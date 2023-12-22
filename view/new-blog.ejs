@@ -1,0 +1,175 @@
+<%- contentFor('HeaderCss') %>
+    <link href="/libs/quill/quill.core.css" rel="stylesheet" type="text/css" />
+    <link href="/libs/quill/quill.bubble.css" rel="stylesheet" type="text/css" />
+    <link href="/libs/quill/quill.snow.css" rel="stylesheet" type="text/css" />
+
+    <link href="/libs/dropzone/min/dropzone.min.css" rel="stylesheet" type="text/css" />
+    <link href="/libs/dropify/css/dropify.min.css" rel="stylesheet" type="text/css" />
+
+
+    <%- contentFor('body') %>
+
+        <!-- start page title -->
+        <div class="row">
+            <div class="col-12">
+                <div class="page-title-box">
+                    <div class="page-title-right">
+                        <ol class="breadcrumb m-0">
+                            <li class="breadcrumb-item">Dashboard</li>
+                            <li class="breadcrumb-item">Blogs</li>
+                            <li class="breadcrumb-item active">New</li>
+                        </ol>
+                    </div>
+                    <h4 class="page-title">Create New Blog</h4>
+                </div>
+            </div>
+        </div>
+        <!-- end page title -->
+
+        <div class="row">
+
+            <div class="col-lg-6">
+
+                <form action="/api/blog/new">
+
+                    <div class="mb-3">
+                        <label for="title" class="form-label">Title</label>
+                        <input type="text" id="title" class="form-control">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="desc" class="form-label">Description</label>
+                        <input type="text" id="desc" class="form-control">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="author" class="form-label">Author</label>
+                        <input type="text" id="author" class="form-control">
+                    </div>
+                    <div class="mb-3"> 
+                        <label for="snow-editor">Blog Content</label>
+                        <div id="snow-editor" style="height: 300px;">
+                            <h3>
+                                <span class="ql-size-large">Hello World!</span>
+                            </h3>
+                            <p><br></p>
+                            <h3>This is an simple editable area.</h3>
+                            <p><br></p>
+
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h4 class="header-title">Upload Blog Banner Here</h4>
+            
+                                    <form action="/" method="post" class="dropzone" id="myAwesomeDropzone" data-plugin="dropzone"
+                                        data-previews-container="#file-previews"
+                                        data-upload-preview-template="#uploadPreviewTemplate">
+                                        <div class="fallback">
+                                            <input name="file" type="file" multiple />
+                                        </div>
+            
+                                        <div class="dz-message needsclick">
+                                            <!-- <i class="h1 text-muted dripicons-cloud-upload"></i> -->
+                                            <h3>Drop files here or click the button upload.</h3>
+                                        </div>
+                                    </form>
+            
+                                    <!-- Preview -->
+                                    <div class="dropzone-previews mt-3" id="file-previews"></div>
+            
+                                </div>
+                                <!-- end card-body-->
+                            </div>
+                            <!-- end card-->
+                        </div>
+                        <!-- end col -->
+                    </div>
+
+                    <input type="submit" id="create-new-blog" value="Publish New Blog">
+                    <input type="submit" id="save-blog" value="Save Draft">
+                </form>
+            </div>
+        </div>
+        <!-- end row -->
+
+
+        <script>
+
+            const fetchCurrentValues = (state) => {
+                console.log(state)
+                const data = {
+                    title: document.getElementById('title').value,
+                    description: document.getElementById('desc').value,
+                    author: document.getElementById('author').value,
+                    content: document.getElementById('snow-editor').innerHTML,
+                    state: state
+                }
+                return data;
+            }
+
+            const createBlogWithData = (data) => {
+                const url = '/api/blog/new'; // replace with your API endpoint
+                // const data = { key1: 'value1', key2: 'value2' }; // replace with your data
+
+                fetch(url, {
+                    method: 'POST', 
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(data), 
+                })
+                .then(response => response.json())
+                .then(data => {
+                    console.log('Success:', data)
+                    redirectToBlogPage(data);
+                    console.log("redirecting to Blog Update Page on Admin Panel")
+                })
+                .catch((error) => {
+                    console.error('Error:', error);
+                    alert("Unable to Publish/Save Blog");
+                });
+            }
+
+            const redirectToBlogPage = (blog) => {
+                console.log(blog.blogNo)
+                window.location.href = `/blog/${blog.blogNo}`
+            }
+            document.getElementById('create-new-blog').addEventListener('click', async()=> {
+                const data = fetchCurrentValues(true);
+                console.log(data)
+                createBlogWithData(data);
+            })
+            document.getElementById('save-blog').addEventListener('click', async()=> {
+                const data = fetchCurrentValues(false);
+                console.log(data)
+                createBlogWithData(data);
+            })
+            
+
+
+        </script>
+        <%- contentFor('FooterJs') %>
+
+            <script src="/libs/dropzone/min/dropzone.min.js"></script>
+            <script src="/libs/dropify/js/dropify.min.js"></script>
+
+            <!-- Init js-->
+            <script src="/js/pages/form-fileuploads.init.js"></script>
+            <!-- knob plugin -->
+            <script src="/libs/quill/quill.min.js"></script>
+
+            <!-- Init js-->
+            <script src="/js/pages/form-quilljs.init.js"></script>
+
+            <script src="/libs/jquery-knob/jquery.knob.min.js"></script>
+
+            <!--Morris Chart-->
+            <script src="/libs/morris.js06/morris.min.js"></script>
+            <script src="/libs/raphael/raphael.min.js"></script>
+
+            <!-- Dashboar init js-->
+            <script src="/js/pages/dashboard.init.js"></script>
