@@ -45,8 +45,12 @@ app.use('/api/blog', apis.BlogRouter)
 app.use('/admin', route);
 
 const frontendRoutes = require('./routes/frontend-routes');
+const servicesRoutes = require('./routes/services-routes');
+const resourcesRoues = require('./routes/resources-routes');
 
 app.use('/', frontendRoutes);
+app.use('/services', servicesRoutes);
+app.use('/resources', resourcesRoues);
 
 app.use((err, req, res, next) => {
     let error = { ...err }
