@@ -1,0 +1,191 @@
+<!doctype html>
+<html amp lang="en" >
+  
+<!-- Mirrored from resources.xceptional.com/blog/2018/06/11/edge-fog-computing-cutting-haze-part-1?hs_amp=true by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 23 Jan 2024 07:10:44 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8">
+    <title>Edge and fog computing: Cutting through the haze (Part 1)</title>
+    <link rel="canonical" href="edge-fog-computing-cutting-haze-part-1.html" />
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+
+    <meta name="author" content="Natalie">
+
+    <meta name="description" content="Edge and fog computing: Cutting through the haze (Part 1)">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <meta name="generator" content="HubSpot">
+    <script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Edge and fog computing: Cutting through the haze (Part 1)",
+        "datePublished": "2018-06-11T17:43:43Z",
+        "dateModified": "2021-11-09T02:17:27.366Z",
+        "mainEntityOfPage": "https://resources.xceptional.com/blog/2018/06/11/edge-fog-computing-cutting-haze-part-1",
+        "author": {
+          "@type": "Person",
+          "name": "Natalie"
+        },
+        "image": {
+         "@type": "ImageObject",
+        
+          
+          
+          "url": "https://f.hubspotusercontent10.net/hubfs/6853069/Imported_Blog_Media/4017575126-2.jpg"
+        
+        },
+        "publisher" : {
+          "@type": "Organization",
+          "logo": {
+            "@type": "ImageObject",
+            
+            "url": "/hs/hsstatic/content_shared_assets/static-1.4092/img/default-amp-logo.png",
+            "width": 60,
+            "height": 60
+            
+          },
+          "name": "The Xceptional Blog"
+        }
+      }
+    </script>
+    <script async custom-element="amp-analytics" src="../../../../../cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
+    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style>
+    <noscript>
+      <style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style>
+    </noscript>
+  <style amp-custom>
+      body {
+        color: #404040;
+        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        font-size: 18px;
+        line-height: 1.6;
+      }
+
+      .hs-page-width-normal {
+        box-sizing: content-box;
+        margin: 0 auto;
+        padding: 0 5vw 5vw;
+      }
+
+      .info {
+        font-size: 14px
+      }
+
+      h1 {
+        color: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        font-size: 26px;
+        line-height: 1.5;
+        font-weight: 600;
+      }
+
+      h1 a {
+        color: #404040;
+      }
+
+      h2 {
+        color: #404040;
+        font-size: 22px;
+        line-height: 38px;
+      }
+
+      a {
+        color: #416bb3;
+        text-decoration: none;
+      }
+
+      .logo-header-text {
+        color: #1e1e1e;
+        font-size: 36px;
+        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        line-height: 2.0;
+        font-weight: bold;
+        vertical-align: text-bottom;
+      }
+
+      .hs-page-width-normal {
+        padding: 5vw;
+      }
+
+      .iframe-placeholder {
+        background-color: #bbb;
+      }
+
+      .header-banner {
+        padding: 3vw 1vw;
+        border-color: #dcdcdc;
+        border-bottom-style: solid;
+        border-bottom-width: thin;
+        background-color: #ffffff;
+        color: #1e1e1e;
+        text-align: center;
+      }
+
+      .full-link {
+        text-align: center;
+      }
+
+      .full-link a {
+        border: 1px solid #dcdcdc;
+        background-color: transparent;
+        color: #416bb3;
+        cursor: pointer;
+        display: block;
+        font-size: 14px;
+        line-height: 18px;
+        margin: 0 auto;
+        max-width: 200px;
+        padding: 11px 16px;
+        text-decoration: none;
+        width: 50%;
+      }
+
+    </style>
+    <script async src="../../../../../cdn.ampproject.org/v0.js"></script>
+  </head>
+  <body>
+    <div class="row-fluid">
+      <div class="header-banner">
+        <a class="blog-link" href="../../../../blog.html">
+        
+          <span class="logo-header-text">The Xceptional Blog</span>
+         </a>
+      </div>  
+      <div class="hs-page-width-normal">
+        <div class="post-header">
+          <h1><a href="edge-fog-computing-cutting-haze-part-1.html">Edge and fog computing: Cutting through the haze (Part 1)</a></h1>
+        </div>
+        <div class="info">
+          <span> Written by <a class="author-link" href="../../../author/andy.html">Natalie</a> | Jun 11, 2018 5:43:43 PM </span>
+        </div>
+        <div class="blog-section">
+          <span><p>Michael Crichton’s 1973 sci-fi movie,&nbsp;<em>Westworld</em>, may be where the initial concept of edge and fog computing (as well as the computer virus) first came to life. In the film, androids appeared to operate using an early form of automated response. But the edge and fog we know today, are much more evolved approaches that are actively helping government improve the quality of our everyday lives. Although both concepts have been around for a while, edge and fog (like so many classic sci-fi stories lately, including&nbsp;<em>Westworld</em>) are in the process of being re-imagined. The result is reshaping how government agencies are interacting with citizens and data, and like all good stories, taking our imaginations to new heights.</p> 
+<h2>What are edge and fog computing?</h2> 
+<p>While the original&nbsp;<a href="http://www.michaelcrichton.com/westworld/"><em>Westworld</em></a>&nbsp;and (spoiler alert) its unfortunate series of events may be an interesting comparison, I’d like to break the concepts of edge and fog computing down a little more.&nbsp;<a href="https://www.cisco.com/c/en/us/solutions/enterprise-networks/edge-computing.html">Cisco coined the term fog computing</a>&nbsp;a few years ago, but not before&nbsp;<em>Westworld</em>’s 1973 premiere. So I guess we can share the idea with Crichton. With traditional cloud computing, you’re switching from processing workloads locally in a data center to leveraging someone else’s remote data center(s) instead (AWS, Azure, Google Cloud, and Oracle). But with fog, control moves away from your data center and into the local area network. You’re simply bringing that cloud processing capability closer to where the data is born. There the data is processed in a fog node. This eliminates the need to send your data all the way back to the data center, saving time and resources.</p> 
+<p>Fog is simply bringing the cloud’s processing capabilities back to Earth, where all the action is. Think about it; in nature, fog is just a cloud on the ground. So just think of fog computing as the cloud (with all its computing, storage, and application power) settling back down, closer to the ground, or action, and away from a centralized data center.</p> 
+<p>But what if you take the next step, and embed your data processing capabilities directly into the end devices? That’s edge computing; actually processing data where the action originates, whether that’s on a pole at an intersection, on a patient’s bedside in rehab, or beneath the Stetson in a processing unit of an artificial hero in&nbsp;<em>Westworld</em>. And it can produce big benefits, especially when used in devices that need to be activated in emergency situations, like gates and locks. This type of function is already happening millions of times every day in our world of IoT connected devices.</p> 
+<h2>From Westworld to real world, and back again.</h2> 
+<p>As the Internet of Things (IoT) and mobile technologies continue to grow, more and more devices are attaching themselves to networks. This is all happening at the edge, where things are a bit looser, the laws at first appear a little less defined, and everyone is pushing a different agenda. It’s a little like the old west. But not in the classic sense. Just like&nbsp;<em>Westworld</em>.</p> 
+<p>As edge and fog (often just called edge fog) computing have evolved in our world, they also have in Crichton’s. In today’s re-imagined&nbsp;<em><a href="https://www.hbo.com/westworld">Westworld series on HBO</a></em>, hundreds of androids (basically end devices) connect to a central network, yet process data and make independent decisions themselves, at the network edge. Their behaviors are generally based on pre-set policies that are designed to limit their actions and have them respond in a certain way, depending on the situation. This is pretty similar to the edge fog approach of today.</p> 
+<h2>What does edge fog computing mean for government?</h2> 
+<p>As a result of edge fog computing, data processing is becoming less centralized. To see the value of pushing decision making to the edge, it’s important to understand that application workloads leveraged by end users are usually pretty forgiving as far as latency and availability. But IoT workloads are not. And with data becoming the new currency, the need for data driven decisions based on time to execute are now critical.</p> 
+<p>The need for speed, so to speak, is growing in parallel with the IoT. And so is the value of edge fog computing. Use cases for IoT are vast, applying to most every aspect of government. From closing gates on a curvy mountain road in response to severe weather, speeding traffic signal response, or even activating emergency door locks to protect our children at school, the opportunities edge fog computing can provide are key to securing a better quality of life in our communities.</p> 
+<p>&nbsp;</p> 
+<p><a href="../../../../../f.hubspotusercontent10.net/hubfs/6853069/Imported_Blog_Media/Blog-Post-6-11-18-Author-2.jpg"><amp-img class="size-medium wp-image-6258 alignleft" src="../../../../hs-fs/hubfs/Imported_Blog_Media/4017575126-26341.jpg?width=56&amp;height=56&amp;name=4017575126-2.jpg" alt="" width="56" height="56" srcset="https://resources.xceptional.com/hs-fs/hubfs/Imported_Blog_Media/4017575126-2.jpg?width=28&amp;height=28&amp;name=4017575126-2.jpg 28w, https://resources.xceptional.com/hs-fs/hubfs/Imported_Blog_Media/4017575126-2.jpg?width=56&amp;height=56&amp;name=4017575126-2.jpg 56w, https://resources.xceptional.com/hs-fs/hubfs/Imported_Blog_Media/4017575126-2.jpg?width=84&amp;height=84&amp;name=4017575126-2.jpg 84w, https://resources.xceptional.com/hs-fs/hubfs/Imported_Blog_Media/4017575126-2.jpg?width=112&amp;height=112&amp;name=4017575126-2.jpg 112w, https://resources.xceptional.com/hs-fs/hubfs/Imported_Blog_Media/4017575126-2.jpg?width=140&amp;height=140&amp;name=4017575126-2.jpg 140w, https://resources.xceptional.com/hs-fs/hubfs/Imported_Blog_Media/4017575126-2.jpg?width=168&amp;height=168&amp;name=4017575126-2.jpg 168w"></amp-img></a>&nbsp;By Marcus Moffett</p> 
+<p>Contributions by Kenn Dodson</p> 
+<p>Published with permission from blogs.cisco.com</p></span>
+        </div>
+        <div class="full-link">
+          <a href="edge-fog-computing-cutting-haze-part-1.html">View full post</a>
+        </div>
+      </div>
+    </div>
+    
+    <amp-pixel src="../../../../../track.hubspot.com/__ptqaa93.gif?cd=SCREEN_COLOR_DEPTH-bit&amp;cs=DOCUMENT_CHARSET&amp;ln=BROWSER_LANGUAGE&amp;sd=AVAILABLE_SCREEN_WIDTHxAVAILABLE_SCREEN_HEIGHT&amp;v=1.1&amp;iaa=1&amp;k=1&amp;ccu=CANONICAL_URL&amp;r=DOCUMENT_REFERRER&amp;ct=blog-post&amp;t=Edge+and+fog+computing%3A+Cutting+through+the+haze+%28Part+1%29&amp;pi=50503647501&amp;a=6853069&amp;nc=true&amp;cgi=23291088092&amp;lvi=50503647501&amp;lvc=en&amp;vi=CLIENT_ID(hubspotutk)&amp;ai=CLIENT_ID(amputk)">
+    </amp-pixel>
+    
+  </body>
+
+<!-- Mirrored from resources.xceptional.com/blog/2018/06/11/edge-fog-computing-cutting-haze-part-1?hs_amp=true by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 23 Jan 2024 07:10:44 GMT -->
+</html>

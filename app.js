@@ -10,6 +10,7 @@ const session = require('express-session');
 const cookieParser = require('cookie-parser');
 const upload = require('express-fileupload');
 const dotenv = require('dotenv');
+const logger = require('morgan');
 dotenv.config({ path: "./config.env" });
 
 const apis = require('./api')
@@ -33,13 +34,19 @@ app.use(cookieParser());
 app.set('layout', 'partials/layout-vertical');
 app.use(expressLayouts);
 
+
+app.use(logger('dev'));
 app.use(express.static(__dirname + '/public'));
 
 
 app.use('/api/admin', apis.AdminRouter)
 app.use('/api/blog', apis.BlogRouter)
 
-app.use('/', route);
+app.use('/admin', route);
+
+const frontendRoutes = require('./routes/frontend-routes');
+
+app.use('/', frontendRoutes);
 
 app.use((err, req, res, next) => {
     let error = { ...err }

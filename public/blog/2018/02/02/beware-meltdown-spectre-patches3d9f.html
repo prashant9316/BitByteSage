@@ -1,0 +1,197 @@
+<!doctype html>
+<html amp lang="en" >
+  
+<!-- Mirrored from resources.xceptional.com/blog/2018/02/02/beware-meltdown-spectre-patches?hs_amp=true by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 23 Jan 2024 07:07:37 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8">
+    <title>Beware of the Meltdown and Spectre patches</title>
+    <link rel="canonical" href="beware-meltdown-spectre-patches.html" />
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+
+    <meta name="author" content="prontowebadmin">
+
+    <meta name="description" content="Beware of the Meltdown and Spectre patches">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <meta name="generator" content="HubSpot">
+    <script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Beware of the Meltdown and Spectre patches",
+        "datePublished": "2018-02-02T11:00:14Z",
+        "dateModified": "2021-11-09T02:28:48.578Z",
+        "mainEntityOfPage": "https://resources.xceptional.com/blog/2018/02/02/beware-meltdown-spectre-patches",
+        "author": {
+          "@type": "Person",
+          "name": "prontowebadmin"
+        },
+        "image": {
+         "@type": "ImageObject",
+        
+          "url": "/hs/hsstatic/content_shared_assets/static-1.4092/img/default-amp-logo.png",
+          "width": 60,
+          "height": 60
+        
+        },
+        "publisher" : {
+          "@type": "Organization",
+          "logo": {
+            "@type": "ImageObject",
+            
+            "url": "/hs/hsstatic/content_shared_assets/static-1.4092/img/default-amp-logo.png",
+            "width": 60,
+            "height": 60
+            
+          },
+          "name": "The Xceptional Blog"
+        }
+      }
+    </script>
+    <script async custom-element="amp-analytics" src="../../../../../cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
+    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style>
+    <noscript>
+      <style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style>
+    </noscript>
+  <style amp-custom>
+      body {
+        color: #404040;
+        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        font-size: 18px;
+        line-height: 1.6;
+      }
+
+      .hs-page-width-normal {
+        box-sizing: content-box;
+        margin: 0 auto;
+        padding: 0 5vw 5vw;
+      }
+
+      .info {
+        font-size: 14px
+      }
+
+      h1 {
+        color: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        font-size: 26px;
+        line-height: 1.5;
+        font-weight: 600;
+      }
+
+      h1 a {
+        color: #404040;
+      }
+
+      h2 {
+        color: #404040;
+        font-size: 22px;
+        line-height: 38px;
+      }
+
+      a {
+        color: #416bb3;
+        text-decoration: none;
+      }
+
+      .logo-header-text {
+        color: #1e1e1e;
+        font-size: 36px;
+        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        line-height: 2.0;
+        font-weight: bold;
+        vertical-align: text-bottom;
+      }
+
+      .hs-page-width-normal {
+        padding: 5vw;
+      }
+
+      .iframe-placeholder {
+        background-color: #bbb;
+      }
+
+      .header-banner {
+        padding: 3vw 1vw;
+        border-color: #dcdcdc;
+        border-bottom-style: solid;
+        border-bottom-width: thin;
+        background-color: #ffffff;
+        color: #1e1e1e;
+        text-align: center;
+      }
+
+      .full-link {
+        text-align: center;
+      }
+
+      .full-link a {
+        border: 1px solid #dcdcdc;
+        background-color: transparent;
+        color: #416bb3;
+        cursor: pointer;
+        display: block;
+        font-size: 14px;
+        line-height: 18px;
+        margin: 0 auto;
+        max-width: 200px;
+        padding: 11px 16px;
+        text-decoration: none;
+        width: 50%;
+      }
+
+    </style>
+    <script async src="../../../../../cdn.ampproject.org/v0.js"></script>
+  </head>
+  <body>
+    <div class="row-fluid">
+      <div class="header-banner">
+        <a class="blog-link" href="../../../../blog.html">
+        
+          <span class="logo-header-text">The Xceptional Blog</span>
+         </a>
+      </div>  
+      <div class="hs-page-width-normal">
+        <div class="post-header">
+          <h1><a href="beware-meltdown-spectre-patches.html">Beware of the Meltdown and Spectre patches</a></h1>
+        </div>
+        <div class="info">
+          <span> Written by <a class="author-link" href="../../../author/prontowebadmin.html">prontowebadmin</a> | Feb 2, 2018 11:00:14 AM </span>
+        </div>
+        <div class="blog-section">
+          <span><p>Installing security patches is usually such a humdrum task that even the most inexperienced users handle it. Unfortunately, that has not been the case with the Spectre and Meltdown fixes. This time around, we recommend you skip installing the update and let an IT professional handle it for you.</p> 
+<h3>Unsecured data storage</h3> 
+<p>Spectre and Meltdown are the names given to two hardware flaws that allow hackers to see any piece of information stored on your computer. Although slightly different in execution, both take advantage of a hardware feature that computer chips use to access and store private information. For the last 20 years, security experts believed this information could not be stolen or spied on by malicious software, but that assumption was proven false on January 3, 2018.</p> 
+<p>Now that the Spectre and Meltdown vulnerabilities are public information, hackers can use them to create programs that steal passwords, social security numbers, credit card numbers, and anything else you type into your computer.</p> 
+<p>Because these problems are hardware-based, none of the updates will be able to secure the vulnerable storage; they’ll simply prevent your computer from storing anything in it. Currently, there are patches for:</p> 
+<ul> 
+ <li>Operating systems (Windows, macOS, and Linux)</li> 
+ <li>Web browsers (Chrome, Firefox, Safari, Edge, and IE)</li> 
+ <li>Chip firmware (low-level programs installed on the processor itself)</li> 
+</ul> 
+<p>If you’re using an Apple computer, these updates are relatively easy to install. If you’re using a Windows or Linux-based computer, these patches may cause your machine to freeze, reboot unexpectedly, or significantly slow down.</p> 
+<h3>Why should I wait to install the updates?</h3> 
+<p>Intel, one of the chipmakers responsible for the Spectre and Meltdown flaws, has provided contradictory recommendations on more than one occasion. As recently as January 18, Intel recommended waiting for an updated patch, but in the same announcement also recommended “consumers to keep systems up-to-date.”</p> 
+<p>Experts believe detecting an attack that is based on one of these flaws will be relatively easy and represent an alternative to installing updates that could render your computer unusable.</p> 
+<h3>What should I do?</h3> 
+<p>IT support experts will be able to quickly and easily assess what is the best option for your computers. For example, our team can determine whether or not your hardware will conflict with the current patches, and either install them or set up a detection strategy that will help you mitigate the risks without ruining your computer.</p> 
+<p>If you need expert IT support for quick responses and ironclad security -- give us a call today.</p> 
+<div class="autoblogfoot">
+  Published with permission from TechAdvisory.org. 
+ <a href="http://www.techadvisory.org/2018/01/beware-of-the-meltdown-and-spectre-patches/">Source.</a> 
+</div></span>
+        </div>
+        <div class="full-link">
+          <a href="beware-meltdown-spectre-patches.html">View full post</a>
+        </div>
+      </div>
+    </div>
+    
+    <amp-pixel src="../../../../../track.hubspot.com/__ptq3c44.gif?cd=SCREEN_COLOR_DEPTH-bit&amp;cs=DOCUMENT_CHARSET&amp;ln=BROWSER_LANGUAGE&amp;sd=AVAILABLE_SCREEN_WIDTHxAVAILABLE_SCREEN_HEIGHT&amp;v=1.1&amp;iaa=1&amp;k=1&amp;ccu=CANONICAL_URL&amp;r=DOCUMENT_REFERRER&amp;ct=blog-post&amp;t=Beware+of+the+Meltdown+and+Spectre+patches&amp;pi=50503990795&amp;a=6853069&amp;nc=true&amp;cgi=23291088092&amp;lvi=50503990795&amp;lvc=en&amp;vi=CLIENT_ID(hubspotutk)&amp;ai=CLIENT_ID(amputk)">
+    </amp-pixel>
+    
+  </body>
+
+<!-- Mirrored from resources.xceptional.com/blog/2018/02/02/beware-meltdown-spectre-patches?hs_amp=true by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 23 Jan 2024 07:07:37 GMT -->
+</html>

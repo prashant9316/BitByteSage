@@ -1,0 +1,215 @@
+<!doctype html>
+<html amp lang="en" >
+  
+<!-- Mirrored from resources.xceptional.com/blog/2019/06/17/why-you-need-both-monitoring-and-observability?hs_amp=true by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 23 Jan 2024 06:41:02 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8">
+    <title>Why you need both monitoring and observability</title>
+    <link rel="canonical" href="why-you-need-both-monitoring-and-observability.html" />
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+
+    <meta name="author" content="Natalie">
+
+    <meta name="description" content="Why you need both monitoring and observability">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <meta name="generator" content="HubSpot">
+    <script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Why you need both monitoring and observability",
+        "datePublished": "2019-06-17T21:39:36Z",
+        "dateModified": "2021-11-09T02:12:59.729Z",
+        "mainEntityOfPage": "https://resources.xceptional.com/blog/2019/06/17/why-you-need-both-monitoring-and-observability",
+        "author": {
+          "@type": "Person",
+          "name": "Natalie"
+        },
+        "image": {
+         "@type": "ImageObject",
+        
+          
+          
+          "url": "https://f.hubspotusercontent10.net/hubfs/6853069/Imported_Blog_Media/1919812042-1.jpg"
+        
+        },
+        "publisher" : {
+          "@type": "Organization",
+          "logo": {
+            "@type": "ImageObject",
+            
+            "url": "/hs/hsstatic/content_shared_assets/static-1.4092/img/default-amp-logo.png",
+            "width": 60,
+            "height": 60
+            
+          },
+          "name": "The Xceptional Blog"
+        }
+      }
+    </script>
+    <script async custom-element="amp-analytics" src="../../../../../cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
+    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style>
+    <noscript>
+      <style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style>
+    </noscript>
+  <style amp-custom>
+      body {
+        color: #404040;
+        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        font-size: 18px;
+        line-height: 1.6;
+      }
+
+      .hs-page-width-normal {
+        box-sizing: content-box;
+        margin: 0 auto;
+        padding: 0 5vw 5vw;
+      }
+
+      .info {
+        font-size: 14px
+      }
+
+      h1 {
+        color: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        font-size: 26px;
+        line-height: 1.5;
+        font-weight: 600;
+      }
+
+      h1 a {
+        color: #404040;
+      }
+
+      h2 {
+        color: #404040;
+        font-size: 22px;
+        line-height: 38px;
+      }
+
+      a {
+        color: #416bb3;
+        text-decoration: none;
+      }
+
+      .logo-header-text {
+        color: #1e1e1e;
+        font-size: 36px;
+        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        line-height: 2.0;
+        font-weight: bold;
+        vertical-align: text-bottom;
+      }
+
+      .hs-page-width-normal {
+        padding: 5vw;
+      }
+
+      .iframe-placeholder {
+        background-color: #bbb;
+      }
+
+      .header-banner {
+        padding: 3vw 1vw;
+        border-color: #dcdcdc;
+        border-bottom-style: solid;
+        border-bottom-width: thin;
+        background-color: #ffffff;
+        color: #1e1e1e;
+        text-align: center;
+      }
+
+      .full-link {
+        text-align: center;
+      }
+
+      .full-link a {
+        border: 1px solid #dcdcdc;
+        background-color: transparent;
+        color: #416bb3;
+        cursor: pointer;
+        display: block;
+        font-size: 14px;
+        line-height: 18px;
+        margin: 0 auto;
+        max-width: 200px;
+        padding: 11px 16px;
+        text-decoration: none;
+        width: 50%;
+      }
+
+    </style>
+    <script async src="../../../../../cdn.ampproject.org/v0.js"></script>
+  </head>
+  <body>
+    <div class="row-fluid">
+      <div class="header-banner">
+        <a class="blog-link" href="../../../../blog.html">
+        
+          <span class="logo-header-text">The Xceptional Blog</span>
+         </a>
+      </div>  
+      <div class="hs-page-width-normal">
+        <div class="post-header">
+          <h1><a href="why-you-need-both-monitoring-and-observability.html">Why you need both monitoring and observability</a></h1>
+        </div>
+        <div class="info">
+          <span> Written by <a class="author-link" href="../../../author/andy.html">Natalie</a> | Jun 17, 2019 9:39:36 PM </span>
+        </div>
+        <div class="blog-section">
+          <span><p>It’s no secret that application environments are certainly not getting any simpler.</p> 
+<p>From the complexity of the mix of applications to manage (there is indeed an app for everything!) to the complexity of building and deploying those apps (microservices, containers and the burgeoning DevOps/cloud-native ecosystem) to the complexity of the delivery infrastructure (mobile, virtual, cloud, SaaS), IT is faced with more apps, systems and platforms than ever to keep up and running in peak condition.</p> 
+<p>With greater complexity driving the need for greater visibility, the processes, tools and methods of monitoring are also growing ever more diverse. One of the ways in which this is happening is through the&nbsp;<em>DevOpsification</em>&nbsp;of monitoring&nbsp;<em>a.k.a.&nbsp;</em>observability.</p> 
+<h3><strong>What is observability?</strong></h3> 
+<div id="attachment_12980" class="wp-caption alignright"> 
+ <a href="../../../../../f.hubspotusercontent10.net/hubfs/6853069/Imported_Blog_Media/Blog-Post-06-17-19-1.jpg"><amp-img class="alignnone  wp-image-8522" src="../../../../hs-fs/hubfs/Imported_Blog_Media/1919812042-1acce.jpg?width=296&amp;height=239&amp;name=1919812042-1.jpg" alt="" width="296" height="239" srcset="https://resources.xceptional.com/hs-fs/hubfs/Imported_Blog_Media/1919812042-1.jpg?width=148&amp;height=120&amp;name=1919812042-1.jpg 148w, https://resources.xceptional.com/hs-fs/hubfs/Imported_Blog_Media/1919812042-1.jpg?width=296&amp;height=239&amp;name=1919812042-1.jpg 296w, https://resources.xceptional.com/hs-fs/hubfs/Imported_Blog_Media/1919812042-1.jpg?width=444&amp;height=359&amp;name=1919812042-1.jpg 444w, https://resources.xceptional.com/hs-fs/hubfs/Imported_Blog_Media/1919812042-1.jpg?width=592&amp;height=478&amp;name=1919812042-1.jpg 592w, https://resources.xceptional.com/hs-fs/hubfs/Imported_Blog_Media/1919812042-1.jpg?width=740&amp;height=598&amp;name=1919812042-1.jpg 740w, https://resources.xceptional.com/hs-fs/hubfs/Imported_Blog_Media/1919812042-1.jpg?width=888&amp;height=717&amp;name=1919812042-1.jpg 888w"></amp-img></a> 
+ <p class="wp-caption-text">Observability data types</p> 
+</div> 
+<p>Traditionally, monitoring has been the domain of ops—sort of an&nbsp;<em>outside looking in</em>&nbsp;view for someone who doesn’t actually build the code. Observability, as a culture and practice, represents a shift left for monitoring as developers take on the task of building applications able to externalize their internal state. A number of open-source technologies have made this&nbsp;<em>inside-out</em>&nbsp;view possible, including:</p> 
+ 
+<ul> 
+ <li>collectd—application metrics</li> 
+ <li>statsd—application statistics</li> 
+ <li>fluentd—unified log data collection</li> 
+ <li>Zipkin, Jaeger, OpenTracing/OpenTelemetry—distributed tracing systems and standards supporting polyglot languages like Go, PHP, Python, C/C++</li> 
+ <li>Semantic logging—structured logs based on strongly typed events<br>  </li> 
+</ul> 
+<h3><strong>Monitoring vs observability: a false dichotomy</strong></h3> 
+<p>Monitoring and observability have different purposes. Monitoring aims to provide a broad view of anything that can be generically measured based on what you can specify in external configuration, whether it is time-series metrics or call stack execution. However, it lacks information as to the developer’s&nbsp;<em>intent</em>. Observability is built into the code by that very developer to provide insight into the system based on the intended behavior. Systems that incorporate observability can be effectively debugged with context rather than conjecture.</p> 
+<p>However, observability does not scale the way monitoring can. Spans are configured while writing code, and for it to be failsafe would require the developer to mark up every span of interest—and a developer is only human! Monitoring, on the other hand, will simply capture every single method call and parameter (or whatever you specify based on runtime characteristics).</p> 
+<h3><a href="../../../../../f.hubspotusercontent10.net/hubfs/6853069/Imported_Blog_Media/Blog-Post-6-17-19-1-1.jpg"><amp-img class="alignnone  wp-image-8523" src="../../../../hs-fs/hubfs/Imported_Blog_Media/3415225803-1c820.jpg?width=416&amp;height=184&amp;name=3415225803-1.jpeg" alt="" width="416" height="184" srcset="https://resources.xceptional.com/hs-fs/hubfs/Imported_Blog_Media/3415225803-1.jpeg?width=208&amp;height=92&amp;name=3415225803-1.jpeg 208w, https://resources.xceptional.com/hs-fs/hubfs/Imported_Blog_Media/3415225803-1.jpeg?width=416&amp;height=184&amp;name=3415225803-1.jpeg 416w, https://resources.xceptional.com/hs-fs/hubfs/Imported_Blog_Media/3415225803-1.jpeg?width=624&amp;height=276&amp;name=3415225803-1.jpeg 624w, https://resources.xceptional.com/hs-fs/hubfs/Imported_Blog_Media/3415225803-1.jpeg?width=832&amp;height=368&amp;name=3415225803-1.jpeg 832w, https://resources.xceptional.com/hs-fs/hubfs/Imported_Blog_Media/3415225803-1.jpeg?width=1040&amp;height=460&amp;name=3415225803-1.jpeg 1040w, https://resources.xceptional.com/hs-fs/hubfs/Imported_Blog_Media/3415225803-1.jpeg?width=1248&amp;height=552&amp;name=3415225803-1.jpeg 1248w" layout="responsive"></amp-img></a></h3> 
+<h3><strong>Cloud native adoption</strong></h3> 
+<p>Observability, along with cloud-native development, has become a cornerstone of modern application and systems design, and a wide variety of open-source monitoring, search, analytics, and visualization platforms have emerged to consume these new data sources. You’ve probably heard of Prometheus, Elastic, Grafana, etc. A quick glance at the&nbsp;<a href="https://landscape.cncf.io/" target="_blank" rel="noopener noreferrer">CNCF landscape</a>&nbsp;illustrates the sheer number of options. The free availability of these options has resulted in widespread adoption among developers and DevOps teams.</p> 
+<p>Concurrently, there has been a staggering increase in the amount of data generated by modern apps. Last year’s DEJ study noted an 18x increase in data collected, on average, from monitoring components and dependencies in container-based vs. more traditional monolith environments. And not only has there been an explosion in the volume and velocity of data, but the variety of data types and sources continues to grow as well.</p> 
+<p>This has created a fresh set of problems.</p> 
+<h3><strong>More data, more problems</strong></h3> 
+<p>While having all this data empowers developers to shift left and fix bugs early in the app lifecycle, relying on multiple commercial and open-source tools is impractical for production environments where there is greater urgency to respond to user issues fast and fix them before business is impacted. Manually correlating data across disparate tools and silos to isolate and triage a user issue is slow and near impossible unless you already know what you are looking for. And while many of the free and low-cost options may appear attractive at first, it quickly becomes apparent they cannot scale in enterprise environments where there may be as many as tens of thousands of containerized components to track and monitor, and where the number of executed transactions can number in the billions every day.</p> 
+<p>As a result, forward-looking organizations recognize a strong need for:</p> 
+<ul> 
+ <li><a href="https://www.riverbed.com/products/steelcentral/index.html?utm_source=blog&amp;utm_medium=social" target="_blank" rel="noopener noreferrer">Unified visibility</a>&nbsp;across multiple IT functions, including app, network and cloud infrastructure</li> 
+ <li><a href="https://www.riverbed.com/go/getasset.html?assetid=1527731643775&amp;utm_source=blog&amp;utm_medium=social" target="_blank" rel="noopener noreferrer">Big data technology</a>&nbsp;capable of capturing, streaming and storing the volume, velocity and variety of data without undue stress on the underlying system or storage infrastructure</li> 
+ <li><a href="https://www.riverbed.com/forms/whitepapers/what-is-aiops-4-dimensions-ai.html?utm_source=blog&amp;utm_medium=social" target="_blank" rel="noopener noreferrer">AIOps approaches</a> for analyzing and visualizing the resulting big data to extract meaningful, even predictive, information about the IT environment</li> 
+</ul> 
+<p>This is where an enterprise-scale monitoring solution providing a single-pane-of-glass view can be immensely valuable.</p> 
+<h3><strong>Better together</strong></h3> 
+<p>Combining application performance monitoring (APM) with observability data, you can have the best of both worlds: insight into the intent of the code, as well as complete end-to-end traces and transaction flow mapping, unified views and drill-downs across multiple IT functions, all with rich metadata context.</p> 
+<p>&nbsp;</p> 
+<p><amp-img class="wp-image-8524 alignleft" src="../../../../hs-fs/hubfs/Imported_Blog_Media/2626452089-121d1.jpg?width=99&amp;height=95&amp;name=2626452089-1.jpeg" alt="" width="99" height="95" srcset="https://resources.xceptional.com/hs-fs/hubfs/Imported_Blog_Media/2626452089-1.jpeg?width=50&amp;height=48&amp;name=2626452089-1.jpeg 50w, https://resources.xceptional.com/hs-fs/hubfs/Imported_Blog_Media/2626452089-1.jpeg?width=99&amp;height=95&amp;name=2626452089-1.jpeg 99w, https://resources.xceptional.com/hs-fs/hubfs/Imported_Blog_Media/2626452089-1.jpeg?width=149&amp;height=143&amp;name=2626452089-1.jpeg 149w, https://resources.xceptional.com/hs-fs/hubfs/Imported_Blog_Media/2626452089-1.jpeg?width=198&amp;height=190&amp;name=2626452089-1.jpeg 198w, https://resources.xceptional.com/hs-fs/hubfs/Imported_Blog_Media/2626452089-1.jpeg?width=248&amp;height=238&amp;name=2626452089-1.jpeg 248w, https://resources.xceptional.com/hs-fs/hubfs/Imported_Blog_Media/2626452089-1.jpeg?width=297&amp;height=285&amp;name=2626452089-1.jpeg 297w"></amp-img>By Amena Siddiqi</p> 
+<p>Published with permission from&nbsp;<a href="https://www.riverbed.com/blogs.html">Riverbed</a>.</p></span>
+        </div>
+        <div class="full-link">
+          <a href="why-you-need-both-monitoring-and-observability.html">View full post</a>
+        </div>
+      </div>
+    </div>
+    
+    <amp-pixel src="../../../../../track.hubspot.com/__ptq79ee.gif?cd=SCREEN_COLOR_DEPTH-bit&amp;cs=DOCUMENT_CHARSET&amp;ln=BROWSER_LANGUAGE&amp;sd=AVAILABLE_SCREEN_WIDTHxAVAILABLE_SCREEN_HEIGHT&amp;v=1.1&amp;iaa=1&amp;k=1&amp;ccu=CANONICAL_URL&amp;r=DOCUMENT_REFERRER&amp;ct=blog-post&amp;t=Why+you+need+both+monitoring+and+observability&amp;pi=50503647911&amp;a=6853069&amp;nc=true&amp;cgi=23291088092&amp;lvi=50503647911&amp;lvc=en&amp;vi=CLIENT_ID(hubspotutk)&amp;ai=CLIENT_ID(amputk)">
+    </amp-pixel>
+    
+  </body>
+
+<!-- Mirrored from resources.xceptional.com/blog/2019/06/17/why-you-need-both-monitoring-and-observability?hs_amp=true by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 23 Jan 2024 06:41:02 GMT -->
+</html>

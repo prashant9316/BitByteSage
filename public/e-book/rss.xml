@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    <title>E-Book</title>
+    <link>https://resources.xceptional.com/e-book</link>
+    <description>Browse our free e-books for information on managed IT, network services, cloud services, unified communications, and more.</description>
+    <language>en</language>
+    <pubDate>Tue, 18 Jan 2022 21:21:41 GMT</pubDate>
+    <dc:date>2022-01-18T21:21:41Z</dc:date>
+    <dc:language>en</dc:language>
+    <item>
+      <title>Compliance-as-a-Service and Security-as-a-Service</title>
+      <link>https://resources.xceptional.com/e-book/compliance-as-a-service-and-security-as-a-service</link>
+      <description>&lt;p&gt;&lt;span&gt;Learn about Xceptional's Compliance-as-a-Service and Security-as-a-Service solution to fit your business needs.&lt;/span&gt;&lt;/p&gt;</description>
+      <content:encoded>&lt;p&gt;&lt;span&gt;Learn about Xceptional's Compliance-as-a-Service and Security-as-a-Service solution to fit your business needs.&lt;/span&gt;&lt;/p&gt;  
+&lt;img src="https://track.hubspot.com/__ptq.gif?a=6853069&amp;amp;k=14&amp;amp;r=https%3A%2F%2Fresources.xceptional.com%2Fe-book%2Fcompliance-as-a-service-and-security-as-a-service&amp;amp;bu=https%253A%252F%252Fresources.xceptional.com%252Fe-book&amp;amp;bvt=rss" alt="" width="1" height="1" style="min-height:1px!important;width:1px!important;border-width:0!important;margin-top:0!important;margin-bottom:0!important;margin-right:0!important;margin-left:0!important;padding-top:0!important;padding-bottom:0!important;padding-right:0!important;padding-left:0!important; "&gt;</content:encoded>
+      <category>Security</category>
+      <pubDate>Wed, 24 Nov 2021 05:20:50 GMT</pubDate>
+      <guid>https://resources.xceptional.com/e-book/compliance-as-a-service-and-security-as-a-service</guid>
+      <dc:date>2021-11-24T05:20:50Z</dc:date>
+      <dc:creator>Xceptional Team</dc:creator>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,195 @@
+<!doctype html>
+<html amp lang="en" >
+  
+<!-- Mirrored from resources.xceptional.com/blog/2019/06/06/why-does-hardware-matter-in-a-software-defined-data-center?hs_amp=true by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 23 Jan 2024 06:40:46 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8">
+    <title>Why does hardware matter in a software-defined data center?</title>
+    <link rel="canonical" href="why-does-hardware-matter-in-a-software-defined-data-center.html" />
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+
+    <meta name="author" content="Natalie">
+
+    <meta name="description" content="Why does hardware matter in a software-defined data center?">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <meta name="generator" content="HubSpot">
+    <script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Why does hardware matter in a software-defined data center?",
+        "datePublished": "2019-06-06T20:14:26Z",
+        "dateModified": "2021-11-09T02:12:34.849Z",
+        "mainEntityOfPage": "https://resources.xceptional.com/blog/2019/06/06/why-does-hardware-matter-in-a-software-defined-data-center",
+        "author": {
+          "@type": "Person",
+          "name": "Natalie"
+        },
+        "image": {
+         "@type": "ImageObject",
+        
+          
+          
+          "url": "https://f.hubspotusercontent10.net/hubfs/6853069/Imported_Blog_Media/Picture1-1.png"
+        
+        },
+        "publisher" : {
+          "@type": "Organization",
+          "logo": {
+            "@type": "ImageObject",
+            
+            "url": "/hs/hsstatic/content_shared_assets/static-1.4092/img/default-amp-logo.png",
+            "width": 60,
+            "height": 60
+            
+          },
+          "name": "The Xceptional Blog"
+        }
+      }
+    </script>
+    <script async custom-element="amp-analytics" src="../../../../../cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
+    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style>
+    <noscript>
+      <style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style>
+    </noscript>
+  <style amp-custom>
+      body {
+        color: #404040;
+        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        font-size: 18px;
+        line-height: 1.6;
+      }
+
+      .hs-page-width-normal {
+        box-sizing: content-box;
+        margin: 0 auto;
+        padding: 0 5vw 5vw;
+      }
+
+      .info {
+        font-size: 14px
+      }
+
+      h1 {
+        color: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        font-size: 26px;
+        line-height: 1.5;
+        font-weight: 600;
+      }
+
+      h1 a {
+        color: #404040;
+      }
+
+      h2 {
+        color: #404040;
+        font-size: 22px;
+        line-height: 38px;
+      }
+
+      a {
+        color: #416bb3;
+        text-decoration: none;
+      }
+
+      .logo-header-text {
+        color: #1e1e1e;
+        font-size: 36px;
+        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        line-height: 2.0;
+        font-weight: bold;
+        vertical-align: text-bottom;
+      }
+
+      .hs-page-width-normal {
+        padding: 5vw;
+      }
+
+      .iframe-placeholder {
+        background-color: #bbb;
+      }
+
+      .header-banner {
+        padding: 3vw 1vw;
+        border-color: #dcdcdc;
+        border-bottom-style: solid;
+        border-bottom-width: thin;
+        background-color: #ffffff;
+        color: #1e1e1e;
+        text-align: center;
+      }
+
+      .full-link {
+        text-align: center;
+      }
+
+      .full-link a {
+        border: 1px solid #dcdcdc;
+        background-color: transparent;
+        color: #416bb3;
+        cursor: pointer;
+        display: block;
+        font-size: 14px;
+        line-height: 18px;
+        margin: 0 auto;
+        max-width: 200px;
+        padding: 11px 16px;
+        text-decoration: none;
+        width: 50%;
+      }
+
+    </style>
+    <script async src="../../../../../cdn.ampproject.org/v0.js"></script>
+  </head>
+  <body>
+    <div class="row-fluid">
+      <div class="header-banner">
+        <a class="blog-link" href="../../../../blog.html">
+        
+          <span class="logo-header-text">The Xceptional Blog</span>
+         </a>
+      </div>  
+      <div class="hs-page-width-normal">
+        <div class="post-header">
+          <h1><a href="why-does-hardware-matter-in-a-software-defined-data-center.html">Why does hardware matter in a software-defined data center?</a></h1>
+        </div>
+        <div class="info">
+          <span> Written by <a class="author-link" href="../../../author/andy.html">Natalie</a> | Jun 6, 2019 8:14:26 PM </span>
+        </div>
+        <div class="blog-section">
+          <span><p>Today, organizations with a modernized infrastructure (aka “modernized” firms) are much better positioned to handle emerging technologies than their competitors with aging hardware. Modernized firms can quickly scale to meet changing needs. They understand the importance of flexibility, especially when it comes to handling demanding applications and processing the insane amount of data inundating us from all angles!</p> 
+<p>The right software-defined data center (SDDC) solutions can help organizations address those heavy demands and accommodate future growth. SDDC breaks down traditional silos and plays a critical role in a firm’s data center transformation. Since all elements in an SDDC are virtualized – servers, storage, and networking – they can easily adapt and decrease the time to deploy new applications.</p> 
+<p>With all these benefits, it’s no surprise that most organizations see value in SDDC as a long-term strategy. They&nbsp;<em>want&nbsp;</em>to be there, and know they&nbsp;<em>need</em>&nbsp;to be there to succeed long-term. But getting to that point is a journey – and one that must start with the right foundation.</p> 
+<p><amp-img class="aligncenter  wp-image-153149" src="../../../../hs-fs/hubfs/Imported_Blog_Media/Picture1-13033.png?width=568&amp;height=71&amp;name=Picture1-1.png" alt="" width="568" height="71" srcset="https://resources.xceptional.com/hs-fs/hubfs/Imported_Blog_Media/Picture1-1.png?width=284&amp;height=36&amp;name=Picture1-1.png 284w, https://resources.xceptional.com/hs-fs/hubfs/Imported_Blog_Media/Picture1-1.png?width=568&amp;height=71&amp;name=Picture1-1.png 568w, https://resources.xceptional.com/hs-fs/hubfs/Imported_Blog_Media/Picture1-1.png?width=852&amp;height=107&amp;name=Picture1-1.png 852w, https://resources.xceptional.com/hs-fs/hubfs/Imported_Blog_Media/Picture1-1.png?width=1136&amp;height=142&amp;name=Picture1-1.png 1136w, https://resources.xceptional.com/hs-fs/hubfs/Imported_Blog_Media/Picture1-1.png?width=1420&amp;height=178&amp;name=Picture1-1.png 1420w, https://resources.xceptional.com/hs-fs/hubfs/Imported_Blog_Media/Picture1-1.png?width=1704&amp;height=213&amp;name=Picture1-1.png 1704w" layout="responsive"></amp-img></p> 
+<h3><strong>Setting the Record Straight</strong></h3> 
+<p>When it comes to SDDC, one of the biggest misconceptions is that hardware doesn’t really matter. Those of us in hardware don’t take it personally (after all, it<em>&nbsp;is</em>&nbsp;<strong>S</strong>DDC, not&nbsp;<strong>H</strong>DDC). But that mindset couldn’t be further from the truth. Having the right hardware doesn’t just matter, it’s critical. Why? For one thing, SDDC runs on hardware. This may seem like a given, but without the right servers in place you can’t do all the other cool stuff that comes along with SDDC. Servers are the foundation of SDDC, and without a solid foundation? Well, we all know what happened to the guy that built his house on the sand…</p> 
+<p>To provide a little more context, here are<strong>&nbsp;6 Reasons Hardware Matters in an SDDC:</strong></p> 
+<ol> 
+ <li><strong>Increased Capacity:&nbsp;</strong>Because SDDC runs on hardware, performance is constrained by the capacity and limitations of your servers. You’re forced to operate within the boundaries of resources available, and if those resources are limited, your SDDC capabilities will be, too.</li> 
+ <li><strong>Faster Deployment:&nbsp;</strong>A modern infrastructure helps reduce the time it takes to deploy new applications. Automation tools such as zero touch deployment make life a lot easier for your IT staff. With aging infrastructure, it can take IT organizations days, weeks, or even months to deploy new versions of applications in their data centers. Modernized servers help to drastically reduce this time.<em><br> </em></li> 
+ <li><strong>Scalability&nbsp;</strong>– The right hardware enables you to more easily scale to meet your changing needs. Modernized servers support data growth, because they give you the capability to add additional resources such as memory. You can scale out to meet business demands, avoiding infrastructure “sprawl.” <em><amp-img class="wp-image-153125 alignright" src="../../../../hs-fs/hubfs/Imported_Blog_Media/Picture2-314a8.png?width=546&amp;height=87&amp;name=Picture2-3.png" alt="" width="546" height="87" srcset="https://resources.xceptional.com/hs-fs/hubfs/Imported_Blog_Media/Picture2-3.png?width=273&amp;height=44&amp;name=Picture2-3.png 273w, https://resources.xceptional.com/hs-fs/hubfs/Imported_Blog_Media/Picture2-3.png?width=546&amp;height=87&amp;name=Picture2-3.png 546w, https://resources.xceptional.com/hs-fs/hubfs/Imported_Blog_Media/Picture2-3.png?width=819&amp;height=131&amp;name=Picture2-3.png 819w, https://resources.xceptional.com/hs-fs/hubfs/Imported_Blog_Media/Picture2-3.png?width=1092&amp;height=174&amp;name=Picture2-3.png 1092w, https://resources.xceptional.com/hs-fs/hubfs/Imported_Blog_Media/Picture2-3.png?width=1365&amp;height=218&amp;name=Picture2-3.png 1365w, https://resources.xceptional.com/hs-fs/hubfs/Imported_Blog_Media/Picture2-3.png?width=1638&amp;height=261&amp;name=Picture2-3.png 1638w" layout="responsive"></amp-img></em></li> 
+ <li><strong>Emerging Workloads</strong>&nbsp;– Today’s workloads are more complex than those of the past. Emerging workloads that require large amounts of parallelized computation need modernized servers designed specifically to support them. If your organization uses (or plans to use) predictive analytics, machine learning, or deep learning you need to have the right infrastructure in place. A recent study by Forrester found that 67% of servers purchased in the next year will be used to support emerging technology workloads including IoT, additive manufacturing, computer vision, predictive analytics, and edge computing.[1]</li> 
+ <li><strong>Customized Workload Placement</strong>&nbsp;– Another benefit to modernized servers is the ability to&nbsp;<a href="https://www.dellemc.com/en-us/servers/index.htm#cobrand=intel&amp;overlay=/collaterals/unauth/brochures/solutions/eBook_developing_an_effective_workload_placement_strategy.pdf" target="_blank" rel="noopener noreferrer">customize your workload placement</a>based on your specific needs and resources. This means you can run some workloads on-premises (such as data-sensitive applications), while keeping others in the cloud. For example,&nbsp;<a href="https://www.dellemc.com/en-us/servers/modular-infrastructure/poweredge-mx/index.htm" target="_blank" rel="noopener noreferrer">PowerEdge MX7000</a>, which was designed specifically for SDDC, is a modular, software-defined infrastructure that can assign, move, and scale shared pools of compute, storage, and fabric with greater flexibility and efficiency.</li> 
+ <li><strong>Improved IT Staff Productivity</strong>&nbsp;– With aging infrastructure, your IT staff likely spends a large chunk of their time managing day-to-day tasks. This doesn’t leave much time to focus on strategy or work on things that will contribute to overall business results. Modernized servers help you automate tasks, making it much easier to deploy, monitor, and maintain, so your staff can add more value in other areas.</li> 
+</ol> 
+<p>The journey to an SDDC can be challenging, and unfortunately the path to get there isn’t clear cut. But if you start with a solid foundation, including the right servers, you’ll be positioned to adapt and grow to meet your changing business needs.</p> 
+<p>&nbsp;</p> 
+<p><amp-img class="wp-image-6870 alignleft" src="../../../../hs-fs/hubfs/Imported_Blog_Media/4172873798-21c9a.jpg?width=87&amp;height=87&amp;name=4172873798-2.jpg" alt="" width="87" height="87" srcset="https://resources.xceptional.com/hs-fs/hubfs/Imported_Blog_Media/4172873798-2.jpg?width=44&amp;height=44&amp;name=4172873798-2.jpg 44w, https://resources.xceptional.com/hs-fs/hubfs/Imported_Blog_Media/4172873798-2.jpg?width=87&amp;height=87&amp;name=4172873798-2.jpg 87w, https://resources.xceptional.com/hs-fs/hubfs/Imported_Blog_Media/4172873798-2.jpg?width=131&amp;height=131&amp;name=4172873798-2.jpg 131w, https://resources.xceptional.com/hs-fs/hubfs/Imported_Blog_Media/4172873798-2.jpg?width=174&amp;height=174&amp;name=4172873798-2.jpg 174w, https://resources.xceptional.com/hs-fs/hubfs/Imported_Blog_Media/4172873798-2.jpg?width=218&amp;height=218&amp;name=4172873798-2.jpg 218w, https://resources.xceptional.com/hs-fs/hubfs/Imported_Blog_Media/4172873798-2.jpg?width=261&amp;height=261&amp;name=4172873798-2.jpg 261w"></amp-img> By Emily O'Shaughnessy</p> 
+<p>Published with permission from&nbsp;<a href="https://blog.dellemc.com/en-us/" rel="nofollow">https://blog.dellemc.com/en-us/</a></p></span>
+        </div>
+        <div class="full-link">
+          <a href="why-does-hardware-matter-in-a-software-defined-data-center.html">View full post</a>
+        </div>
+      </div>
+    </div>
+    
+    <amp-pixel src="../../../../../track.hubspot.com/__ptq5beb.gif?cd=SCREEN_COLOR_DEPTH-bit&amp;cs=DOCUMENT_CHARSET&amp;ln=BROWSER_LANGUAGE&amp;sd=AVAILABLE_SCREEN_WIDTHxAVAILABLE_SCREEN_HEIGHT&amp;v=1.1&amp;iaa=1&amp;k=1&amp;ccu=CANONICAL_URL&amp;r=DOCUMENT_REFERRER&amp;ct=blog-post&amp;t=Why+does+hardware+matter+in+a+software-defined+data+center%3F&amp;pi=50500994720&amp;a=6853069&amp;nc=true&amp;cgi=23291088092&amp;lvi=50500994720&amp;lvc=en&amp;vi=CLIENT_ID(hubspotutk)&amp;ai=CLIENT_ID(amputk)">
+    </amp-pixel>
+    
+  </body>
+
+<!-- Mirrored from resources.xceptional.com/blog/2019/06/06/why-does-hardware-matter-in-a-software-defined-data-center?hs_amp=true by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 23 Jan 2024 06:40:47 GMT -->
+</html>

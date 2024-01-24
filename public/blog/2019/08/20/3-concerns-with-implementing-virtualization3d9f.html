@@ -1,0 +1,190 @@
+<!doctype html>
+<html amp lang="en" >
+  
+<!-- Mirrored from resources.xceptional.com/blog/2019/08/20/3-concerns-with-implementing-virtualization?hs_amp=true by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 23 Jan 2024 06:50:11 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8">
+    <title>3 Concerns with implementing virtualization</title>
+    <link rel="canonical" href="3-concerns-with-implementing-virtualization.html" />
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+
+    <meta name="author" content="prontowebadmin">
+
+    <meta name="description" content="3 Concerns with implementing virtualization">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <meta name="generator" content="HubSpot">
+    <script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "3 Concerns with implementing virtualization",
+        "datePublished": "2019-08-20T09:00:03Z",
+        "dateModified": "2021-11-09T02:20:21.550Z",
+        "mainEntityOfPage": "https://resources.xceptional.com/blog/2019/08/20/3-concerns-with-implementing-virtualization",
+        "author": {
+          "@type": "Person",
+          "name": "prontowebadmin"
+        },
+        "image": {
+         "@type": "ImageObject",
+        
+          "url": "/hs/hsstatic/content_shared_assets/static-1.4092/img/default-amp-logo.png",
+          "width": 60,
+          "height": 60
+        
+        },
+        "publisher" : {
+          "@type": "Organization",
+          "logo": {
+            "@type": "ImageObject",
+            
+            "url": "/hs/hsstatic/content_shared_assets/static-1.4092/img/default-amp-logo.png",
+            "width": 60,
+            "height": 60
+            
+          },
+          "name": "The Xceptional Blog"
+        }
+      }
+    </script>
+    <script async custom-element="amp-analytics" src="../../../../../cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
+    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style>
+    <noscript>
+      <style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style>
+    </noscript>
+  <style amp-custom>
+      body {
+        color: #404040;
+        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        font-size: 18px;
+        line-height: 1.6;
+      }
+
+      .hs-page-width-normal {
+        box-sizing: content-box;
+        margin: 0 auto;
+        padding: 0 5vw 5vw;
+      }
+
+      .info {
+        font-size: 14px
+      }
+
+      h1 {
+        color: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        font-size: 26px;
+        line-height: 1.5;
+        font-weight: 600;
+      }
+
+      h1 a {
+        color: #404040;
+      }
+
+      h2 {
+        color: #404040;
+        font-size: 22px;
+        line-height: 38px;
+      }
+
+      a {
+        color: #416bb3;
+        text-decoration: none;
+      }
+
+      .logo-header-text {
+        color: #1e1e1e;
+        font-size: 36px;
+        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        line-height: 2.0;
+        font-weight: bold;
+        vertical-align: text-bottom;
+      }
+
+      .hs-page-width-normal {
+        padding: 5vw;
+      }
+
+      .iframe-placeholder {
+        background-color: #bbb;
+      }
+
+      .header-banner {
+        padding: 3vw 1vw;
+        border-color: #dcdcdc;
+        border-bottom-style: solid;
+        border-bottom-width: thin;
+        background-color: #ffffff;
+        color: #1e1e1e;
+        text-align: center;
+      }
+
+      .full-link {
+        text-align: center;
+      }
+
+      .full-link a {
+        border: 1px solid #dcdcdc;
+        background-color: transparent;
+        color: #416bb3;
+        cursor: pointer;
+        display: block;
+        font-size: 14px;
+        line-height: 18px;
+        margin: 0 auto;
+        max-width: 200px;
+        padding: 11px 16px;
+        text-decoration: none;
+        width: 50%;
+      }
+
+    </style>
+    <script async src="../../../../../cdn.ampproject.org/v0.js"></script>
+  </head>
+  <body>
+    <div class="row-fluid">
+      <div class="header-banner">
+        <a class="blog-link" href="../../../../blog.html">
+        
+          <span class="logo-header-text">The Xceptional Blog</span>
+         </a>
+      </div>  
+      <div class="hs-page-width-normal">
+        <div class="post-header">
+          <h1><a href="3-concerns-with-implementing-virtualization.html">3 Concerns with implementing virtualization</a></h1>
+        </div>
+        <div class="info">
+          <span> Written by <a class="author-link" href="../../../author/prontowebadmin.html">prontowebadmin</a> | Aug 20, 2019 9:00:03 AM </span>
+        </div>
+        <div class="blog-section">
+          <span><p>Virtualizing your servers, networking devices, and other machines can drastically lower costs and dramatically shorten IT infrastructure deployment times. However, implementing this requires a lot of IT expertise that can’t just be pulled off by regular technicians. Here are three things specialists consider when managing virtualization efforts.</p> 
+<p><span><b>Backing up data can be such a hassle</b></span><br> Incorporating a robust backup system in a virtualized setting can become a huge challenge. This is because you have to determine which data you want to store and how often it should be backed up, then you have to decide whether you should back up all your virtual machines or just some vital ones that have important apps and data.</p> 
+<p>In short, the amount of data that needs to be backed up can be overwhelming. The only way to overcome this is to integrate a powerful virtual backup solution offered by a reputable managed services provider (MSP).</p> 
+<p><span><b>Ensuring security complicates the virtualization process</b></span><br> Security concerns are more complicated in a virtualized setting since you have to monitor security on a couple of tiers: virtual machine security and physical host security.</p> 
+<p>If a physical host server is compromised, let us say by someone plugging in an infected USB drive into one of its ports, it will affect every virtual machine running on it. In a similar way, a compromised virtual machine may disrupt the physical server and may affect other virtual machines residing on the same host.</p> 
+<p>To address this, you need to set up strong network defenses, including firewalls, intrusion prevention systems, antivirus software, and virtual machine security tools. Beyond these, you also need a hardened physical security system comprised of surveillance cameras, locks, biometric scans, and security guards. Of course, if you don’t have the funds to set these up, it may make more sense to leave it to a security-conscious MSP.</p> 
+<p><span><b>Monitoring your systems is resource-intensive</b></span><br> Since your team has to oversee both virtual machines and physical servers to ensure you have a fully operational environment, they’ll experience a couple of pain points.</p> 
+<p>First, running monitoring software on a physical host server is likely to impede the performance of the virtual machines on that server since the former takes up precious processing power and memory. You’ll practically have to monitor your monitoring system to ensure that it’s not hogging the resources of your servers.</p> 
+<p>Second, keeping tabs on your virtual machines and making sure they’re secure and running at all times is a full-time job. So unless you have a team of professionals in-house, you’ll definitely need some help from the outside.</p> 
+<p>Without a doubt, virtualization brings a lot of benefits to the table, but you have to know how it affects every aspect of your business. Let us show you how you can use it to its full potential. Just <a href="http://www.xceptional.com/contact-us/">give us a call</a> today!</p> 
+<div class="autoblogfoot">
+  Published with permission from TechAdvisory.org. 
+ <a href="http://www.techadvisory.org/2019/08/3-concerns-with-implementing-virtualization/">Source.</a> 
+</div></span>
+        </div>
+        <div class="full-link">
+          <a href="3-concerns-with-implementing-virtualization.html">View full post</a>
+        </div>
+      </div>
+    </div>
+    
+    <amp-pixel src="../../../../../track.hubspot.com/__ptq0d6c.gif?cd=SCREEN_COLOR_DEPTH-bit&amp;cs=DOCUMENT_CHARSET&amp;ln=BROWSER_LANGUAGE&amp;sd=AVAILABLE_SCREEN_WIDTHxAVAILABLE_SCREEN_HEIGHT&amp;v=1.1&amp;iaa=1&amp;k=1&amp;ccu=CANONICAL_URL&amp;r=DOCUMENT_REFERRER&amp;ct=blog-post&amp;t=3+Concerns+with+implementing+virtualization&amp;pi=50503647071&amp;a=6853069&amp;nc=true&amp;cgi=23291088092&amp;lvi=50503647071&amp;lvc=en&amp;vi=CLIENT_ID(hubspotutk)&amp;ai=CLIENT_ID(amputk)">
+    </amp-pixel>
+    
+  </body>
+
+<!-- Mirrored from resources.xceptional.com/blog/2019/08/20/3-concerns-with-implementing-virtualization?hs_amp=true by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 23 Jan 2024 06:50:11 GMT -->
+</html>

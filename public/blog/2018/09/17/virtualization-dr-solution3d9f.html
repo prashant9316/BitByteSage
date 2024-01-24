@@ -1,0 +1,191 @@
+<!doctype html>
+<html amp lang="en" >
+  
+<!-- Mirrored from resources.xceptional.com/blog/2018/09/17/virtualization-dr-solution?hs_amp=true by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 23 Jan 2024 07:01:43 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8">
+    <title>What is Virtualization as a DR solution?</title>
+    <link rel="canonical" href="virtualization-dr-solution.html" />
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+
+    <meta name="author" content="prontowebadmin">
+
+    <meta name="description" content="What is Virtualization as a DR solution?">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <meta name="generator" content="HubSpot">
+    <script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "What is Virtualization as a DR solution?",
+        "datePublished": "2018-09-17T11:00:03Z",
+        "dateModified": "2021-11-09T02:12:58.554Z",
+        "mainEntityOfPage": "https://resources.xceptional.com/blog/2018/09/17/virtualization-dr-solution",
+        "author": {
+          "@type": "Person",
+          "name": "prontowebadmin"
+        },
+        "image": {
+         "@type": "ImageObject",
+        
+          "url": "/hs/hsstatic/content_shared_assets/static-1.4092/img/default-amp-logo.png",
+          "width": 60,
+          "height": 60
+        
+        },
+        "publisher" : {
+          "@type": "Organization",
+          "logo": {
+            "@type": "ImageObject",
+            
+            "url": "/hs/hsstatic/content_shared_assets/static-1.4092/img/default-amp-logo.png",
+            "width": 60,
+            "height": 60
+            
+          },
+          "name": "The Xceptional Blog"
+        }
+      }
+    </script>
+    <script async custom-element="amp-analytics" src="../../../../../cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
+    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style>
+    <noscript>
+      <style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style>
+    </noscript>
+  <style amp-custom>
+      body {
+        color: #404040;
+        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        font-size: 18px;
+        line-height: 1.6;
+      }
+
+      .hs-page-width-normal {
+        box-sizing: content-box;
+        margin: 0 auto;
+        padding: 0 5vw 5vw;
+      }
+
+      .info {
+        font-size: 14px
+      }
+
+      h1 {
+        color: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        font-size: 26px;
+        line-height: 1.5;
+        font-weight: 600;
+      }
+
+      h1 a {
+        color: #404040;
+      }
+
+      h2 {
+        color: #404040;
+        font-size: 22px;
+        line-height: 38px;
+      }
+
+      a {
+        color: #416bb3;
+        text-decoration: none;
+      }
+
+      .logo-header-text {
+        color: #1e1e1e;
+        font-size: 36px;
+        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        line-height: 2.0;
+        font-weight: bold;
+        vertical-align: text-bottom;
+      }
+
+      .hs-page-width-normal {
+        padding: 5vw;
+      }
+
+      .iframe-placeholder {
+        background-color: #bbb;
+      }
+
+      .header-banner {
+        padding: 3vw 1vw;
+        border-color: #dcdcdc;
+        border-bottom-style: solid;
+        border-bottom-width: thin;
+        background-color: #ffffff;
+        color: #1e1e1e;
+        text-align: center;
+      }
+
+      .full-link {
+        text-align: center;
+      }
+
+      .full-link a {
+        border: 1px solid #dcdcdc;
+        background-color: transparent;
+        color: #416bb3;
+        cursor: pointer;
+        display: block;
+        font-size: 14px;
+        line-height: 18px;
+        margin: 0 auto;
+        max-width: 200px;
+        padding: 11px 16px;
+        text-decoration: none;
+        width: 50%;
+      }
+
+    </style>
+    <script async src="../../../../../cdn.ampproject.org/v0.js"></script>
+  </head>
+  <body>
+    <div class="row-fluid">
+      <div class="header-banner">
+        <a class="blog-link" href="../../../../blog.html">
+        
+          <span class="logo-header-text">The Xceptional Blog</span>
+         </a>
+      </div>  
+      <div class="hs-page-width-normal">
+        <div class="post-header">
+          <h1><a href="virtualization-dr-solution.html">What is Virtualization as a DR solution?</a></h1>
+        </div>
+        <div class="info">
+          <span> Written by <a class="author-link" href="../../../author/prontowebadmin.html">prontowebadmin</a> | Sep 17, 2018 11:00:03 AM </span>
+        </div>
+        <div class="blog-section">
+          <span><p>Most business owners don’t think of Virtualization when talking about Disaster Recovery (DR). However, virtualization actually serves as an effective disaster recovery plan. Here’s a breakdown for those unfamiliar with how the one can serve as a reliable way of implementing the other.</p> 
+<p>Unlike tape backups, Virtualization restores your entire system in four hours or less by recovering your backed up servers, operating systems, and applications via the internet. This means you’ll lose fewer critical files due to minimal downtime and can resume normal operations promptly.</p> 
+<p>While the speed of virtualized backups might sound alluring, there are a few key points you should be aware of before moving forward.</p> 
+<ul> 
+ <li><strong>Backup location for critical data</strong> – Where do you want your critical resources to be stored? Do you want it stored on tapes, disk technologies, or virtualized servers? Even if you choose virtual machines as your main backup plan, it’s highly recommended to back up your critical data on multiple sources to lower data loss risks and ensure fast recovery.</li> 
+ <li><strong>Data to be backed up</strong> – If you decide to back up your critical data on virtual machines, you should figure out which data you want to store and designate specific virtualized servers to store them. In case a disaster does happen, you’ll know immediately where your backups are and can retrieve your data quickly to get your business up and running again fast.</li> 
+ <li><strong>Systems to be virtualized</strong> – You should also identify and back up critical applications that’s necessary for your business’s operations, such as email, Microsoft Office programs, and other in-house applications. Once identified, you should remember to virtualize and store them off-site for seamless disaster recovery when your local servers fail.</li> 
+</ul> 
+<p>If you choose Virtualization as part of your Disaster Recovery solution, make sure your backups are monitored regularly so they’re up-to-date in the event of a disaster.</p> 
+<p>Besides Disaster Recovery, there are many other benefits to Virtualization. Your business can reduce the amount of servers and other hardware in your office, lower electricity expenses, spend less time maintaining on-site servers, and save money in the process. Consider Disaster Recovery as a nice bonus that’s included with these benefits.</p> 
+<p>Curious to learn how else Virtualization can benefit your business? Interested in a dedicated Disaster Recovery solution? Call us today and discover how our experts can protect your organization and save you money.</p> 
+<div class="autoblogfoot">
+  Published with permission from TechAdvisory.org. 
+ <a href="http://www.techadvisory.org/2018/08/what-is-virtualization-as-a-dr-solution/">Source.</a> 
+</div></span>
+        </div>
+        <div class="full-link">
+          <a href="virtualization-dr-solution.html">View full post</a>
+        </div>
+      </div>
+    </div>
+    
+    <amp-pixel src="../../../../../track.hubspot.com/__ptq9eea.gif?cd=SCREEN_COLOR_DEPTH-bit&amp;cs=DOCUMENT_CHARSET&amp;ln=BROWSER_LANGUAGE&amp;sd=AVAILABLE_SCREEN_WIDTHxAVAILABLE_SCREEN_HEIGHT&amp;v=1.1&amp;iaa=1&amp;k=1&amp;ccu=CANONICAL_URL&amp;r=DOCUMENT_REFERRER&amp;ct=blog-post&amp;t=What+is+Virtualization+as+a+DR+solution%3F&amp;pi=50503647005&amp;a=6853069&amp;nc=true&amp;cgi=23291088092&amp;lvi=50503647005&amp;lvc=en&amp;vi=CLIENT_ID(hubspotutk)&amp;ai=CLIENT_ID(amputk)">
+    </amp-pixel>
+    
+  </body>
+
+<!-- Mirrored from resources.xceptional.com/blog/2018/09/17/virtualization-dr-solution?hs_amp=true by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 23 Jan 2024 07:01:44 GMT -->
+</html>

@@ -1,0 +1,189 @@
+<!doctype html>
+<html amp lang="en" >
+  
+<!-- Mirrored from resources.xceptional.com/blog/2019/04/16/how-to-properly-manage-your-fleet-of-vms?hs_amp=true by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 23 Jan 2024 06:52:39 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8">
+    <title>How to properly manage your fleet of VMs</title>
+    <link rel="canonical" href="how-to-properly-manage-your-fleet-of-vms.html" />
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+
+    <meta name="author" content="prontowebadmin">
+
+    <meta name="description" content="How to properly manage your fleet of VMs">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <meta name="generator" content="HubSpot">
+    <script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "How to properly manage your fleet of VMs",
+        "datePublished": "2019-04-16T09:00:35Z",
+        "dateModified": "2021-11-09T02:26:23.795Z",
+        "mainEntityOfPage": "https://resources.xceptional.com/blog/2019/04/16/how-to-properly-manage-your-fleet-of-vms",
+        "author": {
+          "@type": "Person",
+          "name": "prontowebadmin"
+        },
+        "image": {
+         "@type": "ImageObject",
+        
+          "url": "/hs/hsstatic/content_shared_assets/static-1.4092/img/default-amp-logo.png",
+          "width": 60,
+          "height": 60
+        
+        },
+        "publisher" : {
+          "@type": "Organization",
+          "logo": {
+            "@type": "ImageObject",
+            
+            "url": "/hs/hsstatic/content_shared_assets/static-1.4092/img/default-amp-logo.png",
+            "width": 60,
+            "height": 60
+            
+          },
+          "name": "The Xceptional Blog"
+        }
+      }
+    </script>
+    <script async custom-element="amp-analytics" src="../../../../../cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
+    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style>
+    <noscript>
+      <style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style>
+    </noscript>
+  <style amp-custom>
+      body {
+        color: #404040;
+        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        font-size: 18px;
+        line-height: 1.6;
+      }
+
+      .hs-page-width-normal {
+        box-sizing: content-box;
+        margin: 0 auto;
+        padding: 0 5vw 5vw;
+      }
+
+      .info {
+        font-size: 14px
+      }
+
+      h1 {
+        color: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        font-size: 26px;
+        line-height: 1.5;
+        font-weight: 600;
+      }
+
+      h1 a {
+        color: #404040;
+      }
+
+      h2 {
+        color: #404040;
+        font-size: 22px;
+        line-height: 38px;
+      }
+
+      a {
+        color: #416bb3;
+        text-decoration: none;
+      }
+
+      .logo-header-text {
+        color: #1e1e1e;
+        font-size: 36px;
+        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        line-height: 2.0;
+        font-weight: bold;
+        vertical-align: text-bottom;
+      }
+
+      .hs-page-width-normal {
+        padding: 5vw;
+      }
+
+      .iframe-placeholder {
+        background-color: #bbb;
+      }
+
+      .header-banner {
+        padding: 3vw 1vw;
+        border-color: #dcdcdc;
+        border-bottom-style: solid;
+        border-bottom-width: thin;
+        background-color: #ffffff;
+        color: #1e1e1e;
+        text-align: center;
+      }
+
+      .full-link {
+        text-align: center;
+      }
+
+      .full-link a {
+        border: 1px solid #dcdcdc;
+        background-color: transparent;
+        color: #416bb3;
+        cursor: pointer;
+        display: block;
+        font-size: 14px;
+        line-height: 18px;
+        margin: 0 auto;
+        max-width: 200px;
+        padding: 11px 16px;
+        text-decoration: none;
+        width: 50%;
+      }
+
+    </style>
+    <script async src="../../../../../cdn.ampproject.org/v0.js"></script>
+  </head>
+  <body>
+    <div class="row-fluid">
+      <div class="header-banner">
+        <a class="blog-link" href="../../../../blog.html">
+        
+          <span class="logo-header-text">The Xceptional Blog</span>
+         </a>
+      </div>  
+      <div class="hs-page-width-normal">
+        <div class="post-header">
+          <h1><a href="how-to-properly-manage-your-fleet-of-vms.html">How to properly manage your fleet of VMs</a></h1>
+        </div>
+        <div class="info">
+          <span> Written by <a class="author-link" href="../../../author/prontowebadmin.html">prontowebadmin</a> | Apr 16, 2019 9:00:35 AM </span>
+        </div>
+        <div class="blog-section">
+          <span><p>A virtual machine (VM) is essentially one piece of software that contains operating systems, software, and files that take a portion of computing resources from your on-premises server. VMs behave like normal files, so you could deploy a fleet of them on any workstation with ease. But there are some drawbacks. Too many VMs can cause a logistical nightmare and cost your business a lot of money.</p> 
+<p><span><b>The problem with VM sprawl</b></span><br> VM sprawl is a phenomenon that occurs when there are too many virtual machines on a network. Keep in mind that VMs have the same licensing, security, and compliance requirements as your other computers and servers. So when administrators are given free rein to create as many virtual instances as they want, issues concerning the security and management of VMs begin to appear.</p> 
+<p>Having too many virtual instances running at the same time exhausts server resources. In fact, a majority of virtual servers are idle, which means companies are paying for licenses they’re not using. Unused VMs are also not patched and maintained properly, enabling attackers to infiltrate a network.</p> 
+<p>However, there are some things you can do to prevent VM sprawl.</p> 
+<p><span><b>VM creation policies</b></span><br> Businesses should have policies in place for limiting the creation of unnecessary VMs. For instance, you can have a policy that forbids users from deploying a new VM unless they specify a good reason. This way, they’re more likely to think twice before requesting resources they may not need. You should also place limits on how many VMs each department can create to keep your virtualized environment small and manageable.</p> 
+<p><span><b>VM inventory</b></span><br> Documenting every VM in your network should be standard protocol in your company. They should be organized by their purpose (e.g., backups, app testing, resource-intensive software usage), who they are assigned to, and when their software was last updated. This will make it easier to review which VMs are necessary to your operations and decommission the ones that no longer serve a purpose.</p> 
+<p><span><b>Life cycle management</b></span><br> For businesses with large-scale VM deployments, life cycle management tools can give you total visibility into how many VMs are running on the network, how they’re being utilized, and who created them.</p> 
+<p>Such tools allow you to set time-based policies that remove VMs that were needed for only a short time (e.g., those used for app testing). This ensures you’re not wasting resources on idle VMs.</p> 
+<p>Although virtualization is a powerful solution, it must be carefully managed if you want to realize its cost-cutting and efficiency-boosting benefits. If you want to truly benefit from virtualization, <a href="http://www.xceptional.com/about-us/contact-us/">call us</a> today.</p> 
+<div class="autoblogfoot">
+  Published with permission from TechAdvisory.org. 
+ <a href="http://www.techadvisory.org/2019/01/how-to-properly-manage-your-fleet-of-vms/">Source.</a> 
+</div></span>
+        </div>
+        <div class="full-link">
+          <a href="how-to-properly-manage-your-fleet-of-vms.html">View full post</a>
+        </div>
+      </div>
+    </div>
+    
+    <amp-pixel src="../../../../../track.hubspot.com/__ptq95c2.gif?cd=SCREEN_COLOR_DEPTH-bit&amp;cs=DOCUMENT_CHARSET&amp;ln=BROWSER_LANGUAGE&amp;sd=AVAILABLE_SCREEN_WIDTHxAVAILABLE_SCREEN_HEIGHT&amp;v=1.1&amp;iaa=1&amp;k=1&amp;ccu=CANONICAL_URL&amp;r=DOCUMENT_REFERRER&amp;ct=blog-post&amp;t=How+to+properly+manage+your+fleet+of+VMs&amp;pi=50500995103&amp;a=6853069&amp;nc=true&amp;cgi=23291088092&amp;lvi=50500995103&amp;lvc=en&amp;vi=CLIENT_ID(hubspotutk)&amp;ai=CLIENT_ID(amputk)">
+    </amp-pixel>
+    
+  </body>
+
+<!-- Mirrored from resources.xceptional.com/blog/2019/04/16/how-to-properly-manage-your-fleet-of-vms?hs_amp=true by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 23 Jan 2024 06:52:40 GMT -->
+</html>

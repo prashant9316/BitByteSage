@@ -1,0 +1,200 @@
+<!doctype html>
+<html amp lang="en" >
+  
+<!-- Mirrored from resources.xceptional.com/blog/2019/05/22/security-pitfalls-with-multicloud-deployments?hs_amp=true by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 23 Jan 2024 06:53:12 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8">
+    <title>Security pitfalls with multicloud deployments</title>
+    <link rel="canonical" href="security-pitfalls-with-multicloud-deployments.html" />
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+
+    <meta name="author" content="Natalie">
+
+    <meta name="description" content="Security pitfalls with multicloud deployments">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <meta name="generator" content="HubSpot">
+    <script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Security pitfalls with multicloud deployments",
+        "datePublished": "2019-05-22T23:10:12Z",
+        "dateModified": "2021-07-09T17:54:16.326Z",
+        "mainEntityOfPage": "https://resources.xceptional.com/blog/2019/05/22/security-pitfalls-with-multicloud-deployments",
+        "author": {
+          "@type": "Person",
+          "name": "Natalie"
+        },
+        "image": {
+         "@type": "ImageObject",
+        
+          
+          
+          "url": "https://f.hubspotusercontent10.net/hubfs/6853069/Imported_Blog_Media/3268579056-1.jpg"
+        
+        },
+        "publisher" : {
+          "@type": "Organization",
+          "logo": {
+            "@type": "ImageObject",
+            
+            "url": "/hs/hsstatic/content_shared_assets/static-1.4092/img/default-amp-logo.png",
+            "width": 60,
+            "height": 60
+            
+          },
+          "name": "The Xceptional Blog"
+        }
+      }
+    </script>
+    <script async custom-element="amp-analytics" src="../../../../../cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
+    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style>
+    <noscript>
+      <style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style>
+    </noscript>
+  <style amp-custom>
+      body {
+        color: #404040;
+        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        font-size: 18px;
+        line-height: 1.6;
+      }
+
+      .hs-page-width-normal {
+        box-sizing: content-box;
+        margin: 0 auto;
+        padding: 0 5vw 5vw;
+      }
+
+      .info {
+        font-size: 14px
+      }
+
+      h1 {
+        color: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        font-size: 26px;
+        line-height: 1.5;
+        font-weight: 600;
+      }
+
+      h1 a {
+        color: #404040;
+      }
+
+      h2 {
+        color: #404040;
+        font-size: 22px;
+        line-height: 38px;
+      }
+
+      a {
+        color: #416bb3;
+        text-decoration: none;
+      }
+
+      .logo-header-text {
+        color: #1e1e1e;
+        font-size: 36px;
+        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        line-height: 2.0;
+        font-weight: bold;
+        vertical-align: text-bottom;
+      }
+
+      .hs-page-width-normal {
+        padding: 5vw;
+      }
+
+      .iframe-placeholder {
+        background-color: #bbb;
+      }
+
+      .header-banner {
+        padding: 3vw 1vw;
+        border-color: #dcdcdc;
+        border-bottom-style: solid;
+        border-bottom-width: thin;
+        background-color: #ffffff;
+        color: #1e1e1e;
+        text-align: center;
+      }
+
+      .full-link {
+        text-align: center;
+      }
+
+      .full-link a {
+        border: 1px solid #dcdcdc;
+        background-color: transparent;
+        color: #416bb3;
+        cursor: pointer;
+        display: block;
+        font-size: 14px;
+        line-height: 18px;
+        margin: 0 auto;
+        max-width: 200px;
+        padding: 11px 16px;
+        text-decoration: none;
+        width: 50%;
+      }
+
+    </style>
+    <script async src="../../../../../cdn.ampproject.org/v0.js"></script>
+  </head>
+  <body>
+    <div class="row-fluid">
+      <div class="header-banner">
+        <a class="blog-link" href="../../../../blog.html">
+        
+          <span class="logo-header-text">The Xceptional Blog</span>
+         </a>
+      </div>  
+      <div class="hs-page-width-normal">
+        <div class="post-header">
+          <h1><a href="security-pitfalls-with-multicloud-deployments.html">Security pitfalls with multicloud deployments</a></h1>
+        </div>
+        <div class="info">
+          <span> Written by <a class="author-link" href="../../../author/andy.html">Natalie</a> | May 22, 2019 11:10:12 PM </span>
+        </div>
+        <div class="blog-section">
+          <span><p>I recently had the pleasure of participating in a panel discussion at the Cyber Security Summit USA in Denver, CO, on the topic of cloud INsecurity. The panel needed to cover the common pitfalls that organizations make when moving to the cloud and how to avoid them. Joined by several distinguished panelists from the security industry, we tackled some key questions and I wanted to share the key takeaways with those who were not so fortunate to join us live during the event.</p> 
+<h3><span>1. What is the number one risk customers miss in moving to the cloud?</span></h3> 
+<p>Nobody wants to be on the news because they missed mitigating the number one risk in moving to the cloud and caused a breach that leaked customer data. So naturally, I get asked this question often. I flip flop between two answers: shadow IT and lack of IT staff training.</p> 
+<p>In the context of our topic, shadow IT is the phenomenon whereby employees who are not getting what they need from their own IT department take it upon themselves to set up storage or compute infrastructure at a public cloud provider, and deploy applications or store data in the cloud.</p> 
+<p>Assuming you have a very capable and well funded security team, they can only protect what they know they own. But when employees deploy their own cloud presence, they don’t necessarily have the skills or the tools to make sure that deployment is secure and remains secure over time. Quite often, cloud instances are forgotten at the end of a project and whatever web servers might have been deployed become outdated and vulnerable with nobody responsible for patching them. The company as a whole ends up dealing with a data leakage or an intrusion because of an attack surface the IT department did not even know existed.</p> 
+<p>My second answer is the lack of IT staff training. Quite often, IT staff finds itself dealing with a mandated cloud exposure without ever having been trained on the security aspects of moving to the cloud. Most of the training focuses on the cloud service provider and what security tools it may have, like setting up access lists, but little training goes into what kind of threats does a cloud deployment expose us to, and what capabilities do our existing security tools have that could expand to the cloud.</p> 
+<h3><span>2. How dangerous is “Shadow IT” and what are the ways we can better integrate shadow IT into our cloud adoption strategy?</span></h3> 
+<p>This is a key question in my mind. We have to recognize that IT staff is always under pressure to deliver on business transformation initiatives and they will always be stretched thin. Shadow IT is here to stay, so we need a strategy to include it in the cloud adoption journey.</p> 
+<p>Most of the time with shadow IT, some group in the company needs to quickly deploy an application or storage onto the cloud. In order for IT to somewhat retain control over the security posture of the entire network presence, they need to provide templates and tools that would enable a secure deployment. For instance, deploying a new VPC should automatically deploy a virtual firewall with all the necessary configuration to restrict access to the VPC to known sources, secure the campus to cloud connection with a site to site VPN, and add the newly acquired IP addresses to a scanning solution to make sure the VPC never deviates from an acceptable posture.</p> 
+<h3><span>3. How do we need to update our policies, contracts and vendor risk assessments to take into account cloud resources?</span></h3> 
+<p>Yes, the journey to the cloud opens additional risks with third party vendors that were not present in a data center deployment. For example, let’s assume you are deploying a SaaS application to the public cloud. Most security assessments would focus on testing the APIs exposed by the application. But time and again, various cyber incidents have proven that supply chain attacks are very devastating. So you must ensure the integrity of the third party libraries used (are updates signed and delivered securely? does the provider have good secure development practices?) and ensure that the posture of the vendors providing internal services is at the level expected.</p> 
+<h3><span>4. What are some new and emerging threats that are “Cloud native”?</span></h3> 
+<p>The public cloud has clearly made some types of threats more potent. The first one is phishing for credentials. The adoption of SaaS application for email and file sharing in particular, in addition to the implementation of single-sign-on access control, we see a lot of phishing attacks aiming at collecting user credentials. The second threat is access privilege abuse. Many applications deployed on familiar cloud platforms request and obtain access to privileged personal information by luring users to believe they are legitimate requests from trusted application. The third type of threat is the prevalence of cryptomining attacks targeting insecure docker instances or server instances. The fourth is the non-stop scanning of public cloud IPs hunting for non secured data troves in hopes of monetization through ransom notes.</p> 
+<h3><span>5. What questions should organizations be asking their security providers as they look at services for the Cloud?</span></h3> 
+<p>One of the most important decisions people make when adopting a cloud strategy is to pick a vendor of choice to guide them through the transition. This vendor must master both networking and security to be a viable option. In my mind, here are the main questions to ask your vendors:</p> 
+<ol> 
+ <li>Can I have centralized visibility? Nobody moves to the cloud and leaves a data center behind. For the foreseeable future, you have to deal with a hybrid environment with potentially multiple cloud providers in addition to your data center. It is important for the chosen vendor to provide a single pane of glass for the entire network.</li> 
+ <li>Can I apply business policies across DC and multiple clouds? For the same reason above, you will want to craft and deploy policies based on business entities and applications, not based on physical deployment criteria. Where an application is running in your data center or a public cloud, the same policies should apply seamlessly.</li> 
+ <li>Do you handle new deployments the same way in the Data Center or the cloud? In other words, you want to make sure that the security services are available for both physical hardware deployment in the DC as well as a virtual, or containerized version for the cloud.</li> 
+ <li>What are the gaps your solution does not cover? The proverbial elephant in the room must be uncovered. Each vendor should be able to articulate the security gaps in their offering that you need to handle through a different vendor. That is usually a good time to check for openness of the architecture, its reliance on open APIs to integrate other solutions.</li> 
+</ol> 
+<p>&nbsp;</p> 
+<p><amp-img class="wp-image-8369 alignleft" src="../../../../hs-fs/hubfs/Imported_Blog_Media/3268579056-16595.jpg?width=89&amp;height=89&amp;name=3268579056-1.jpg" alt="" width="89" height="89" srcset="https://resources.xceptional.com/hs-fs/hubfs/Imported_Blog_Media/3268579056-1.jpg?width=45&amp;height=45&amp;name=3268579056-1.jpg 45w, https://resources.xceptional.com/hs-fs/hubfs/Imported_Blog_Media/3268579056-1.jpg?width=89&amp;height=89&amp;name=3268579056-1.jpg 89w, https://resources.xceptional.com/hs-fs/hubfs/Imported_Blog_Media/3268579056-1.jpg?width=134&amp;height=134&amp;name=3268579056-1.jpg 134w, https://resources.xceptional.com/hs-fs/hubfs/Imported_Blog_Media/3268579056-1.jpg?width=178&amp;height=178&amp;name=3268579056-1.jpg 178w, https://resources.xceptional.com/hs-fs/hubfs/Imported_Blog_Media/3268579056-1.jpg?width=223&amp;height=223&amp;name=3268579056-1.jpg 223w, https://resources.xceptional.com/hs-fs/hubfs/Imported_Blog_Media/3268579056-1.jpg?width=267&amp;height=267&amp;name=3268579056-1.jpg 267w"></amp-img> By Mounir Hahad</p> 
+<p>Published with permission from&nbsp;forums.juniper.net/t5/Blogs/ct-p/blogs</p></span>
+        </div>
+        <div class="full-link">
+          <a href="security-pitfalls-with-multicloud-deployments.html">View full post</a>
+        </div>
+      </div>
+    </div>
+    
+    <amp-pixel src="../../../../../track.hubspot.com/__ptqac30.gif?cd=SCREEN_COLOR_DEPTH-bit&amp;cs=DOCUMENT_CHARSET&amp;ln=BROWSER_LANGUAGE&amp;sd=AVAILABLE_SCREEN_WIDTHxAVAILABLE_SCREEN_HEIGHT&amp;v=1.1&amp;iaa=1&amp;k=1&amp;ccu=CANONICAL_URL&amp;r=DOCUMENT_REFERRER&amp;ct=blog-post&amp;t=Security+pitfalls+with+multicloud+deployments&amp;pi=50503647599&amp;a=6853069&amp;nc=true&amp;cgi=23291088092&amp;lvi=50503647599&amp;lvc=en&amp;vi=CLIENT_ID(hubspotutk)&amp;ai=CLIENT_ID(amputk)">
+    </amp-pixel>
+    
+  </body>
+
+<!-- Mirrored from resources.xceptional.com/blog/2019/05/22/security-pitfalls-with-multicloud-deployments?hs_amp=true by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 23 Jan 2024 06:53:12 GMT -->
+</html>

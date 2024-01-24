@@ -1,0 +1,195 @@
+<!doctype html>
+<html amp lang="en" >
+  
+<!-- Mirrored from resources.xceptional.com/blog/2018/08/08/pandas-caviar-deep-learning?hs_amp=true by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 23 Jan 2024 07:07:43 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8">
+    <title>Pandas, Caviar, and Deep Learning</title>
+    <link rel="canonical" href="pandas-caviar-deep-learning.html" />
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+
+    <meta name="author" content="Natalie">
+
+    <meta name="description" content="Pandas, Caviar, and Deep Learning">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <meta name="generator" content="HubSpot">
+    <script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Pandas, Caviar, and Deep Learning",
+        "datePublished": "2018-08-08T08:11:04Z",
+        "dateModified": "2021-07-09T17:56:27.907Z",
+        "mainEntityOfPage": "https://resources.xceptional.com/blog/2018/08/08/pandas-caviar-deep-learning",
+        "author": {
+          "@type": "Person",
+          "name": "Natalie"
+        },
+        "image": {
+         "@type": "ImageObject",
+        
+          
+          
+          "url": "https://f.hubspotusercontent10.net/hubfs/6853069/Imported_Blog_Media/91539906-2.jpg"
+        
+        },
+        "publisher" : {
+          "@type": "Organization",
+          "logo": {
+            "@type": "ImageObject",
+            
+            "url": "/hs/hsstatic/content_shared_assets/static-1.4092/img/default-amp-logo.png",
+            "width": 60,
+            "height": 60
+            
+          },
+          "name": "The Xceptional Blog"
+        }
+      }
+    </script>
+    <script async custom-element="amp-analytics" src="../../../../../cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
+    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style>
+    <noscript>
+      <style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style>
+    </noscript>
+  <style amp-custom>
+      body {
+        color: #404040;
+        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        font-size: 18px;
+        line-height: 1.6;
+      }
+
+      .hs-page-width-normal {
+        box-sizing: content-box;
+        margin: 0 auto;
+        padding: 0 5vw 5vw;
+      }
+
+      .info {
+        font-size: 14px
+      }
+
+      h1 {
+        color: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        font-size: 26px;
+        line-height: 1.5;
+        font-weight: 600;
+      }
+
+      h1 a {
+        color: #404040;
+      }
+
+      h2 {
+        color: #404040;
+        font-size: 22px;
+        line-height: 38px;
+      }
+
+      a {
+        color: #416bb3;
+        text-decoration: none;
+      }
+
+      .logo-header-text {
+        color: #1e1e1e;
+        font-size: 36px;
+        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        line-height: 2.0;
+        font-weight: bold;
+        vertical-align: text-bottom;
+      }
+
+      .hs-page-width-normal {
+        padding: 5vw;
+      }
+
+      .iframe-placeholder {
+        background-color: #bbb;
+      }
+
+      .header-banner {
+        padding: 3vw 1vw;
+        border-color: #dcdcdc;
+        border-bottom-style: solid;
+        border-bottom-width: thin;
+        background-color: #ffffff;
+        color: #1e1e1e;
+        text-align: center;
+      }
+
+      .full-link {
+        text-align: center;
+      }
+
+      .full-link a {
+        border: 1px solid #dcdcdc;
+        background-color: transparent;
+        color: #416bb3;
+        cursor: pointer;
+        display: block;
+        font-size: 14px;
+        line-height: 18px;
+        margin: 0 auto;
+        max-width: 200px;
+        padding: 11px 16px;
+        text-decoration: none;
+        width: 50%;
+      }
+
+    </style>
+    <script async src="../../../../../cdn.ampproject.org/v0.js"></script>
+  </head>
+  <body>
+    <div class="row-fluid">
+      <div class="header-banner">
+        <a class="blog-link" href="../../../../blog.html">
+        
+          <span class="logo-header-text">The Xceptional Blog</span>
+         </a>
+      </div>  
+      <div class="hs-page-width-normal">
+        <div class="post-header">
+          <h1><a href="pandas-caviar-deep-learning.html">Pandas, Caviar, and Deep Learning</a></h1>
+        </div>
+        <div class="info">
+          <span> Written by <a class="author-link" href="../../../author/andy.html">Natalie</a> | Aug 8, 2018 8:11:04 AM </span>
+        </div>
+        <div class="blog-section">
+          <span><p>Analytics is redefining the world. Data is the new oil. Artificial intelligence (AI) is everywhere</p> 
+<p>It feels like we hear some variant of these phrases too often. But there is a reason why such statements have become so pervasive. Data has quickly become the&nbsp;<a href="https://blog.dellemc.com/en-us/data-capital-separating-winners-losers-tomorrow/">most valuable and differentiating asset</a>&nbsp;for many organizations as it opens up new revenue streams and unearths opportunities for improvement in almost every part of an organization.</p> 
+<p>Innovative companies are devoting an ever-increasing amount of resources to collect, store and analyze data – in order to squeeze every drop of value out of this asset. And the companies that haven’t been investing in advanced analytics technologies, like deep learning, risk exposing themselves to major disruptions, forcing them to quickly evolve or risk extinction.</p> 
+<p>As one would expect with any early-stage technology, as organizations prioritize analytics, the number of toolkits and use cases have proliferated. At times, it feels like there’s a new analytics tool or data framework every day. And right now, the area that is heating up the fastest AI, specifically deep learning using a more iterative and layered approach for things like image classification and natural language processing.</p> 
+<h3><strong>Data is at the heart of AI</strong></h3> 
+<p>From what I’ve seen<strong>,&nbsp;</strong>how an organization utilizes its&nbsp;<strong>DATA</strong>&nbsp;continues to be the differentiation that separates the leaders from the rest of the pack. To be more precise, it’s in the types of data, the depth of data, and the uniqueness of data available for analysis.</p> 
+<p>Unstructured data provides organizations the opportunity to significantly move the needle as it exposes rich unique data sets consisting of images, video, and streaming IoT data that previously has gone untapped in the data analytics space. The bad news is that the data requirements for deep learning (DL) models are quite different than the traditional data that organizations are used to dealing with. For example, most DL use cases are image and video heavy workloads which are huge in data size and virtually incompressible. In my experience, I’ve only been able to get up to 4.6 percent compression using the most extreme lossy algorithm on ImageNet which doesn’t allow much in the way of savings or efficiency when managing billions or trillions of files.&nbsp; &nbsp;Additionally, the advent of GPUs to handle highly iterative deep learning models from frameworks like TensorFlow have added concurrency as a new infrastructure requirement as files are often read millions of times by a single layer of a convolution neural network (CNN).</p> 
+<p>These extreme DL requirements for performance, scale, and flexibility don’t neatly conform to traditional block storage boundaries. Luckily, game-changing innovations in unstructured storage as well as computing (rise of the GPU) paired with deep learning networks for image recognition or natural language processing, are finally enabling access to and analysis of data that was hard to divine much insight from a decade ago.</p> 
+<h3><strong>AI infrastructure:&nbsp; Pandas vs Caviar</strong></h3> 
+<p>As anyone who has taken&nbsp;<a href="https://www.coursera.org/lecture/deep-neural-network/hyperparameters-tuning-in-practice-pandas-vs-caviar-DHNcc">Andrew Ng’s Deep Learning AI course</a>&nbsp;will tell you, Andrew argues that it’s less about the algorithms and math; he asserts it’s all about the data. Data curation, data engineering, data labeling, and data management of the sprawling infrastructure to support the 100’s of terabytes (TB) to 100’s petabytes (PB) of pictures, videos, and streaming sensor data. Thus, in the AI space, one of the biggest challenges is managing all the unstructured data with the right infrastructure stack to both persist PBs of data and utilized in the data-hungry AI models.</p> 
+<p>To quote Andrew Ng again, the infrastructure choices are all about pandas and caviar.</p> 
+<p>The “Raising Pandas” approach refers to the fact many adult pandas babysit and care for one panda baby at a time, or in this case focus on training one model at a time.&nbsp; For example, if you’re a smaller company or you’re just starting on your AI journey, you might only have the infrastructure and computational capacity to train, measure, and tune a single model at a time.&nbsp; This is a great solution if you only have one data scientist, if there aren’t not many use cases for deep learning in your organization, or if the model requires a modest amount of data (&lt;100 TB) of data to train the algorithm.</p> 
+<p>“Caviar refers to laying thousands of eggs and training many models in parallel, then picking the model with the best learning curve.&nbsp; This approach is often required if petabytes of data are involved in the solution like in the case of autonomous driving and fraud detection. These solutions require a large-scale and complex distributed computing environment to simultaneously training multiple deep learning models to find a best-fit model. In the more advanced cases, these can even be automated and managed with a container-based solution like BlueData to provide an elastic “as-a-service” approach.</p> 
+<h3><strong>Summary</strong></h3> 
+<p>Regardless of your data types and the means of managing value from your data, remember that the companies with the most innovative and actionable DATA win. As your AI requirements mature from pandas to caviar, the infrastructure decisions you make today will have a major impact on your business tomorrow.</p> 
+<p>&nbsp;</p> 
+<p><a href="../../../../../f.hubspotusercontent10.net/hubfs/6853069/Imported_Blog_Media/Blog-Post-8-08-18-Author-1.jpg"><amp-img class="wp-image-6531 alignleft" src="../../../../hs-fs/hubfs/Imported_Blog_Media/91539906-2aa21.jpg?width=94&amp;height=95&amp;name=91539906-2.jpg" alt="" width="94" height="95" srcset="https://resources.xceptional.com/hs-fs/hubfs/Imported_Blog_Media/91539906-2.jpg?width=47&amp;height=48&amp;name=91539906-2.jpg 47w, https://resources.xceptional.com/hs-fs/hubfs/Imported_Blog_Media/91539906-2.jpg?width=94&amp;height=95&amp;name=91539906-2.jpg 94w, https://resources.xceptional.com/hs-fs/hubfs/Imported_Blog_Media/91539906-2.jpg?width=141&amp;height=143&amp;name=91539906-2.jpg 141w, https://resources.xceptional.com/hs-fs/hubfs/Imported_Blog_Media/91539906-2.jpg?width=188&amp;height=190&amp;name=91539906-2.jpg 188w, https://resources.xceptional.com/hs-fs/hubfs/Imported_Blog_Media/91539906-2.jpg?width=235&amp;height=238&amp;name=91539906-2.jpg 235w, https://resources.xceptional.com/hs-fs/hubfs/Imported_Blog_Media/91539906-2.jpg?width=282&amp;height=285&amp;name=91539906-2.jpg 282w"></amp-img></a>&nbsp;By Keith Manthey</p> 
+<p>Published with permission from https://blog.dellemc.com/en-us/</p> 
+<p>&nbsp;</p></span>
+        </div>
+        <div class="full-link">
+          <a href="pandas-caviar-deep-learning.html">View full post</a>
+        </div>
+      </div>
+    </div>
+    
+    <amp-pixel src="../../../../../track.hubspot.com/__ptqf618.gif?cd=SCREEN_COLOR_DEPTH-bit&amp;cs=DOCUMENT_CHARSET&amp;ln=BROWSER_LANGUAGE&amp;sd=AVAILABLE_SCREEN_WIDTHxAVAILABLE_SCREEN_HEIGHT&amp;v=1.1&amp;iaa=1&amp;k=1&amp;ccu=CANONICAL_URL&amp;r=DOCUMENT_REFERRER&amp;ct=blog-post&amp;t=Pandas%2C+Caviar%2C+and+Deep+Learning&amp;pi=50503991045&amp;a=6853069&amp;nc=true&amp;cgi=23291088092&amp;lvi=50503991045&amp;lvc=en&amp;vi=CLIENT_ID(hubspotutk)&amp;ai=CLIENT_ID(amputk)">
+    </amp-pixel>
+    
+  </body>
+
+<!-- Mirrored from resources.xceptional.com/blog/2018/08/08/pandas-caviar-deep-learning?hs_amp=true by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 23 Jan 2024 07:07:43 GMT -->
+</html>

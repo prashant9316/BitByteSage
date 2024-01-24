@@ -1,0 +1,199 @@
+<!doctype html>
+<html amp lang="en" >
+  
+<!-- Mirrored from resources.xceptional.com/blog/2019/05/06/dealing-with-hypervisors-vulnerabilities?hs_amp=true by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 23 Jan 2024 06:52:20 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8">
+    <title>Dealing with hypervisors' vulnerabilities</title>
+    <link rel="canonical" href="dealing-with-hypervisors-vulnerabilities.html" />
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+
+    <meta name="author" content="prontowebadmin">
+
+    <meta name="description" content="Dealing with hypervisors&#39; vulnerabilities">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <meta name="generator" content="HubSpot">
+    <script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Dealing with hypervisors' vulnerabilities",
+        "datePublished": "2019-05-06T09:00:09Z",
+        "dateModified": "2021-11-09T02:26:44.280Z",
+        "mainEntityOfPage": "https://resources.xceptional.com/blog/2019/05/06/dealing-with-hypervisors-vulnerabilities",
+        "author": {
+          "@type": "Person",
+          "name": "prontowebadmin"
+        },
+        "image": {
+         "@type": "ImageObject",
+        
+          "url": "/hs/hsstatic/content_shared_assets/static-1.4092/img/default-amp-logo.png",
+          "width": 60,
+          "height": 60
+        
+        },
+        "publisher" : {
+          "@type": "Organization",
+          "logo": {
+            "@type": "ImageObject",
+            
+            "url": "/hs/hsstatic/content_shared_assets/static-1.4092/img/default-amp-logo.png",
+            "width": 60,
+            "height": 60
+            
+          },
+          "name": "The Xceptional Blog"
+        }
+      }
+    </script>
+    <script async custom-element="amp-analytics" src="../../../../../cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
+    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style>
+    <noscript>
+      <style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style>
+    </noscript>
+  <style amp-custom>
+      body {
+        color: #404040;
+        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        font-size: 18px;
+        line-height: 1.6;
+      }
+
+      .hs-page-width-normal {
+        box-sizing: content-box;
+        margin: 0 auto;
+        padding: 0 5vw 5vw;
+      }
+
+      .info {
+        font-size: 14px
+      }
+
+      h1 {
+        color: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        font-size: 26px;
+        line-height: 1.5;
+        font-weight: 600;
+      }
+
+      h1 a {
+        color: #404040;
+      }
+
+      h2 {
+        color: #404040;
+        font-size: 22px;
+        line-height: 38px;
+      }
+
+      a {
+        color: #416bb3;
+        text-decoration: none;
+      }
+
+      .logo-header-text {
+        color: #1e1e1e;
+        font-size: 36px;
+        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        line-height: 2.0;
+        font-weight: bold;
+        vertical-align: text-bottom;
+      }
+
+      .hs-page-width-normal {
+        padding: 5vw;
+      }
+
+      .iframe-placeholder {
+        background-color: #bbb;
+      }
+
+      .header-banner {
+        padding: 3vw 1vw;
+        border-color: #dcdcdc;
+        border-bottom-style: solid;
+        border-bottom-width: thin;
+        background-color: #ffffff;
+        color: #1e1e1e;
+        text-align: center;
+      }
+
+      .full-link {
+        text-align: center;
+      }
+
+      .full-link a {
+        border: 1px solid #dcdcdc;
+        background-color: transparent;
+        color: #416bb3;
+        cursor: pointer;
+        display: block;
+        font-size: 14px;
+        line-height: 18px;
+        margin: 0 auto;
+        max-width: 200px;
+        padding: 11px 16px;
+        text-decoration: none;
+        width: 50%;
+      }
+
+    </style>
+    <script async src="../../../../../cdn.ampproject.org/v0.js"></script>
+  </head>
+  <body>
+    <div class="row-fluid">
+      <div class="header-banner">
+        <a class="blog-link" href="../../../../blog.html">
+        
+          <span class="logo-header-text">The Xceptional Blog</span>
+         </a>
+      </div>  
+      <div class="hs-page-width-normal">
+        <div class="post-header">
+          <h1><a href="dealing-with-hypervisors-vulnerabilities.html">Dealing with hypervisors' vulnerabilities</a></h1>
+        </div>
+        <div class="info">
+          <span> Written by <a class="author-link" href="../../../author/prontowebadmin.html">prontowebadmin</a> | May 6, 2019 9:00:09 AM </span>
+        </div>
+        <div class="blog-section">
+          <span><p>Hypervisors have changed the game of cybersecurity. They provide unmatched cyber protection for your data as they keep it in the cloud. However, hypervisors still have vulnerabilities that hackers can exploit. Find out how their weak points can be addressed.</p> 
+<p>A hypervisor is a software application that distributes computing resources (e.g., processing power, RAM, storage) into virtual machines (VMs), which can then be delivered to other computers in a network. This gives people the resources they need to run resource-intensive applications without having to rely on powerful and expensive desktop computers.</p> 
+<p>System administrators can also use a hypervisor to monitor and manage VMs. So if hackers manage to compromise hypervisor software, they’ll have unfettered access to every VM and the data stored on them.</p> 
+<p>While hypervisors are generally well-protected and robust, security experts say hackers will eventually find a bug in the software. So far, there have been limited reports of hypervisor hacks; but in theory, cybercriminals could run a program that can break out of a VM and interact directly with the hypervisor. From there, they can control everything, from access privileges to computing resources.</p> 
+<p>Another point of vulnerability is the network. Since hypervisors distribute VMs via the company network, they can be susceptible to remove intrusions and denial-of-service attacks if you don’t have the right protections in place.</p> 
+<p>If those attack methods aren’t possible, hackers can always break into server rooms and compromise the hypervisor directly. So what can you do to protect against these threats?</p> 
+<h3>Create separate VM and management networks</h3> 
+<p>Keeping your VM network away from your management network is a great way to secure your virtualized environment. If malware compromises your VMs, it won’t be able to affect your hypervisor.</p> 
+<h3>Set access privileges</h3> 
+<p>Ideally, only you, your system administrator, or virtualization provider should have access to your hypervisor console. You need to set strict access restrictions on the software to prevent unauthorized users from messing with VM settings and viewing your most sensitive data.</p> 
+<h3>Disable unnecessary services</h3> 
+<p>Off-the-shelf operating systems will have many unnecessary services and apps that increase the attack surface of your VMs. If you can’t tell which ones to disable, consult with a virtualization specialist.</p> 
+<h3>Pay attention to physical security</h3> 
+<p>Breaking into a server room is the easiest way to compromise hypervisors, so make sure your physical servers are behind locked doors and watched over by staff at all times.</p> 
+<h3>Install top-notch network security tools</h3> 
+<p>Due to network intrusions affecting hypervisor security, installing cutting-edge firewalls and intrusion prevention systems is highly recommended. These security tools monitor network traffic for abnormal behavior to protect you from the newest exploits.</p> 
+<h3>Stay on top of hypervisor updates</h3> 
+<p>Hypervisors must be updated to defend them against the latest threats. But if you’d rather spend your time on more important projects, you can always entrust the security of your hypervisors to a highly experienced and certified managed services provider, like us.</p> 
+<p><a href="http://www.xceptional.com/about-us/contact-us/">Contact us</a> today to see how we can protect your virtualized environment.</p> 
+<div class="autoblogfoot">
+  Published with permission from TechAdvisory.org. 
+ <a href="http://www.techadvisory.org/2019/04/dealing-with-hypervisors-vulnerabilities/">Source.</a> 
+</div></span>
+        </div>
+        <div class="full-link">
+          <a href="dealing-with-hypervisors-vulnerabilities.html">View full post</a>
+        </div>
+      </div>
+    </div>
+    
+    <amp-pixel src="../../../../../track.hubspot.com/__ptq0de8.gif?cd=SCREEN_COLOR_DEPTH-bit&amp;cs=DOCUMENT_CHARSET&amp;ln=BROWSER_LANGUAGE&amp;sd=AVAILABLE_SCREEN_WIDTHxAVAILABLE_SCREEN_HEIGHT&amp;v=1.1&amp;iaa=1&amp;k=1&amp;ccu=CANONICAL_URL&amp;r=DOCUMENT_REFERRER&amp;ct=blog-post&amp;t=Dealing+with+hypervisors%27+vulnerabilities&amp;pi=50503990792&amp;a=6853069&amp;nc=true&amp;cgi=23291088092&amp;lvi=50503990792&amp;lvc=en&amp;vi=CLIENT_ID(hubspotutk)&amp;ai=CLIENT_ID(amputk)">
+    </amp-pixel>
+    
+  </body>
+
+<!-- Mirrored from resources.xceptional.com/blog/2019/05/06/dealing-with-hypervisors-vulnerabilities?hs_amp=true by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 23 Jan 2024 06:52:20 GMT -->
+</html>

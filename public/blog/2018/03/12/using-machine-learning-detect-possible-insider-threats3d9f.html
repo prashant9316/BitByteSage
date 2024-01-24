@@ -1,0 +1,186 @@
+<!doctype html>
+<html amp lang="en" >
+  
+<!-- Mirrored from resources.xceptional.com/blog/2018/03/12/using-machine-learning-detect-possible-insider-threats?hs_amp=true by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 23 Jan 2024 07:15:01 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8">
+    <title>Using machine learning to detect possible insider threats</title>
+    <link rel="canonical" href="using-machine-learning-detect-possible-insider-threats.html" />
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+
+    <meta name="author" content="Natalie">
+
+    <meta name="description" content="Using machine learning to detect possible insider threats">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <meta name="generator" content="HubSpot">
+    <script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Using machine learning to detect possible insider threats",
+        "datePublished": "2018-03-12T17:58:01Z",
+        "dateModified": "2021-11-09T02:14:22.452Z",
+        "mainEntityOfPage": "https://resources.xceptional.com/blog/2018/03/12/using-machine-learning-detect-possible-insider-threats",
+        "author": {
+          "@type": "Person",
+          "name": "Natalie"
+        },
+        "image": {
+         "@type": "ImageObject",
+        
+          
+          
+          "url": "https://f.hubspotusercontent10.net/hubfs/6853069/Imported_Blog_Media/5a9dbb777ad19-300x388-1.png"
+        
+        },
+        "publisher" : {
+          "@type": "Organization",
+          "logo": {
+            "@type": "ImageObject",
+            
+            "url": "/hs/hsstatic/content_shared_assets/static-1.4092/img/default-amp-logo.png",
+            "width": 60,
+            "height": 60
+            
+          },
+          "name": "The Xceptional Blog"
+        }
+      }
+    </script>
+    <script async custom-element="amp-analytics" src="../../../../../cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
+    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style>
+    <noscript>
+      <style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style>
+    </noscript>
+  <style amp-custom>
+      body {
+        color: #404040;
+        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        font-size: 18px;
+        line-height: 1.6;
+      }
+
+      .hs-page-width-normal {
+        box-sizing: content-box;
+        margin: 0 auto;
+        padding: 0 5vw 5vw;
+      }
+
+      .info {
+        font-size: 14px
+      }
+
+      h1 {
+        color: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        font-size: 26px;
+        line-height: 1.5;
+        font-weight: 600;
+      }
+
+      h1 a {
+        color: #404040;
+      }
+
+      h2 {
+        color: #404040;
+        font-size: 22px;
+        line-height: 38px;
+      }
+
+      a {
+        color: #416bb3;
+        text-decoration: none;
+      }
+
+      .logo-header-text {
+        color: #1e1e1e;
+        font-size: 36px;
+        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        line-height: 2.0;
+        font-weight: bold;
+        vertical-align: text-bottom;
+      }
+
+      .hs-page-width-normal {
+        padding: 5vw;
+      }
+
+      .iframe-placeholder {
+        background-color: #bbb;
+      }
+
+      .header-banner {
+        padding: 3vw 1vw;
+        border-color: #dcdcdc;
+        border-bottom-style: solid;
+        border-bottom-width: thin;
+        background-color: #ffffff;
+        color: #1e1e1e;
+        text-align: center;
+      }
+
+      .full-link {
+        text-align: center;
+      }
+
+      .full-link a {
+        border: 1px solid #dcdcdc;
+        background-color: transparent;
+        color: #416bb3;
+        cursor: pointer;
+        display: block;
+        font-size: 14px;
+        line-height: 18px;
+        margin: 0 auto;
+        max-width: 200px;
+        padding: 11px 16px;
+        text-decoration: none;
+        width: 50%;
+      }
+
+    </style>
+    <script async src="../../../../../cdn.ampproject.org/v0.js"></script>
+  </head>
+  <body>
+    <div class="row-fluid">
+      <div class="header-banner">
+        <a class="blog-link" href="../../../../blog.html">
+        
+          <span class="logo-header-text">The Xceptional Blog</span>
+         </a>
+      </div>  
+      <div class="hs-page-width-normal">
+        <div class="post-header">
+          <h1><a href="using-machine-learning-detect-possible-insider-threats.html">Using machine learning to detect possible insider threats</a></h1>
+        </div>
+        <div class="info">
+          <span> Written by <a class="author-link" href="../../../author/andy.html">Natalie</a> | Mar 12, 2018 5:58:01 PM </span>
+        </div>
+        <div class="blog-section">
+          <span><p>Cloud applications are now commonplace in enterprises. From productivity applications to storage, employees and IT departments are realizing the benefits of offloading documents and data into the cloud. But as data, identities, and applications move to the cloud, security teams must manage the risk involved with losing control of traditional network perimeter. This is largely a problem of visibility: If data never travels across corporate networks, how can defenders understand what users are doing, whether their activities are legitimate, and if their accounts have been compromised?</p> 
+<p>In the&nbsp;<a href="https://www.cisco.com/c/en/us/products/security/security-reports.html?CCID=cc000160&amp;DTID=esootr000515&amp;OID=anrsc005679" target="_blank" rel="noopener">Cisco 2018 Annual Cybersec</a><a href="https://www.cisco.com/c/en/us/products/security/security-reports.html?CCID=cc000160&amp;DTID=esootr000515&amp;OID=anrsc005679"><amp-img class="alignright  wp-image-246563" src="../../../../hs-fs/hubfs/Imported_Blog_Media/5a9dbb777ad19-300x388-12e01.png?width=306&amp;height=395&amp;name=5a9dbb777ad19-300x388-1.png" alt="" width="306" height="395" srcset="https://resources.xceptional.com/hs-fs/hubfs/Imported_Blog_Media/5a9dbb777ad19-300x388-1.png?width=153&amp;height=198&amp;name=5a9dbb777ad19-300x388-1.png 153w, https://resources.xceptional.com/hs-fs/hubfs/Imported_Blog_Media/5a9dbb777ad19-300x388-1.png?width=306&amp;height=395&amp;name=5a9dbb777ad19-300x388-1.png 306w, https://resources.xceptional.com/hs-fs/hubfs/Imported_Blog_Media/5a9dbb777ad19-300x388-1.png?width=459&amp;height=593&amp;name=5a9dbb777ad19-300x388-1.png 459w, https://resources.xceptional.com/hs-fs/hubfs/Imported_Blog_Media/5a9dbb777ad19-300x388-1.png?width=612&amp;height=790&amp;name=5a9dbb777ad19-300x388-1.png 612w, https://resources.xceptional.com/hs-fs/hubfs/Imported_Blog_Media/5a9dbb777ad19-300x388-1.png?width=765&amp;height=988&amp;name=5a9dbb777ad19-300x388-1.png 765w, https://resources.xceptional.com/hs-fs/hubfs/Imported_Blog_Media/5a9dbb777ad19-300x388-1.png?width=918&amp;height=1185&amp;name=5a9dbb777ad19-300x388-1.png 918w"></amp-img></a><a href="https://www.cisco.com/c/en/us/products/security/security-reports.html?CCID=cc000160&amp;DTID=esootr000515&amp;OID=anrsc005679">urity Report</a>, we offer insights on the impact of the cloud on user activity—and how careful analysis of this activity could potentially unearth threats from inside an organization. Using a machine-learning algorithm, Cisco researchers looked at data exfiltration trends for 150,000 users in 34 countries, all using cloud service providers during a 6-month period from January to June 2017. The algorithm took into account not only the volume of documents being downloaded, but also variables such as the time of day of downloads, IP addresses, and locations. In the next 1.5 months, the algorithm started flagging deviations from the norm for each individual user.</p> 
+<p>Cisco’s algorithm flagged 0.5 percent of users for suspicious downloads. This may seem like a small amount, but these users downloaded, in total, 3.9 million documents from corporate cloud systems—an average of 5200 documents per user during the 1.5 month period. Sixty-two percent of the suspicious downloads occurred outside of normal works hours, while forty percent took place on weekends.</p> 
+<p>On its face, the volume of data might be a concern for many organizations. However, such activity could be normal; simply looking at the total number doesn’t necessarily indicate nefarious behavior by employees or as evidence of compromised accounts. In further analysis, Cisco threat researchers conducted a text-mining analysis on the titles of the 3.9 million documents. The most popular keyword in document titles was “data”; the keywords most commonly appearing with the word “data” were “employee” and “customer.”</p> 
+<p>The fact that documents with keywords like “employee” and “customer” are being downloaded from commonly used productivity applications could be a sign of data exfiltration, and perhaps security teams might want to focus on these outliers for further investigation. But the findings would need to be matched with analysis about normal user behavior to determine if a threat from inside is actually present.</p> 
+<p>Machine-learning algorithms can provide a more nuanced view of cloud user activity across multiple cloud platforms. For example, the algorithm can “learn” about the history of the user according to several variables, such as location and time of day for download activity. In Cisco’s analysis, 23 percent of users were flagged more than 3 times for suspicious downloads, starting usually in small numbers. The volume slowly increased each time, and eventually, these users showed a sudden and significant spike in downloads.</p> 
+<p><a href="../../../../../f.hubspotusercontent10.net/hubfs/6853069/Imported_Blog_Media/5a9dbae23a55b-1.png" target="_blank" rel="noopener"><amp-img class="aligncenter wp-image-246560 " src="../../../../hs-fs/hubfs/Imported_Blog_Media/5a9dbae23a55b-18a01.png?width=570&amp;height=572&amp;name=5a9dbae23a55b-1.png" alt="" width="570" height="572" srcset="https://resources.xceptional.com/hs-fs/hubfs/Imported_Blog_Media/5a9dbae23a55b-1.png?width=285&amp;height=286&amp;name=5a9dbae23a55b-1.png 285w, https://resources.xceptional.com/hs-fs/hubfs/Imported_Blog_Media/5a9dbae23a55b-1.png?width=570&amp;height=572&amp;name=5a9dbae23a55b-1.png 570w, https://resources.xceptional.com/hs-fs/hubfs/Imported_Blog_Media/5a9dbae23a55b-1.png?width=855&amp;height=858&amp;name=5a9dbae23a55b-1.png 855w, https://resources.xceptional.com/hs-fs/hubfs/Imported_Blog_Media/5a9dbae23a55b-1.png?width=1140&amp;height=1144&amp;name=5a9dbae23a55b-1.png 1140w, https://resources.xceptional.com/hs-fs/hubfs/Imported_Blog_Media/5a9dbae23a55b-1.png?width=1425&amp;height=1430&amp;name=5a9dbae23a55b-1.png 1425w, https://resources.xceptional.com/hs-fs/hubfs/Imported_Blog_Media/5a9dbae23a55b-1.png?width=1710&amp;height=1716&amp;name=5a9dbae23a55b-1.png 1710w" layout="responsive"></amp-img></a>Such activity, especially an increase in downloads that are outside of the norm for that user, could pinpoint a possible threat. Equipped with knowledge of how and when users download information from the cloud, defenders can cut the time it takes to investigate download activity, since they won’t need to examine what is likely legitimate behavior. On the other hand, machine learning can help defenders spot patterns that could indicate data exfiltration, and stop it before the damage is done.</p> 
+<p>&nbsp;</p> 
+<p><a href="../../../../../f.hubspotusercontent10.net/hubfs/6853069/Imported_Blog_Media/Blog-Post-3-12-18-Author-1.jpg"><amp-img class="alignnone size-medium wp-image-5791" src="../../../../hs-fs/hubfs/Imported_Blog_Media/1709890990-1ede6.jpg?width=56&amp;height=56&amp;name=1709890990-1.jpg" alt="" width="56" height="56" srcset="https://resources.xceptional.com/hs-fs/hubfs/Imported_Blog_Media/1709890990-1.jpg?width=28&amp;height=28&amp;name=1709890990-1.jpg 28w, https://resources.xceptional.com/hs-fs/hubfs/Imported_Blog_Media/1709890990-1.jpg?width=56&amp;height=56&amp;name=1709890990-1.jpg 56w, https://resources.xceptional.com/hs-fs/hubfs/Imported_Blog_Media/1709890990-1.jpg?width=84&amp;height=84&amp;name=1709890990-1.jpg 84w, https://resources.xceptional.com/hs-fs/hubfs/Imported_Blog_Media/1709890990-1.jpg?width=112&amp;height=112&amp;name=1709890990-1.jpg 112w, https://resources.xceptional.com/hs-fs/hubfs/Imported_Blog_Media/1709890990-1.jpg?width=140&amp;height=140&amp;name=1709890990-1.jpg 140w, https://resources.xceptional.com/hs-fs/hubfs/Imported_Blog_Media/1709890990-1.jpg?width=168&amp;height=168&amp;name=1709890990-1.jpg 168w"></amp-img></a>&nbsp;By Ayse Kaya Firat</p> 
+<p>Published with permission from blogs.cisco.com</p></span>
+        </div>
+        <div class="full-link">
+          <a href="using-machine-learning-detect-possible-insider-threats.html">View full post</a>
+        </div>
+      </div>
+    </div>
+    
+    <amp-pixel src="../../../../../track.hubspot.com/__ptqe279.gif?cd=SCREEN_COLOR_DEPTH-bit&amp;cs=DOCUMENT_CHARSET&amp;ln=BROWSER_LANGUAGE&amp;sd=AVAILABLE_SCREEN_WIDTHxAVAILABLE_SCREEN_HEIGHT&amp;v=1.1&amp;iaa=1&amp;k=1&amp;ccu=CANONICAL_URL&amp;r=DOCUMENT_REFERRER&amp;ct=blog-post&amp;t=Using+machine+learning+to+detect+possible+insider+threats&amp;pi=50500994576&amp;a=6853069&amp;nc=true&amp;cgi=23291088092&amp;lvi=50500994576&amp;lvc=en&amp;vi=CLIENT_ID(hubspotutk)&amp;ai=CLIENT_ID(amputk)">
+    </amp-pixel>
+    
+  </body>
+
+<!-- Mirrored from resources.xceptional.com/blog/2018/03/12/using-machine-learning-detect-possible-insider-threats?hs_amp=true by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 23 Jan 2024 07:15:01 GMT -->
+</html>

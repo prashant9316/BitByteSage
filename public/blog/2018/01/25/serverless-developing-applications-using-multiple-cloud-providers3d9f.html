@@ -1,0 +1,199 @@
+<!doctype html>
+<html amp lang="en" >
+  
+<!-- Mirrored from resources.xceptional.com/blog/2018/01/25/serverless-developing-applications-using-multiple-cloud-providers?hs_amp=true by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 23 Jan 2024 07:16:58 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8">
+    <title>Serverless & Developing Applications Using Multiple Cloud Providers</title>
+    <link rel="canonical" href="serverless-developing-applications-using-multiple-cloud-providers.html" />
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+
+    <meta name="author" content="Natalie">
+
+    <meta name="description" content="Serverless &amp;amp; Developing Applications Using Multiple Cloud Providers">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <meta name="generator" content="HubSpot">
+    <script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Serverless & Developing Applications Using Multiple Cloud Providers",
+        "datePublished": "2018-01-25T11:30:47Z",
+        "dateModified": "2021-11-09T02:12:35.312Z",
+        "mainEntityOfPage": "https://resources.xceptional.com/blog/2018/01/25/serverless-developing-applications-using-multiple-cloud-providers",
+        "author": {
+          "@type": "Person",
+          "name": "Natalie"
+        },
+        "image": {
+         "@type": "ImageObject",
+        
+          
+          
+          "url": "https://f.hubspotusercontent10.net/hubfs/6853069/Imported_Blog_Media/5a6a263eb6aaa-550x277-1.png"
+        
+        },
+        "publisher" : {
+          "@type": "Organization",
+          "logo": {
+            "@type": "ImageObject",
+            
+            "url": "/hs/hsstatic/content_shared_assets/static-1.4092/img/default-amp-logo.png",
+            "width": 60,
+            "height": 60
+            
+          },
+          "name": "The Xceptional Blog"
+        }
+      }
+    </script>
+    <script async custom-element="amp-analytics" src="../../../../../cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
+    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style>
+    <noscript>
+      <style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style>
+    </noscript>
+  <style amp-custom>
+      body {
+        color: #404040;
+        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        font-size: 18px;
+        line-height: 1.6;
+      }
+
+      .hs-page-width-normal {
+        box-sizing: content-box;
+        margin: 0 auto;
+        padding: 0 5vw 5vw;
+      }
+
+      .info {
+        font-size: 14px
+      }
+
+      h1 {
+        color: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        font-size: 26px;
+        line-height: 1.5;
+        font-weight: 600;
+      }
+
+      h1 a {
+        color: #404040;
+      }
+
+      h2 {
+        color: #404040;
+        font-size: 22px;
+        line-height: 38px;
+      }
+
+      a {
+        color: #416bb3;
+        text-decoration: none;
+      }
+
+      .logo-header-text {
+        color: #1e1e1e;
+        font-size: 36px;
+        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        line-height: 2.0;
+        font-weight: bold;
+        vertical-align: text-bottom;
+      }
+
+      .hs-page-width-normal {
+        padding: 5vw;
+      }
+
+      .iframe-placeholder {
+        background-color: #bbb;
+      }
+
+      .header-banner {
+        padding: 3vw 1vw;
+        border-color: #dcdcdc;
+        border-bottom-style: solid;
+        border-bottom-width: thin;
+        background-color: #ffffff;
+        color: #1e1e1e;
+        text-align: center;
+      }
+
+      .full-link {
+        text-align: center;
+      }
+
+      .full-link a {
+        border: 1px solid #dcdcdc;
+        background-color: transparent;
+        color: #416bb3;
+        cursor: pointer;
+        display: block;
+        font-size: 14px;
+        line-height: 18px;
+        margin: 0 auto;
+        max-width: 200px;
+        padding: 11px 16px;
+        text-decoration: none;
+        width: 50%;
+      }
+
+    </style>
+    <script async src="../../../../../cdn.ampproject.org/v0.js"></script>
+  </head>
+  <body>
+    <div class="row-fluid">
+      <div class="header-banner">
+        <a class="blog-link" href="../../../../blog.html">
+        
+          <span class="logo-header-text">The Xceptional Blog</span>
+         </a>
+      </div>  
+      <div class="hs-page-width-normal">
+        <div class="post-header">
+          <h1><a href="serverless-developing-applications-using-multiple-cloud-providers.html">Serverless & Developing Applications Using Multiple Cloud Providers</a></h1>
+        </div>
+        <div class="info">
+          <span> Written by <a class="author-link" href="../../../author/andy.html">Natalie</a> | Jan 25, 2018 11:30:47 AM </span>
+        </div>
+        <div class="blog-section">
+          <span><p>I’ve been into serverless technologies for a few years now. The thought of not having to care about what platform my code is executing on, or having to manage and operate it, resonated with my developer side that just wants to code. I also saw it as a possible catalyst for change in how we are developing applications using&nbsp;<a title="cloud provider" href="http://www.cisco.com/web/solutions/trends/cloud/build-public-cloud.html" target="_blank" rel="noopener">cloud provider</a>&nbsp;services, one that allows services from multiple clouds to be pieced together to form a whole application…but more on that further down this blog!</p> 
+<h3>Misleading Name…Awesome Developer Tech!</h3> 
+<p>For the uninitiated, serverless technologies allow you to write code and then deploy it to a ’serverless service’. At which point, you can execute it whenever you like and get the result returned to you. You don’t care or need to know about any of the underlying infrastructure or platform that executes your code, it just happens. On top of that, you don’t have to worry about operational issues like scalability or redundancy either, as the ’serverless service’ deals with that, too! Now, of course, there&nbsp;<em>are</em>servers involved somewhere along the line, it’s just to you, the consumer of the service, it’s ‘serverless’ – you simply don’t have to care about them.</p> 
+<p>From a cost perspective, public serverless services can also be beneficial, as with public serverless services you tend only to pay tiny amounts for the length of time your code takes to execute or number of calls made. This definitely beats paying for an idle VM that might just be sitting there for hours in between executing your code. But, if you build some dodgy code with an infinite loop in it or that calls itself untold times, you can see cost add up quickly (a lesson I learnt when a bot I was writing decided to have an endless conversation with itself&nbsp;).</p> 
+<p>You can see a few examples of public serverless services on a number of the big public cloud providers – for example, Google’s are&nbsp;<a href="https://cloud.google.com/serverless/" target="_blank" rel="noopener">here</a>.</p> 
+<h3>Going Private with Serverless</h3> 
+<p>But, there are also serverless services that you can deploy in your private cloud / data center too, like OpenWhisk and&nbsp;<a href="https://www.openfaas.com/" target="_blank" rel="noopener">OpenFaaS</a>. From an IT Ops perspective, you have to deal with the underlying container platform and operate it with this model, but then they are free to use as much as you want and your consuming application developer fan club will love you for it…and of course you can use the service yourself!</p> 
+<p>It’s worth noting, you can’t really write the whole of your application in pieces of code that just return a result through one of these serverless services (also known as Function-as-a-Service – FaaS), you’ll be needing API Gateways, storage, identity services etc etc…but more on that in a future blog.</p> 
+<p><amp-img class="aligncenter size-large wp-image-243077" src="../../../../hs-fs/hubfs/Imported_Blog_Media/5a6a263eb6aaa-550x277-1dee4.png?width=550&amp;height=277&amp;name=5a6a263eb6aaa-550x277-1.png" alt="" width="550" height="277" srcset="https://resources.xceptional.com/hs-fs/hubfs/Imported_Blog_Media/5a6a263eb6aaa-550x277-1.png?width=275&amp;height=139&amp;name=5a6a263eb6aaa-550x277-1.png 275w, https://resources.xceptional.com/hs-fs/hubfs/Imported_Blog_Media/5a6a263eb6aaa-550x277-1.png?width=550&amp;height=277&amp;name=5a6a263eb6aaa-550x277-1.png 550w, https://resources.xceptional.com/hs-fs/hubfs/Imported_Blog_Media/5a6a263eb6aaa-550x277-1.png?width=825&amp;height=416&amp;name=5a6a263eb6aaa-550x277-1.png 825w, https://resources.xceptional.com/hs-fs/hubfs/Imported_Blog_Media/5a6a263eb6aaa-550x277-1.png?width=1100&amp;height=554&amp;name=5a6a263eb6aaa-550x277-1.png 1100w, https://resources.xceptional.com/hs-fs/hubfs/Imported_Blog_Media/5a6a263eb6aaa-550x277-1.png?width=1375&amp;height=693&amp;name=5a6a263eb6aaa-550x277-1.png 1375w, https://resources.xceptional.com/hs-fs/hubfs/Imported_Blog_Media/5a6a263eb6aaa-550x277-1.png?width=1650&amp;height=831&amp;name=5a6a263eb6aaa-550x277-1.png 1650w" layout="responsive"></amp-img><em>Serverless Applications – More than just the Function-as-a-Service (FaaS) calls!</em></p> 
+<h3>Catalyst for easier cloud provider agnostic development?</h3> 
+<p>What has been fantastic to see is all the open tooling and frameworks that are being built to support the community in development of serverless applications. It’s these frameworks that made me believe that cloud application development would span more than a single cloud provider eventually.</p> 
+<p>A fantastic example of such a framework is the somewhat confusingly named&nbsp;<a href="https://serverless.com/" target="_blank" rel="noopener">serverless</a>. Using such frameworks means that it’s far easier to become cloud provider agnostic, deploying code to any of the supported cloud provider serverless offerings and using the other services on that cloud (DB, API Gateway, Storage etc.) as well as from others.</p> 
+<p><amp-img class="aligncenter size-large wp-image-243078" src="../../../../hs-fs/hubfs/Imported_Blog_Media/5a6a267944044-550x261-1ebff.png?width=550&amp;height=261&amp;name=5a6a267944044-550x261-1.png" alt="" width="550" height="261" srcset="https://resources.xceptional.com/hs-fs/hubfs/Imported_Blog_Media/5a6a267944044-550x261-1.png?width=275&amp;height=131&amp;name=5a6a267944044-550x261-1.png 275w, https://resources.xceptional.com/hs-fs/hubfs/Imported_Blog_Media/5a6a267944044-550x261-1.png?width=550&amp;height=261&amp;name=5a6a267944044-550x261-1.png 550w, https://resources.xceptional.com/hs-fs/hubfs/Imported_Blog_Media/5a6a267944044-550x261-1.png?width=825&amp;height=392&amp;name=5a6a267944044-550x261-1.png 825w, https://resources.xceptional.com/hs-fs/hubfs/Imported_Blog_Media/5a6a267944044-550x261-1.png?width=1100&amp;height=522&amp;name=5a6a267944044-550x261-1.png 1100w, https://resources.xceptional.com/hs-fs/hubfs/Imported_Blog_Media/5a6a267944044-550x261-1.png?width=1375&amp;height=653&amp;name=5a6a267944044-550x261-1.png 1375w, https://resources.xceptional.com/hs-fs/hubfs/Imported_Blog_Media/5a6a267944044-550x261-1.png?width=1650&amp;height=783&amp;name=5a6a267944044-550x261-1.png 1650w" layout="responsive"></amp-img><em>Application spanning private / public cloud provider services</em></p> 
+<p>Now, I hadn’t come across any real-world application that had been developed across clouds like this….until a recent trip to&nbsp;<a href="https://www.mi-idea.com/" target="_blank" rel="noopener">Mi-Idea</a>&nbsp;at the Manchester Science Park in the UK. They have some fantastic start-ups developing some very exciting solutions. Falling into a conversation with one of the tech leads there, I discovered they were using a DB service from one provider, while other aspects were leveraged through another provider. Reasoning all came down to trade-offs of cost, performance and usability.</p> 
+<p>I got pretty excited. Sadly. I’m now actively looking for other applications built this way to understand if this is becoming much more common – applications being developed across multiple clouds and their individual services, using serverless patterns. If you’re reading this and think ‘yup – totally am’, then reach out – using serverless architectures or not! I’d love to hear from you. Drop me a comment on this blog.</p> 
+<h3>Starting Your Serverless Journey – Free!</h3> 
+<p>If you’d like to get started in the world of serverless, head over to&nbsp;<a href="https://developer.cisco.com/?utm_source=TomDavies_Serverless&amp;utm_medium=blogs_cisco" target="_blank" rel="noopener">DevNet</a>&nbsp;and hit the&nbsp;<a href="https://developer.cisco.com/site/sandbox/?utm_source=TomDavies_Serverless&amp;utm_medium=blogs_cisco" target="_blank" rel="noopener">Sandbox</a>, where you’ll find an&nbsp;<a href="https://devnetsandbox.cisco.com/RM/Diagram/Index/e7bf7f4c-f5fc-4809-9c45-4e10beb91a54?diagramType=Topology" target="_blank" rel="noopener">OpenFaaS Sandbox</a>&nbsp;that will provide you a private serverless service, totally free for you to reserve and spin up. This sandbox is built on UCS, gives you a kubernetes cluster (check out the open source&nbsp;<a href="https://blogs.cisco.com/developer/kubam-let-your-data-center-dance" target="_blank" rel="noopener">KuBaM</a>&nbsp;if you want to deploy kubernetes on UCS in minutes, yourself) and it deploys&nbsp;<a href="https://www.openfaas.com/" target="_blank" rel="noopener">OpenFaaS</a>&nbsp;ready to go. We’ve also included some Hello World examples to get you started and give you your first taste.</p> 
+<p>As a sidenote:<br> You might also here the phrase ‘Function-as-a-Service’ (FaaS) if you decide the delve into the world of serverless. When in the community I find that talking ‘serverless’ relates to the design pattern you employ to build your application (‘I’m building a serverless web site’), while FaaS is the serverless service you might leverage to do that – for example Google’s Cloud Functions (‘I’m using Cloud Functions as the FaaS element of my serverless application’). In case you were wondering!</p> 
+<p><amp-img class="aligncenter size-full wp-image-243079" src="../../../../hs-fs/hubfs/Imported_Blog_Media/5a6a269a950a2-1cf22.png?width=261&amp;height=203&amp;name=5a6a269a950a2-1.png" alt="" width="261" height="203" srcset="https://resources.xceptional.com/hs-fs/hubfs/Imported_Blog_Media/5a6a269a950a2-1.png?width=131&amp;height=102&amp;name=5a6a269a950a2-1.png 131w, https://resources.xceptional.com/hs-fs/hubfs/Imported_Blog_Media/5a6a269a950a2-1.png?width=261&amp;height=203&amp;name=5a6a269a950a2-1.png 261w, https://resources.xceptional.com/hs-fs/hubfs/Imported_Blog_Media/5a6a269a950a2-1.png?width=392&amp;height=305&amp;name=5a6a269a950a2-1.png 392w, https://resources.xceptional.com/hs-fs/hubfs/Imported_Blog_Media/5a6a269a950a2-1.png?width=522&amp;height=406&amp;name=5a6a269a950a2-1.png 522w, https://resources.xceptional.com/hs-fs/hubfs/Imported_Blog_Media/5a6a269a950a2-1.png?width=653&amp;height=508&amp;name=5a6a269a950a2-1.png 653w, https://resources.xceptional.com/hs-fs/hubfs/Imported_Blog_Media/5a6a269a950a2-1.png?width=783&amp;height=609&amp;name=5a6a269a950a2-1.png 783w"></amp-img></p> 
+<p>&nbsp;</p> 
+<p><a href="../../../../../f.hubspotusercontent10.net/hubfs/6853069/Imported_Blog_Media/Blog-Post-1-26-18-Author-1.jpg"><amp-img class="size-medium wp-image-5606 alignleft" src="../../../../hs-fs/hubfs/Imported_Blog_Media/1144368282-1bc92.jpg?width=56&amp;height=56&amp;name=1144368282-1.jpg" alt="" width="56" height="56" srcset="https://resources.xceptional.com/hs-fs/hubfs/Imported_Blog_Media/1144368282-1.jpg?width=28&amp;height=28&amp;name=1144368282-1.jpg 28w, https://resources.xceptional.com/hs-fs/hubfs/Imported_Blog_Media/1144368282-1.jpg?width=56&amp;height=56&amp;name=1144368282-1.jpg 56w, https://resources.xceptional.com/hs-fs/hubfs/Imported_Blog_Media/1144368282-1.jpg?width=84&amp;height=84&amp;name=1144368282-1.jpg 84w, https://resources.xceptional.com/hs-fs/hubfs/Imported_Blog_Media/1144368282-1.jpg?width=112&amp;height=112&amp;name=1144368282-1.jpg 112w, https://resources.xceptional.com/hs-fs/hubfs/Imported_Blog_Media/1144368282-1.jpg?width=140&amp;height=140&amp;name=1144368282-1.jpg 140w, https://resources.xceptional.com/hs-fs/hubfs/Imported_Blog_Media/1144368282-1.jpg?width=168&amp;height=168&amp;name=1144368282-1.jpg 168w"></amp-img></a>&nbsp;By Tom Davies</p> 
+<p>Published with permission from blogs.cisco.com</p> 
+<p>&nbsp;</p></span>
+        </div>
+        <div class="full-link">
+          <a href="serverless-developing-applications-using-multiple-cloud-providers.html">View full post</a>
+        </div>
+      </div>
+    </div>
+    
+    <amp-pixel src="../../../../../track.hubspot.com/__ptqde18.gif?cd=SCREEN_COLOR_DEPTH-bit&amp;cs=DOCUMENT_CHARSET&amp;ln=BROWSER_LANGUAGE&amp;sd=AVAILABLE_SCREEN_WIDTHxAVAILABLE_SCREEN_HEIGHT&amp;v=1.1&amp;iaa=1&amp;k=1&amp;ccu=CANONICAL_URL&amp;r=DOCUMENT_REFERRER&amp;ct=blog-post&amp;t=Serverless+%26+Developing+Applications+Using+Multiple+Cloud+Providers&amp;pi=50503646985&amp;a=6853069&amp;nc=true&amp;cgi=23291088092&amp;lvi=50503646985&amp;lvc=en&amp;vi=CLIENT_ID(hubspotutk)&amp;ai=CLIENT_ID(amputk)">
+    </amp-pixel>
+    
+  </body>
+
+<!-- Mirrored from resources.xceptional.com/blog/2018/01/25/serverless-developing-applications-using-multiple-cloud-providers?hs_amp=true by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 23 Jan 2024 07:16:59 GMT -->
+</html>

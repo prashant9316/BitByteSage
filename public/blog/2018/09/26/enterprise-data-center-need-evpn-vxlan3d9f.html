@@ -1,0 +1,345 @@
+<!doctype html>
+<html amp lang="en" >
+  
+<!-- Mirrored from resources.xceptional.com/blog/2018/09/26/enterprise-data-center-need-evpn-vxlan?hs_amp=true by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 23 Jan 2024 07:05:34 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8">
+    <title>Why does the Enterprise Data Center need EVPN and VXLAN?</title>
+    <link rel="canonical" href="enterprise-data-center-need-evpn-vxlan.html" />
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+
+    <meta name="author" content="Natalie">
+
+    <meta name="description" content="Why does the Enterprise Data Center need EVPN and VXLAN?">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <meta name="generator" content="HubSpot">
+    <script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Why does the Enterprise Data Center need EVPN and VXLAN?",
+        "datePublished": "2018-09-26T21:11:01Z",
+        "dateModified": "2021-11-09T02:34:50.904Z",
+        "mainEntityOfPage": "https://resources.xceptional.com/blog/2018/09/26/enterprise-data-center-need-evpn-vxlan",
+        "author": {
+          "@type": "Person",
+          "name": "Natalie"
+        },
+        "image": {
+         "@type": "ImageObject",
+        
+          "url": "/hs/hsstatic/content_shared_assets/static-1.4092/img/default-amp-logo.png",
+          "width": 60,
+          "height": 60
+        
+        },
+        "publisher" : {
+          "@type": "Organization",
+          "logo": {
+            "@type": "ImageObject",
+            
+            "url": "/hs/hsstatic/content_shared_assets/static-1.4092/img/default-amp-logo.png",
+            "width": 60,
+            "height": 60
+            
+          },
+          "name": "The Xceptional Blog"
+        }
+      }
+    </script>
+    <script async custom-element="amp-analytics" src="../../../../../cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
+    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style>
+    <noscript>
+      <style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style>
+    </noscript>
+  <style amp-custom>
+      body {
+        color: #404040;
+        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        font-size: 18px;
+        line-height: 1.6;
+      }
+
+      .hs-page-width-normal {
+        box-sizing: content-box;
+        margin: 0 auto;
+        padding: 0 5vw 5vw;
+      }
+
+      .info {
+        font-size: 14px
+      }
+
+      h1 {
+        color: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        font-size: 26px;
+        line-height: 1.5;
+        font-weight: 600;
+      }
+
+      h1 a {
+        color: #404040;
+      }
+
+      h2 {
+        color: #404040;
+        font-size: 22px;
+        line-height: 38px;
+      }
+
+      a {
+        color: #416bb3;
+        text-decoration: none;
+      }
+
+      .logo-header-text {
+        color: #1e1e1e;
+        font-size: 36px;
+        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        line-height: 2.0;
+        font-weight: bold;
+        vertical-align: text-bottom;
+      }
+
+      .hs-page-width-normal {
+        padding: 5vw;
+      }
+
+      .iframe-placeholder {
+        background-color: #bbb;
+      }
+
+      .header-banner {
+        padding: 3vw 1vw;
+        border-color: #dcdcdc;
+        border-bottom-style: solid;
+        border-bottom-width: thin;
+        background-color: #ffffff;
+        color: #1e1e1e;
+        text-align: center;
+      }
+
+      .full-link {
+        text-align: center;
+      }
+
+      .full-link a {
+        border: 1px solid #dcdcdc;
+        background-color: transparent;
+        color: #416bb3;
+        cursor: pointer;
+        display: block;
+        font-size: 14px;
+        line-height: 18px;
+        margin: 0 auto;
+        max-width: 200px;
+        padding: 11px 16px;
+        text-decoration: none;
+        width: 50%;
+      }
+
+    </style>
+    <script async src="../../../../../cdn.ampproject.org/v0.js"></script>
+  </head>
+  <body>
+    <div class="row-fluid">
+      <div class="header-banner">
+        <a class="blog-link" href="../../../../blog.html">
+        
+          <span class="logo-header-text">The Xceptional Blog</span>
+         </a>
+      </div>  
+      <div class="hs-page-width-normal">
+        <div class="post-header">
+          <h1><a href="enterprise-data-center-need-evpn-vxlan.html">Why does the Enterprise Data Center need EVPN and VXLAN?</a></h1>
+        </div>
+        <div class="info">
+          <span> Written by <a class="author-link" href="../../../author/andy.html">Natalie</a> | Sep 26, 2018 9:11:01 PM </span>
+        </div>
+        <div class="blog-section">
+          <span><p>IT sits at the core of an enterprise’s digital transformation and bears the burden to provide an on-demand infrastructure that delivers high uptime and agility. The data center becomes the focal point from where this transformation begins and enterprise data center fabrics need to evolve to meet the evolving needs of the business. Advancements in data center networking technologies can come to the rescue!</p> 
+<p>Since the early days of VXLAN, the ability to support 16 million subnets has been touted as the killer app for VXLAN. However, for the vast majority of enterprises 4K VLANS are plenty. In fact, the average enterprise probably needs no more than 200-300 VLANS. So then, is a VXLAN fabric something that enterprises need to consider? The answer is an emphatic YES. Let us see why.</p> 
+<p><strong>THE DATA CENTER NETWORK JOURNEY SO FAR</strong></p> 
+<p>The first generation of data center networks were built using spanning tree protocols. Several extensions followed to optimize flooding and improve convergence. These networks followed the typical 3-tier (access, Aggregation, core) architecture depicted below.</p> 
+<p><span class="lia-inline-image-display-wrapper lia-image-align-inline"><span class="lia-message-image-wrapper"><amp-img class="lia-media-image" src="../../../../../static.hsstatic.net/BlogImporterAssetsUI/ex/missing-image.png" alt="STP.png" width="579" height="329" layout="responsive"></amp-img><i></i></span></span></p> 
+<p>Spanning tree protocols make terrible use of network capacity and, even with all the extensions, are imperfect at solving network meltdowns and convergence issues.</p> 
+<p><span class="lia-inline-image-display-wrapper lia-image-align-inline"><span class="lia-message-image-wrapper"><amp-img class="lia-media-image" src="../../../../../static.hsstatic.net/BlogImporterAssetsUI/ex/missing-image.png" alt="MC-LAG.png" width="583" height="332" layout="responsive"></amp-img><i></i></span></span></p> 
+<p>Multi-chassis LAG (and similar technologies) arose from the shadows of STP to resolve the network utilization issues as depicted below</p> 
+<p>MC-LAG is widely deployed in enterprise, but suffers from the following limitations:</p> 
+<ul> 
+ <li> 
+  <ul> 
+   <li>Proprietary implementations from different vendors means that the implementations are not interoperable</li> 
+   <li>Solution is limited to 2 aggregation devices and the loss of a single device leaves the network hanging with 50% reduced capacity</li> 
+  </ul> </li> 
+</ul> 
+<p>While MC-LAG helped with the network capacity problem, it fundamentally did not change the architecture much. STP and MC-LAG are both optimized to serve north-south traffic. The rise of VM’s and containers means that east-west traffic dominates in data center networks today. Since the L3 demarcation points on the network sit on the aggregation layer (and sometime core depending on design), east-west traffic that crosses VLAN boundaries is routed at the aggregation layer. Ideally this traffic should be routed as close to the source as possible to optimize application performance and network utilization.</p> 
+<p><strong>LEARNING FROM PUBLIC CLOUD</strong></p> 
+<p>Public cloud providers demonstrated how on-demand infrastructures are built at scale. The building block for such a network is a leaf-spine IP fabric (depicted below).</p> 
+<p><span class="lia-inline-image-display-wrapper lia-image-align-inline"><span class="lia-message-image-wrapper"><amp-img class="lia-media-image" src="../../../../../static.hsstatic.net/BlogImporterAssetsUI/ex/missing-image.png" alt="IP.png" width="585" height="343" layout="responsive"></amp-img><i></i></span></span></p> 
+<p>An IP fabric in the underlay has the following advantages</p> 
+<ul> 
+ <li> 
+  <ul> 
+   <li>SCALE: Using constructs such as BGP, IP fabrics can scale to support tens of thousands of servers. Enterprises will never need that kind of scale, but when architecting the next generation data center fabric, network architects should pick a technology that keeps the door open to future expansion beyond what legacy technologies can provide</li> 
+  </ul> </li> 
+</ul> 
+<ul> 
+ <li> 
+  <ul> 
+   <li>RESILIENCY: IP fabrics can leverage well-established mechanisms such as BFD to improve resiliency around failures. After all, it is the technology that runs the Internet</li> 
+  </ul> </li> 
+</ul> 
+<ul> 
+ <li> 
+  <ul> 
+   <li>RESILIENCY: IP based fabrics can easily accommodate 4 or more spines, so that when a spine goes down, it does not take down 50% of the network capacity</li> 
+  </ul> </li> 
+</ul> 
+<ul> 
+ <li> 
+  <ul> 
+   <li>SIMPLE: Eliminates the use of STP and other legacy technologies in the fabric</li> 
+  </ul> </li> 
+</ul> 
+<ul> 
+ <li> 
+  <ul> 
+   <li>SIMPLE: Public cloud providers have an operations-led mindset. At the scale and automation at which they operate, operations has to be top of mind when making architectural choices. Again IP emerges as the winner</li> 
+  </ul> </li> 
+</ul> 
+<ul> 
+ <li> 
+  <ul> 
+   <li>OPEN: Leveraging open standard technologies, it reduces vendor lock-in and enables multi-vendor deployments</li> 
+  </ul> </li> 
+</ul> 
+<ul> 
+ <li> 
+  <ul> 
+   <li>DC Traffic Optimized: Layer 3 routing moves closer to the source to optimize the path taken by east-west traffic. While this may be on the leaf, it can also move to the compute by extending IP endpoint to a virtual router on the server</li> 
+  </ul> </li> 
+</ul> 
+<p>While the path to public cloud is almost certain for most enterprises, enterprises are also realizing that the practical end state is likely Multicloud. Economics and application requirements will dictate that some applications are better served from a Private cloud. Lines of business however will demand an on-demand private infrastructure that operates with high availability and enables the business to be agile.&nbsp; Therefore, what has worked for the public cloud can certainly work for the enterprise. An IP based underlay is a strong foundation for private cloud.</p> 
+<p><strong>BUT ENTERPRISE DATA CENTERS HAVE MORE COMPLEX REQUIREMENTS</strong></p> 
+<p>However, enterprise IT faces unique challenges that public cloud providers are not burdened with. They are:</p> 
+<ul> 
+ <li> 
+  <ul> 
+   <li>While public clouds have to deal with mostly homogenous virtualized workloads, enterprises carry forward a lot of legacy debt. Enterprises have to deal with both virtualized and bare metal workloads. Some of the applications running on bare metal may be 10-30 years old, but are business critical and cannot be abandoned. Therefore, while public cloud IaaS providers can originate their overlays on the virtualized host, enterprises may not have that luxury.</li> 
+  </ul> </li> 
+</ul> 
+<ul> 
+ <li> 
+  <ul> 
+   <li>Even applications that have undergone the physical-to-virtual (P2V) migration may still require Layer 2 adjacency. Public cloud SaaS providers deploy applications that were born-in-the-cloud and not burdened by the requirements of legacy applications. Moreover, an enterprise data center fabric needs to provide the interconnection between born-in-the-cloud and legacy applications. For example, the web tier for an application designed with modern principles that needs to talk to the legacy applications in the database or logic tier.</li> 
+  </ul> </li> 
+</ul> 
+<ul> 
+ <li> 
+  <ul> 
+   <li>Multi-tenancy is inherent in an enterprise. Again, Public cloud SaaS providers may be exempt from the complexity of implementing multi-tenancy.</li> 
+  </ul> </li> 
+</ul> 
+<p><strong>VXLAN and EVPN TO THE RESCUE</strong></p> 
+<p>Enterprises need to deliver a true multiservice data center. VXLAN comes to the rescue and provides the following functionality required by Private Clouds</p> 
+<ul> 
+ <li> 
+  <ul> 
+   <li>Layer 2 adjacency required by legacy applications that are not born-in-the cloud</li> 
+  </ul> </li> 
+</ul> 
+<ul> 
+ <li> 
+  <ul> 
+   <li>Stitch between legacy and modern workloads</li> 
+  </ul> </li> 
+</ul> 
+<ul> 
+ <li> 
+  <ul> 
+   <li>Stitch between virtual workloads (VM’s or containers) and physical workloads (bate metal)</li> 
+  </ul> </li> 
+</ul> 
+<ul> 
+ <li> 
+  <ul> 
+   <li>Any-workload-anywhere in the DC – With an IP-only fabric, since Layer 3 moves to the edge of the fabric (leaf), by definition placement of workload (legacy workload that requires L2 adjacency) or VM Mobility for the workload in a given VLAN is restricted to the L3 boundary. VXLAN provides a Layer 2 overlay that rides on top of a Layer 3 IP underlay and allows placement or mobility of the workload anywhere in the data center or across data centers if needed</li> 
+  </ul> </li> 
+</ul> 
+<p>Moreover, VXLAN is open standard unlike alternative proprietary solutions that were invented to solve the same problem.</p> 
+<p>The next design choice is the choice of how learning takes place for a VXLAN overlay. Here we have three choices:</p> 
+<ul> 
+ <li> 
+  <ul> 
+   <li>Data Plane Learning: Flood and learn was the proposed mechanism as part of the original VXLAN draft for the edge nodes (called VTEP’s) in an overlay to learn the MAC address of the remote end points connected to the data center fabric. The downside of this mechanism is that it relies on multicast in the fabric and suffers from the same network meltdown issues caused by flooding that traditional Layer 2 networks suffer from. Aside from a few deployments, this did not catch on in the industry as a popular choice.</li> 
+  </ul> </li> 
+</ul> 
+<ul> 
+ <li> 
+  <ul> 
+   <li>OVSDB: OVSDB emerged as a choice for VXLAN overlay management when SDN controllers are involved. It does not suffer from the flooding issues inherent with data plane learning. SDN controllers are capable of managing overlay edges on both physical devices (hardware VTEP) and on the virtualized hosts (software VTEP). However, the use of OVSDB mandates the use of SDN controllers. Network operators who want to take a phased approach to migrate to an orchestrated private cloud (to mitigate risk) do&nbsp;<u>NOT&nbsp;</u>have the option with OVSDB to build a controller-less private cloud and then phase in an SDN controller as and when the risk appetite allows.</li> 
+  </ul> </li> 
+</ul> 
+<ul> 
+ <li> 
+  <ul> 
+   <li>EVPN: EVPN is a BGP based control plane mechanism for MAC address learning and offers the following advantages:</li> 
+  </ul> </li> 
+</ul> 
+<ul> 
+ <li> 
+  <ul> 
+   <li> 
+    <ul> 
+     <li>It is BGP based! BGP is a well-established protocol that delivers Internet-grade resiliency needed for large-scale deployments and offers a rich suite of policy controls as well. It is a technology familiar to network operators and minimizes the need to learn and deploy multiple technologies</li> 
+    </ul> </li> 
+  </ul> </li> 
+</ul> 
+<ul> 
+ <li> 
+  <ul> 
+   <li> 
+    <ul> 
+     <li>An overlay built with BGP as the control plane can be operated in controller-less mode as well as with an SDN controller.</li> 
+    </ul> </li> 
+  </ul> </li> 
+</ul> 
+<ul> 
+ <li> 
+  <ul> 
+   <li> 
+    <ul> 
+     <li>EVPN can be used to build both Layer 2 and Layer 3 multi-tenancy.</li> 
+    </ul> </li> 
+  </ul> </li> 
+</ul> 
+<ul> 
+ <li> 
+  <ul> 
+   <li> 
+    <ul> 
+     <li>Largely minimizes flooding in the fabric since the MAC distribution happens in the control plane.</li> 
+    </ul> </li> 
+  </ul> </li> 
+</ul> 
+<p>&nbsp;</p> 
+<p><a href="../../../../../f.hubspotusercontent10.net/hubfs/6853069/Imported_Blog_Media/Blog-Post-9-26-18-Author-1.jpg"><amp-img class="wp-image-6775 alignleft" src="../../../../hs-fs/hubfs/Imported_Blog_Media/3250966231-1ac18.jpg?width=87&amp;height=87&amp;name=3250966231-1.jpg" alt="" width="87" height="87" srcset="https://resources.xceptional.com/hs-fs/hubfs/Imported_Blog_Media/3250966231-1.jpg?width=44&amp;height=44&amp;name=3250966231-1.jpg 44w, https://resources.xceptional.com/hs-fs/hubfs/Imported_Blog_Media/3250966231-1.jpg?width=87&amp;height=87&amp;name=3250966231-1.jpg 87w, https://resources.xceptional.com/hs-fs/hubfs/Imported_Blog_Media/3250966231-1.jpg?width=131&amp;height=131&amp;name=3250966231-1.jpg 131w, https://resources.xceptional.com/hs-fs/hubfs/Imported_Blog_Media/3250966231-1.jpg?width=174&amp;height=174&amp;name=3250966231-1.jpg 174w, https://resources.xceptional.com/hs-fs/hubfs/Imported_Blog_Media/3250966231-1.jpg?width=218&amp;height=218&amp;name=3250966231-1.jpg 218w, https://resources.xceptional.com/hs-fs/hubfs/Imported_Blog_Media/3250966231-1.jpg?width=261&amp;height=261&amp;name=3250966231-1.jpg 261w"></amp-img></a>By Praful Lalchandani</p> 
+<p>Published with permission from&nbsp;forums.juniper.net/t5/Blogs/ct-p/blogs</p></span>
+        </div>
+        <div class="full-link">
+          <a href="enterprise-data-center-need-evpn-vxlan.html">View full post</a>
+        </div>
+      </div>
+    </div>
+    
+    <amp-pixel src="../../../../../track.hubspot.com/__ptq6ac3.gif?cd=SCREEN_COLOR_DEPTH-bit&amp;cs=DOCUMENT_CHARSET&amp;ln=BROWSER_LANGUAGE&amp;sd=AVAILABLE_SCREEN_WIDTHxAVAILABLE_SCREEN_HEIGHT&amp;v=1.1&amp;iaa=1&amp;k=1&amp;ccu=CANONICAL_URL&amp;r=DOCUMENT_REFERRER&amp;ct=blog-post&amp;t=Why+does+the+Enterprise+Data+Center+need+EVPN+and+VXLAN%3F&amp;pi=50503990545&amp;a=6853069&amp;nc=true&amp;cgi=23291088092&amp;lvi=50503990545&amp;lvc=en&amp;vi=CLIENT_ID(hubspotutk)&amp;ai=CLIENT_ID(amputk)">
+    </amp-pixel>
+    
+  </body>
+
+<!-- Mirrored from resources.xceptional.com/blog/2018/09/26/enterprise-data-center-need-evpn-vxlan?hs_amp=true by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 23 Jan 2024 07:05:35 GMT -->
+</html>

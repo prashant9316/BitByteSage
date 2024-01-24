@@ -1,0 +1,183 @@
+<!doctype html>
+<html amp lang="en" >
+  
+<!-- Mirrored from resources.xceptional.com/blog/2019/03/28/data-lake-vs-data-leak?hs_amp=true by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 23 Jan 2024 06:54:00 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8">
+    <title>Data lake vs. data leak</title>
+    <link rel="canonical" href="data-lake-vs-data-leak.html" />
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+
+    <meta name="author" content="Natalie">
+
+    <meta name="description" content="Data lake vs. data leak">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <meta name="generator" content="HubSpot">
+    <script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Data lake vs. data leak",
+        "datePublished": "2019-03-28T23:33:29Z",
+        "dateModified": "2021-11-09T02:13:21.446Z",
+        "mainEntityOfPage": "https://resources.xceptional.com/blog/2019/03/28/data-lake-vs-data-leak",
+        "author": {
+          "@type": "Person",
+          "name": "Natalie"
+        },
+        "image": {
+         "@type": "ImageObject",
+        
+          
+          
+          "url": "https://f.hubspotusercontent10.net/hubfs/6853069/Imported_Blog_Media/878017303-1.jpg"
+        
+        },
+        "publisher" : {
+          "@type": "Organization",
+          "logo": {
+            "@type": "ImageObject",
+            
+            "url": "/hs/hsstatic/content_shared_assets/static-1.4092/img/default-amp-logo.png",
+            "width": 60,
+            "height": 60
+            
+          },
+          "name": "The Xceptional Blog"
+        }
+      }
+    </script>
+    <script async custom-element="amp-analytics" src="../../../../../cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
+    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style>
+    <noscript>
+      <style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style>
+    </noscript>
+  <style amp-custom>
+      body {
+        color: #404040;
+        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        font-size: 18px;
+        line-height: 1.6;
+      }
+
+      .hs-page-width-normal {
+        box-sizing: content-box;
+        margin: 0 auto;
+        padding: 0 5vw 5vw;
+      }
+
+      .info {
+        font-size: 14px
+      }
+
+      h1 {
+        color: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        font-size: 26px;
+        line-height: 1.5;
+        font-weight: 600;
+      }
+
+      h1 a {
+        color: #404040;
+      }
+
+      h2 {
+        color: #404040;
+        font-size: 22px;
+        line-height: 38px;
+      }
+
+      a {
+        color: #416bb3;
+        text-decoration: none;
+      }
+
+      .logo-header-text {
+        color: #1e1e1e;
+        font-size: 36px;
+        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        line-height: 2.0;
+        font-weight: bold;
+        vertical-align: text-bottom;
+      }
+
+      .hs-page-width-normal {
+        padding: 5vw;
+      }
+
+      .iframe-placeholder {
+        background-color: #bbb;
+      }
+
+      .header-banner {
+        padding: 3vw 1vw;
+        border-color: #dcdcdc;
+        border-bottom-style: solid;
+        border-bottom-width: thin;
+        background-color: #ffffff;
+        color: #1e1e1e;
+        text-align: center;
+      }
+
+      .full-link {
+        text-align: center;
+      }
+
+      .full-link a {
+        border: 1px solid #dcdcdc;
+        background-color: transparent;
+        color: #416bb3;
+        cursor: pointer;
+        display: block;
+        font-size: 14px;
+        line-height: 18px;
+        margin: 0 auto;
+        max-width: 200px;
+        padding: 11px 16px;
+        text-decoration: none;
+        width: 50%;
+      }
+
+    </style>
+    <script async src="../../../../../cdn.ampproject.org/v0.js"></script>
+  </head>
+  <body>
+    <div class="row-fluid">
+      <div class="header-banner">
+        <a class="blog-link" href="../../../../blog.html">
+        
+          <span class="logo-header-text">The Xceptional Blog</span>
+         </a>
+      </div>  
+      <div class="hs-page-width-normal">
+        <div class="post-header">
+          <h1><a href="data-lake-vs-data-leak.html">Data lake vs. data leak</a></h1>
+        </div>
+        <div class="info">
+          <span> Written by <a class="author-link" href="../../../author/andy.html">Natalie</a> | Mar 28, 2019 11:33:29 PM </span>
+        </div>
+        <div class="blog-section">
+          <span><p><span>The advent of scalable enterprise search based on (among other things) Lucene-based storage clusters has brought about a renaissance&nbsp;in analytics techniques. Knowledge discovery across the enterprise has become a possibility and many have capitalized on this.&nbsp;Finding the relationship between response time and online sales is huge.&nbsp;Discovering that productivity drops when manufacturing backlogs are large, or which flight delays have the biggest economic impact on an airline, etc.&nbsp;These are powerful pieces of business intelligence that cannot obviously be seen in large amounts of raw data. However, they can now be discovered, thanks to the scale and power of machine learning analytical techniques applied to large bodies of data stored in these “data lakes.”</span></p> 
+<p><span>Perhaps the tail has started wagging the dog. Since “some strategically chosen data” combined with “select machine learning algorithms” has yielded “value” to the enterprise, it is only logical that we should dump in “more and more data” to get more and more “value.” However, this is not always true. Intuitively there is declining value in adding additional data sources: each additional data stream will have some logical overlap with things you already know. Yet, this has not stopped many enterprises from simply bringing in “all the data” from as many sources as possible with the hope to eventually exploit its value through machine learning.</span></p> 
+<p>So although there is clear value in bringing data together for analytical purposes, we must weight this against the risks of the loss of this data. When data is decentralized there is an implicit amount of data security. It will be harder for one attacker or malicious insider to walk out with all the crown jewels--but once data is uploaded to the data lake, a lot of control over this data is lost. Note also that similar arguments have been made surrounding cloud storage, backup solutions and other products, which has given rise to a rich fabric of data privacy solutions, data centralization, and access control. For enterprise data lakes, however, this may still prove to be a challenge. Moreover, since storage is cheap, what is the harm? You can always delete it later if you end up not using it. Perhaps not surprisingly, we have recently seen a notable increase in the number of attacks hitting these storage clusters.&nbsp;<span>From password brute-force attacks to exploits for software bugs—<a href="https://www.riverbed.com/blogs/do-we-have-a-chance-against-well-funded-attack-teams.html?utm_source=blog&amp;utm_medium=social" target="_blank" rel="noopener noreferrer">attackers</a>&nbsp;are systematically finding ways into these enterprise data treasure troves. The more data you “centralize” in one location, the bigger the damage when the wrong hands gain access to this location. This is when your large data lake turns into a regrettable data leak.</span></p> 
+<p><span>Ultimately, enterprises should judiciously decide how to provision and use their data lakes; what flows into them; and what the impact is of a data leak. Often there is a natural way to decentralize data, and obviously proper network security practices must be followed. Additionally, many analytical techniques can make use of existing database APIs that allow data to be analyzed from many decentralized sources. This does not require that all data is drawn into the data lake, thus decentralizing the data, and making use of native access control mechanisms. Obviously, once access is provisioned, a data leak may still occur, but the scope will be significantly limited!</span></p> 
+<p>&nbsp;</p> 
+<p><a href="../../../../../f.hubspotusercontent10.net/hubfs/6853069/Imported_Blog_Media/Blog-Post-3-28-19-Author-1.jpg"><amp-img class="size-medium wp-image-8023 alignleft" src="../../../../hs-fs/hubfs/Imported_Blog_Media/878017303-18866.jpg?width=61&amp;height=61&amp;name=878017303-1.jpg" alt="" width="61" height="61" srcset="https://resources.xceptional.com/hs-fs/hubfs/Imported_Blog_Media/878017303-1.jpg?width=31&amp;height=31&amp;name=878017303-1.jpg 31w, https://resources.xceptional.com/hs-fs/hubfs/Imported_Blog_Media/878017303-1.jpg?width=61&amp;height=61&amp;name=878017303-1.jpg 61w, https://resources.xceptional.com/hs-fs/hubfs/Imported_Blog_Media/878017303-1.jpg?width=92&amp;height=92&amp;name=878017303-1.jpg 92w, https://resources.xceptional.com/hs-fs/hubfs/Imported_Blog_Media/878017303-1.jpg?width=122&amp;height=122&amp;name=878017303-1.jpg 122w, https://resources.xceptional.com/hs-fs/hubfs/Imported_Blog_Media/878017303-1.jpg?width=153&amp;height=153&amp;name=878017303-1.jpg 153w, https://resources.xceptional.com/hs-fs/hubfs/Imported_Blog_Media/878017303-1.jpg?width=183&amp;height=183&amp;name=878017303-1.jpg 183w"></amp-img></a>&nbsp;By Vincent Berk</p> 
+<p>Published with permission from&nbsp;<a href="https://www.riverbed.com/blogs.html">Riverbed</a>.</p></span>
+        </div>
+        <div class="full-link">
+          <a href="data-lake-vs-data-leak.html">View full post</a>
+        </div>
+      </div>
+    </div>
+    
+    <amp-pixel src="../../../../../track.hubspot.com/__ptqb3fd.gif?cd=SCREEN_COLOR_DEPTH-bit&amp;cs=DOCUMENT_CHARSET&amp;ln=BROWSER_LANGUAGE&amp;sd=AVAILABLE_SCREEN_WIDTHxAVAILABLE_SCREEN_HEIGHT&amp;v=1.1&amp;iaa=1&amp;k=1&amp;ccu=CANONICAL_URL&amp;r=DOCUMENT_REFERRER&amp;ct=blog-post&amp;t=Data+lake+vs.+data+leak&amp;pi=50500994680&amp;a=6853069&amp;nc=true&amp;cgi=23291088092&amp;lvi=50500994680&amp;lvc=en&amp;vi=CLIENT_ID(hubspotutk)&amp;ai=CLIENT_ID(amputk)">
+    </amp-pixel>
+    
+  </body>
+
+<!-- Mirrored from resources.xceptional.com/blog/2019/03/28/data-lake-vs-data-leak?hs_amp=true by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 23 Jan 2024 06:54:01 GMT -->
+</html>

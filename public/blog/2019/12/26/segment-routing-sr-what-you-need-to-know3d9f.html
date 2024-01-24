@@ -1,0 +1,198 @@
+<!doctype html>
+<html amp lang="en" >
+  
+<!-- Mirrored from resources.xceptional.com/blog/2019/12/26/segment-routing-sr-what-you-need-to-know?hs_amp=true by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 23 Jan 2024 06:48:49 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8">
+    <title>Segment Routing (SR) – What you need to know</title>
+    <link rel="canonical" href="segment-routing-sr-what-you-need-to-know.html" />
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+
+    <meta name="author" content="Natalie">
+
+    <meta name="description" content="Segment Routing (SR) – What you need to know">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <meta name="generator" content="HubSpot">
+    <script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Segment Routing (SR) \u2013 What you need to know",
+        "datePublished": "2019-12-26T21:51:46Z",
+        "dateModified": "2021-11-09T02:13:16.016Z",
+        "mainEntityOfPage": "https://resources.xceptional.com/blog/2019/12/26/segment-routing-sr-what-you-need-to-know",
+        "author": {
+          "@type": "Person",
+          "name": "Natalie"
+        },
+        "image": {
+         "@type": "ImageObject",
+        
+          
+          
+          "url": "https://f.hubspotusercontent10.net/hubfs/6853069/Imported_Blog_Media/2824504525-1.jpg"
+        
+        },
+        "publisher" : {
+          "@type": "Organization",
+          "logo": {
+            "@type": "ImageObject",
+            
+            "url": "/hs/hsstatic/content_shared_assets/static-1.4092/img/default-amp-logo.png",
+            "width": 60,
+            "height": 60
+            
+          },
+          "name": "The Xceptional Blog"
+        }
+      }
+    </script>
+    <script async custom-element="amp-analytics" src="../../../../../cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
+    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style>
+    <noscript>
+      <style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style>
+    </noscript>
+  <style amp-custom>
+      body {
+        color: #404040;
+        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        font-size: 18px;
+        line-height: 1.6;
+      }
+
+      .hs-page-width-normal {
+        box-sizing: content-box;
+        margin: 0 auto;
+        padding: 0 5vw 5vw;
+      }
+
+      .info {
+        font-size: 14px
+      }
+
+      h1 {
+        color: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        font-size: 26px;
+        line-height: 1.5;
+        font-weight: 600;
+      }
+
+      h1 a {
+        color: #404040;
+      }
+
+      h2 {
+        color: #404040;
+        font-size: 22px;
+        line-height: 38px;
+      }
+
+      a {
+        color: #416bb3;
+        text-decoration: none;
+      }
+
+      .logo-header-text {
+        color: #1e1e1e;
+        font-size: 36px;
+        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        line-height: 2.0;
+        font-weight: bold;
+        vertical-align: text-bottom;
+      }
+
+      .hs-page-width-normal {
+        padding: 5vw;
+      }
+
+      .iframe-placeholder {
+        background-color: #bbb;
+      }
+
+      .header-banner {
+        padding: 3vw 1vw;
+        border-color: #dcdcdc;
+        border-bottom-style: solid;
+        border-bottom-width: thin;
+        background-color: #ffffff;
+        color: #1e1e1e;
+        text-align: center;
+      }
+
+      .full-link {
+        text-align: center;
+      }
+
+      .full-link a {
+        border: 1px solid #dcdcdc;
+        background-color: transparent;
+        color: #416bb3;
+        cursor: pointer;
+        display: block;
+        font-size: 14px;
+        line-height: 18px;
+        margin: 0 auto;
+        max-width: 200px;
+        padding: 11px 16px;
+        text-decoration: none;
+        width: 50%;
+      }
+
+    </style>
+    <script async src="../../../../../cdn.ampproject.org/v0.js"></script>
+  </head>
+  <body>
+    <div class="row-fluid">
+      <div class="header-banner">
+        <a class="blog-link" href="../../../../blog.html">
+        
+          <span class="logo-header-text">The Xceptional Blog</span>
+         </a>
+      </div>  
+      <div class="hs-page-width-normal">
+        <div class="post-header">
+          <h1><a href="segment-routing-sr-what-you-need-to-know.html">Segment Routing (SR) – What you need to know</a></h1>
+        </div>
+        <div class="info">
+          <span> Written by <a class="author-link" href="../../../author/andy.html">Natalie</a> | Dec 26, 2019 9:51:46 PM </span>
+        </div>
+        <div class="blog-section">
+          <span><p><span>If you are interested in learning the basics of&nbsp;<a href="https://www.juniper.net/us/en/solutions/segment-routing/" target="_blank" rel="nofollow noopener noreferrer">Segment Routing (SR)</a>, you have arrived in the right place. Whether you are new to SR or simply looking to learn more about the technology, this blog will provide you insights to help you on your journey by exploring the three key aspects of SR: domain, path and control plane.&nbsp;</span></p> 
+<p><span>Segment Routing Overview</span></p> 
+<p><span><a href="https://www.juniper.net/us/en/solutions/segment-routing/" target="_blank" rel="nofollow noopener noreferrer">Segment Routing</a>&nbsp;uses a routing technology or technique known as source packet routing. In source packet routing, the source or ingress router specifies the path a packet will take through the network, rather than the packet being routed hop by hop through the network based upon its destination address. However, source packet routing is not a new concept. In fact, source packet routing has existed for over 20 years. As an example, MPLS is one of the most widely adopted forms of source packet routing, which uses labels to direct packets through a network. In an MPLS network, when a packet arrives at an ingress node an MPLS label is prepended to the packet which determines the packet’s path through the network.</span></p> 
+<p><span>While SR and MPLS are similar, in that they are both source-based routing protocols, there are a few differences between them. One of these key differences lies in a primary objective of SR, which is documented in&nbsp;<a href="https://tools.ietf.org/html/rfc7855" target="_blank" rel="nofollow noopener noreferrer">RFC7855</a>, “The SPRING [SR] architecture MUST allow putting the policy state in the packet header and not in the intermediate nodes along the path. Hence, the policy is instantiated in the packet header and does not require any policy state in midpoints and tail-ends.” Unlike MPLS, SR does not require the intermediate routers to maintain path information. This provides a couple of benefits, which we will cover in a subsequent blog, but the primary benefit is that you are able to remove protocols like RSVP and LDP from the network.</span></p> 
+<p><span>Yet, it is important to note that SR can be used with MPLS. In fact, these two protocols will work together, synergistically.&nbsp;<a href="https://tools.ietf.org/html/rfc7855" target="_blank" rel="nofollow noopener noreferrer">RFC7855</a>&nbsp;also states that, “the SPRING [SR] architecture objective is not to replace existing source routing and traffic-engineering mechanisms, but rather to complement them and address use cases where removal of signaling and path state in the core is a requirement.“</span></p> 
+<p><span>With a basic understanding of what SR is and how it compares to existing source-based routing solutions, let’s look at its components.</span></p> 
+<p><span>Segment Routing Domain</span></p> 
+<p><span>The SR domain is a collection of nodes or network devices that participate in&nbsp;<a href="https://forums.juniper.net/t5/Ask-Juniper/Segment-Routing-SR-An-Overview/ba-p/468540" target="_blank" rel="noopener noreferrer">SR protocols</a>. Within an&nbsp;<a href="https://forums.juniper.net/t5/Industry-Solutions-and-Trends/Segment-Routing-Policies-Paths-and-Segments/ba-p/463023" target="_blank" rel="noopener noreferrer">SR domain</a>, a node can execute ingress, transit or egress procedures. Typically, with SR networks, the source and end-point nodes reside outside of the SR domain, while the path between them traverses through the SR domain.</span></p> 
+<p><span>Segment Routing Path</span></p> 
+<p><span>The&nbsp;<a href="https://forums.juniper.net/t5/Industry-Solutions-and-Trends/Segment-Routing-Policies-Paths-and-Segments/ba-p/463023" target="_blank" rel="noopener noreferrer">SR path</a>&nbsp;is an ordered list of network segments that connect an SR ingress node to an SR egress node. However, network segments are not SR path specific, so many SR paths can share a single segment. While an SR path can follow the least cost path from ingress to egress, it can also follow another path for traffic engineering and network service administration purposes. SR paths can be comprised of multiple segment types, which are identified by Segment Identifiers, which we refer to as SIDs. SR segment types include adjacency, prefix, anycast and binding segments. While a path can be comprised of one or more of these segment types, adjacency and prefix segments are the most common types.</span></p> 
+<p><span>Segment Routing Control Plane</span></p> 
+<p><span>The&nbsp;<a href="https://forums.juniper.net/t5/Industry-Solutions-and-Trends/Traffic-Engineering-Segment-Routed-Networks-with-NorthStar/ba-p/459613" target="_blank" rel="noopener noreferrer">SR control plane</a>&nbsp;provides the “brains” of the operation, creating and managing the SR paths, which is done by a path computation function that resides on the ingress router or by a centralized Path Computation Element (PCE). If a PCE is used, it often resides on a Path Computation Element Controller. The ingress router becomes the Path Computation Client (PCC) and the Path Computation Element Protocol (PCEP) is used to communicate between them.</span></p> 
+<p><span>SR paths can follow the least cost path to the egress node or constraints can force them to follow another path specified by the ingress node. The SR path can be engineered by the PCE to satisfy any number of constraints (e.g., minimum link bandwidth, maximum path latency). While path computation can reside solely on the ingress routers, there are a number of benefits to centralizing this function, which are captured in subsequent blogs that can be found&nbsp;<a href="https://forums.juniper.net/t5/Ask-Juniper/Segment-Routing-SR-An-Overview/ba-p/468540" target="_blank" rel="noopener noreferrer">here</a>.</span></p> 
+<p><span>Let’s look at how this works - when a packet arrives at the SR ingress node, the ingress node subjects the packet to policy. The policy includes match conditions and actions. If the packet satisfies match conditions, the SR ingress node assigns the packet to an SR path. The SR ingress does this by encoding the associated segment list in the packet’s SR Header (SRH) or in the case of SR-MPLS, it encodes the segment list in an MPLS label stack and places that in the MPLS label header. It then forwards the packet downstream. Transit nodes process the header, forwarding the packet from the current segment to the next segment. In this way, the packet travels through the SR domain and traverses an SR path to the egress node.</span></p> 
+<p><span>The Benefit</span></p> 
+<p><span>Because the SR ingress node encodes path information in the SR header, transit nodes are not required to maintain information regarding each path that they support. They are only required to process the segment identifiers found in the packet header, forwarding the packet from the current segment to the next segment.</span></p> 
+<p><span>This is the major benefit of SR. Because transit nodes are not required to maintain path information, overhead associated with maintaining that information is eliminated. As a result, routing protocols are simplified, scaling characteristics are improved, and network operations become less problematic.</span></p> 
+<p>&nbsp;</p> 
+<p>&nbsp;</p> 
+<p><amp-img class="wp-image-10109 alignleft" src="../../../../hs-fs/hubfs/Imported_Blog_Media/2824504525-165b8.jpg?width=99&amp;height=95&amp;name=2824504525-1.jpg" alt="" width="99" height="95" srcset="https://resources.xceptional.com/hs-fs/hubfs/Imported_Blog_Media/2824504525-1.jpg?width=50&amp;height=48&amp;name=2824504525-1.jpg 50w, https://resources.xceptional.com/hs-fs/hubfs/Imported_Blog_Media/2824504525-1.jpg?width=99&amp;height=95&amp;name=2824504525-1.jpg 99w, https://resources.xceptional.com/hs-fs/hubfs/Imported_Blog_Media/2824504525-1.jpg?width=149&amp;height=143&amp;name=2824504525-1.jpg 149w, https://resources.xceptional.com/hs-fs/hubfs/Imported_Blog_Media/2824504525-1.jpg?width=198&amp;height=190&amp;name=2824504525-1.jpg 198w, https://resources.xceptional.com/hs-fs/hubfs/Imported_Blog_Media/2824504525-1.jpg?width=248&amp;height=238&amp;name=2824504525-1.jpg 248w, https://resources.xceptional.com/hs-fs/hubfs/Imported_Blog_Media/2824504525-1.jpg?width=297&amp;height=285&amp;name=2824504525-1.jpg 297w"></amp-img>By Steve Puluka</p> 
+<p>Published with permission from&nbsp;forums.juniper.net/t5/Blogs/ct-p/blogs</p> 
+<p>&nbsp;</p></span>
+        </div>
+        <div class="full-link">
+          <a href="segment-routing-sr-what-you-need-to-know.html">View full post</a>
+        </div>
+      </div>
+    </div>
+    
+    <amp-pixel src="../../../../../track.hubspot.com/__ptq63ea.gif?cd=SCREEN_COLOR_DEPTH-bit&amp;cs=DOCUMENT_CHARSET&amp;ln=BROWSER_LANGUAGE&amp;sd=AVAILABLE_SCREEN_WIDTHxAVAILABLE_SCREEN_HEIGHT&amp;v=1.1&amp;iaa=1&amp;k=1&amp;ccu=CANONICAL_URL&amp;r=DOCUMENT_REFERRER&amp;ct=blog-post&amp;t=Segment+Routing+%28SR%29+%E2%80%93+What+you+need+to+know&amp;pi=50503990689&amp;a=6853069&amp;nc=true&amp;cgi=23291088092&amp;lvi=50503990689&amp;lvc=en&amp;vi=CLIENT_ID(hubspotutk)&amp;ai=CLIENT_ID(amputk)">
+    </amp-pixel>
+    
+  </body>
+
+<!-- Mirrored from resources.xceptional.com/blog/2019/12/26/segment-routing-sr-what-you-need-to-know?hs_amp=true by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 23 Jan 2024 06:48:49 GMT -->
+</html>

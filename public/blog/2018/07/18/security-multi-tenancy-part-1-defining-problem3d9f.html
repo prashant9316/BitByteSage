@@ -1,0 +1,191 @@
+<!doctype html>
+<html amp lang="en" >
+  
+<!-- Mirrored from resources.xceptional.com/blog/2018/07/18/security-multi-tenancy-part-1-defining-problem?hs_amp=true by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 23 Jan 2024 07:08:47 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8">
+    <title>Security Multi-Tenancy Part 1: Defining the Problem</title>
+    <link rel="canonical" href="security-multi-tenancy-part-1-defining-problem.html" />
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+
+    <meta name="author" content="Natalie">
+
+    <meta name="description" content="Security Multi-Tenancy Part 1: Defining the Problem">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <meta name="generator" content="HubSpot">
+    <script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Security Multi-Tenancy Part 1: Defining the Problem",
+        "datePublished": "2018-07-18T16:29:20Z",
+        "dateModified": "2021-07-09T17:54:50.085Z",
+        "mainEntityOfPage": "https://resources.xceptional.com/blog/2018/07/18/security-multi-tenancy-part-1-defining-problem",
+        "author": {
+          "@type": "Person",
+          "name": "Natalie"
+        },
+        "image": {
+         "@type": "ImageObject",
+        
+          
+          
+          "url": "https://f.hubspotusercontent10.net/hubfs/6853069/Imported_Blog_Media/1924904372-1.jpg"
+        
+        },
+        "publisher" : {
+          "@type": "Organization",
+          "logo": {
+            "@type": "ImageObject",
+            
+            "url": "/hs/hsstatic/content_shared_assets/static-1.4092/img/default-amp-logo.png",
+            "width": 60,
+            "height": 60
+            
+          },
+          "name": "The Xceptional Blog"
+        }
+      }
+    </script>
+    <script async custom-element="amp-analytics" src="../../../../../cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
+    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style>
+    <noscript>
+      <style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style>
+    </noscript>
+  <style amp-custom>
+      body {
+        color: #404040;
+        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        font-size: 18px;
+        line-height: 1.6;
+      }
+
+      .hs-page-width-normal {
+        box-sizing: content-box;
+        margin: 0 auto;
+        padding: 0 5vw 5vw;
+      }
+
+      .info {
+        font-size: 14px
+      }
+
+      h1 {
+        color: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        font-size: 26px;
+        line-height: 1.5;
+        font-weight: 600;
+      }
+
+      h1 a {
+        color: #404040;
+      }
+
+      h2 {
+        color: #404040;
+        font-size: 22px;
+        line-height: 38px;
+      }
+
+      a {
+        color: #416bb3;
+        text-decoration: none;
+      }
+
+      .logo-header-text {
+        color: #1e1e1e;
+        font-size: 36px;
+        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        line-height: 2.0;
+        font-weight: bold;
+        vertical-align: text-bottom;
+      }
+
+      .hs-page-width-normal {
+        padding: 5vw;
+      }
+
+      .iframe-placeholder {
+        background-color: #bbb;
+      }
+
+      .header-banner {
+        padding: 3vw 1vw;
+        border-color: #dcdcdc;
+        border-bottom-style: solid;
+        border-bottom-width: thin;
+        background-color: #ffffff;
+        color: #1e1e1e;
+        text-align: center;
+      }
+
+      .full-link {
+        text-align: center;
+      }
+
+      .full-link a {
+        border: 1px solid #dcdcdc;
+        background-color: transparent;
+        color: #416bb3;
+        cursor: pointer;
+        display: block;
+        font-size: 14px;
+        line-height: 18px;
+        margin: 0 auto;
+        max-width: 200px;
+        padding: 11px 16px;
+        text-decoration: none;
+        width: 50%;
+      }
+
+    </style>
+    <script async src="../../../../../cdn.ampproject.org/v0.js"></script>
+  </head>
+  <body>
+    <div class="row-fluid">
+      <div class="header-banner">
+        <a class="blog-link" href="../../../../blog.html">
+        
+          <span class="logo-header-text">The Xceptional Blog</span>
+         </a>
+      </div>  
+      <div class="hs-page-width-normal">
+        <div class="post-header">
+          <h1><a href="security-multi-tenancy-part-1-defining-problem.html">Security Multi-Tenancy Part 1: Defining the Problem</a></h1>
+        </div>
+        <div class="info">
+          <span> Written by <a class="author-link" href="../../../author/andy.html">Natalie</a> | Jul 18, 2018 4:29:20 PM </span>
+        </div>
+        <div class="blog-section">
+          <span><p><strong>Pre-Virtual Virtual Firewalls</strong></p> 
+<p>Nowadays, everyone likes to talk about network function virtualization. Most security vendors build their firewall products to run on a few popular hypervisors. However, the “virtual firewall” term predates this virtualization craze. Many firewall administrators use this nomenclature to describe an ability to create multiple virtual partitions or contexts within a single physical security appliance. Each of these virtual firewalls has its own configuration, stateful connection table, and management capabilities. However, they may not be as independent or isolated as one would assume – more on this later. Even though Cisco Adaptive Security Appliance (ASA) software supported virtual firewalls with multiple-context mode for quite some time, we deliberately delayed similar functionality in our threat-centric Firepower Threat Defense (FTD) product in order to get it right. As any decent engineer would tell you, getting the right solution starts with fully understanding the problem. Namely, why do our security customers deploy virtual firewalls?</p> 
+<p><strong>Understanding Use Cases</strong></p> 
+<p>As it turns out, not all customers deploy multiple security contexts specifically for multi-tenancy. Some look for routing table separation, where each virtual firewall represents a separate Virtual Routing and Forwarding (VRF) domain. This functionality comes in handy especially when trying to protect several internal organizations with overlapping IP spaces. Other firewall administrators leverage multiple-context mode to separate and simplify policy management across different domains. Instead of looking at a single flat policy, they break it up into smaller chunks based on individual network segments. This may also involve management separation, where administering individual security contexts is delegated to other organizations. A common example here is a big college where several departments manage their own networks and configure individual virtual firewalls on a shared physical appliance at the extranet edge. Other customers go even deeper and require complete traffic processing separation between different tenants or network segments. For instance, one typically does not want their production applications to be affected by some traffic from a lab environment. As these requirements add up, it becomes clear how most existing firewall multi-tenancy solutions come apart at the seams.</p> 
+<p><strong>Reality Check</strong></p> 
+<p>There are several operational considerations that need to be taken into account when deploying virtual firewalls.&nbsp; All security contexts on a single appliance run the same software image, so you cannot test upgrades on a limited number of tenants. Similarly, they all live or die together – rebooting just one is not possible. When it comes to features, you need to keep track of which are not supported in the virtual firewall mode. Often enough, these subtle nuances come up when you are already so far down the implementation path that turning back is either expensive or completely impossible. But wait, there is more!</p> 
+<p>While virtual firewalls can certainly be used for routing or policy domain separation, it comes with a lot of unnecessary complexity. One needs to create firewall contexts, assign different interfaces, configure them all independently, and then keep switching back and forth in order to manage policies and other relevant configuration. If you need a single access policy across all of your contexts, it must be independently programmed into each virtual firewall. Luckily, features like VRF help in avoiding multiple-context mode by enabling routing domain separation only. When it comes to policy simplification, some of my customers found managing multiple virtual firewalls too cumbersome, converged back into a single security context, and leveraged Security Group Tags (SGTs) to significantly reduce the rule set. Unless you indeed require complete separation between tenants, it makes very little sense to deploy virtual firewalls.</p> 
+<p>When it comes to management separation, multiple-context mode seems like a perfect fit. After all, each tenant gets their own firewall to play with, all without impacting anyone else. Or is that really true? Even though each virtual firewall has its own independent configuration, they all run within a single security application on a shared physical device. In most implementations, it means that the management plane is shared across all of the virtual contexts. If one tenant is pushing a lot of policy changes or constantly polling for connection information, this will inevitably impact every other virtual firewall that runs on the same device. However, the real problem lies within the shared data plane.</p> 
+<p>Despite the perceived separation, all virtual firewalls ultimately run on shared CPU, memory, and internal backplane resources. Even when assigning different physical interfaces to different security contexts, all of the traffic typically converges at the ingress classification function in the CPU. While one sometimes can configure maximum routing or connection table sizes on per-context basis, it still does not limit the amount of network traffic or CPU resources that each particular tenant consumes. In order to classify packets to a particular virtual firewall, the system must spend CPU cycles on processing them first. If a particular tenant is getting a lot of traffic from the network, it can consume a disproportionally large amount of system CPU resources even if this traffic is later dropped by a rate-limiter. As such, there is never a guarantee that one virtual firewall does not grow too big and impact every other security context on the same box. I have seen many cases where firewall administrators were caught completely unaware by this simple caveat. Not being a problem with any specific vendor, this is just how most virtual firewalls are implemented today.</p> 
+<p><strong>Thinking Outside the Contexts</strong></p> 
+<p>After looking at the use cases and analyzing challenges with existing virtual firewall implementations, I knew that our approach to implementing multi-tenancy in FTD must fundamentally change. An ideal solution would provide complete management and traffic processing separation across all tenants, so one virtual firewall truly cannot impact anyone else on the same box. This separation should extend to independent software upgrades and reloads. At the same time, all of the available FTD features should always be supported when implementing virtual firewalls. Not only must it simplify the experience for an end user, but also significantly cut down on both development and testing times.</p> 
+<p>While these may have seemed like impossible requirements, I had a really cool idea on how we can get there for our customers. This novel approach builds on the multi-service capabilities of our Firepower platforms as well as such developing trends as application containerization.&nbsp;With the solution scheduled to arrive in just a few months, check back for an update in one of my next blog posts!</p> 
+<p>&nbsp;</p> 
+<p><a href="../../../../../f.hubspotusercontent10.net/hubfs/6853069/Imported_Blog_Media/Blog-Post-7-18-18-Author-1.jpg"><amp-img class="size-medium wp-image-6425 alignleft" src="../../../../hs-fs/hubfs/Imported_Blog_Media/1924904372-13ac8.jpg?width=56&amp;height=56&amp;name=1924904372-1.jpg" alt="" width="56" height="56" srcset="https://resources.xceptional.com/hs-fs/hubfs/Imported_Blog_Media/1924904372-1.jpg?width=28&amp;height=28&amp;name=1924904372-1.jpg 28w, https://resources.xceptional.com/hs-fs/hubfs/Imported_Blog_Media/1924904372-1.jpg?width=56&amp;height=56&amp;name=1924904372-1.jpg 56w, https://resources.xceptional.com/hs-fs/hubfs/Imported_Blog_Media/1924904372-1.jpg?width=84&amp;height=84&amp;name=1924904372-1.jpg 84w, https://resources.xceptional.com/hs-fs/hubfs/Imported_Blog_Media/1924904372-1.jpg?width=112&amp;height=112&amp;name=1924904372-1.jpg 112w, https://resources.xceptional.com/hs-fs/hubfs/Imported_Blog_Media/1924904372-1.jpg?width=140&amp;height=140&amp;name=1924904372-1.jpg 140w, https://resources.xceptional.com/hs-fs/hubfs/Imported_Blog_Media/1924904372-1.jpg?width=168&amp;height=168&amp;name=1924904372-1.jpg 168w"></amp-img></a>&nbsp;By Andrew Ossipov</p> 
+<p>Published with permission from blogs.cisco.com</p></span>
+        </div>
+        <div class="full-link">
+          <a href="security-multi-tenancy-part-1-defining-problem.html">View full post</a>
+        </div>
+      </div>
+    </div>
+    
+    <amp-pixel src="../../../../../track.hubspot.com/__ptq5404.gif?cd=SCREEN_COLOR_DEPTH-bit&amp;cs=DOCUMENT_CHARSET&amp;ln=BROWSER_LANGUAGE&amp;sd=AVAILABLE_SCREEN_WIDTHxAVAILABLE_SCREEN_HEIGHT&amp;v=1.1&amp;iaa=1&amp;k=1&amp;ccu=CANONICAL_URL&amp;r=DOCUMENT_REFERRER&amp;ct=blog-post&amp;t=Security+Multi-Tenancy+Part+1%3A+Defining+the+Problem&amp;pi=50503990709&amp;a=6853069&amp;nc=true&amp;cgi=23291088092&amp;lvi=50503990709&amp;lvc=en&amp;vi=CLIENT_ID(hubspotutk)&amp;ai=CLIENT_ID(amputk)">
+    </amp-pixel>
+    
+  </body>
+
+<!-- Mirrored from resources.xceptional.com/blog/2018/07/18/security-multi-tenancy-part-1-defining-problem?hs_amp=true by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 23 Jan 2024 07:08:47 GMT -->
+</html>

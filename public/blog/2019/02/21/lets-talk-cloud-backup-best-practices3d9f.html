@@ -1,0 +1,195 @@
+<!doctype html>
+<html amp lang="en" >
+  
+<!-- Mirrored from resources.xceptional.com/blog/2019/02/21/lets-talk-cloud-backup-best-practices?hs_amp=true by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 23 Jan 2024 06:48:48 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8">
+    <title>Let's Talk Cloud Backup Best Practices</title>
+    <link rel="canonical" href="lets-talk-cloud-backup-best-practices.html" />
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+
+    <meta name="author" content="Chris McKewon">
+
+    <meta name="description" content="The truth is, no, your data is not always safe in the cloud. Learn how to keep it safe.">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <meta name="generator" content="HubSpot">
+    <script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Let's Talk Cloud Backup Best Practices",
+        "datePublished": "2019-02-21T06:00:58Z",
+        "dateModified": "2022-09-13T20:25:46.220Z",
+        "mainEntityOfPage": "https://resources.xceptional.com/blog/2019/02/21/lets-talk-cloud-backup-best-practices",
+        "author": {
+          "@type": "Person",
+          "name": "Chris McKewon"
+        },
+        "image": {
+         "@type": "ImageObject",
+        
+          "url": "/hs/hsstatic/content_shared_assets/static-1.4092/img/default-amp-logo.png",
+          "width": 60,
+          "height": 60
+        
+        },
+        "publisher" : {
+          "@type": "Organization",
+          "logo": {
+            "@type": "ImageObject",
+            
+            "url": "/hs/hsstatic/content_shared_assets/static-1.4092/img/default-amp-logo.png",
+            "width": 60,
+            "height": 60
+            
+          },
+          "name": "The Xceptional Blog"
+        }
+      }
+    </script>
+    <script async custom-element="amp-analytics" src="../../../../../cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
+    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style>
+    <noscript>
+      <style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style>
+    </noscript>
+  <style amp-custom>
+      body {
+        color: #404040;
+        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        font-size: 18px;
+        line-height: 1.6;
+      }
+
+      .hs-page-width-normal {
+        box-sizing: content-box;
+        margin: 0 auto;
+        padding: 0 5vw 5vw;
+      }
+
+      .info {
+        font-size: 14px
+      }
+
+      h1 {
+        color: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        font-size: 26px;
+        line-height: 1.5;
+        font-weight: 600;
+      }
+
+      h1 a {
+        color: #404040;
+      }
+
+      h2 {
+        color: #404040;
+        font-size: 22px;
+        line-height: 38px;
+      }
+
+      a {
+        color: #416bb3;
+        text-decoration: none;
+      }
+
+      .logo-header-text {
+        color: #1e1e1e;
+        font-size: 36px;
+        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        line-height: 2.0;
+        font-weight: bold;
+        vertical-align: text-bottom;
+      }
+
+      .hs-page-width-normal {
+        padding: 5vw;
+      }
+
+      .iframe-placeholder {
+        background-color: #bbb;
+      }
+
+      .header-banner {
+        padding: 3vw 1vw;
+        border-color: #dcdcdc;
+        border-bottom-style: solid;
+        border-bottom-width: thin;
+        background-color: #ffffff;
+        color: #1e1e1e;
+        text-align: center;
+      }
+
+      .full-link {
+        text-align: center;
+      }
+
+      .full-link a {
+        border: 1px solid #dcdcdc;
+        background-color: transparent;
+        color: #416bb3;
+        cursor: pointer;
+        display: block;
+        font-size: 14px;
+        line-height: 18px;
+        margin: 0 auto;
+        max-width: 200px;
+        padding: 11px 16px;
+        text-decoration: none;
+        width: 50%;
+      }
+
+    </style>
+    <script async src="../../../../../cdn.ampproject.org/v0.js"></script>
+  </head>
+  <body>
+    <div class="row-fluid">
+      <div class="header-banner">
+        <a class="blog-link" href="../../../../blog.html">
+        
+          <span class="logo-header-text">The Xceptional Blog</span>
+         </a>
+      </div>  
+      <div class="hs-page-width-normal">
+        <div class="post-header">
+          <h1><a href="lets-talk-cloud-backup-best-practices.html">Let's Talk Cloud Backup Best Practices</a></h1>
+        </div>
+        <div class="info">
+          <span> Written by <a class="author-link" href="../../../author/chris-mckewon.html">Chris McKewon</a> | Feb 21, 2019 6:00:58 AM </span>
+        </div>
+        <div class="blog-section">
+          <span><p><em><span>by Chris McKewon, CEO, Xceptional</span></em></p> 
+<p><span>When it comes to keeping your data secure, every business knows – or should know – the importance of having some kind of backup. However, this understanding doesn’t come with automatic knowledge on how that business should go about getting the right backup technology. This lack of knowledge can result in confusion about the cloud and on-premises software and how both can be used for effective backups. To shed some light on some misconceptions, we’ll be addressing best practices for backups in regards to both cloud and on-premises software.</span></p> 
+<h2><b>Misconceptions</b></h2> 
+<p><span>The ever-changing landscape of IT means that cloud, cloud integration, and hybrid cloud often create confusion around backups. While some small business owners may be asking themselves if they need it, others may be skeptical about the security of their data in the cloud. The truth is, no, your data is not always safe in the cloud. In fact, you need more than one copy of your data to ensure it’s safe.</span></p> 
+<p><span>The idea that your data is automatically backed up in the cloud is not true. &nbsp;Most cloud providers (i.e. Microsoft Office 365) hold on to data for a short period of time (default is 30 days) when it’s been changed or deleted. If that deletion or change goes unnoticed then the cloud providers permanently delete that data once the short retention period has expired. Sometimes, systems failures or human error can cause data loss and/or service interruptions which can harm businesses. To ensure this kind of human error or oversight doesn’t cause permanent data loss, it makes sense to consider an external cloud backup which backs up data from the cloud to another cloud provider (e.g. from Microsoft Office to Amazon Web Services). </span></p> 
+<p><span>In most on-premise situations where a large amount of data lives in servers and storage on premise, it is always recommended to have:</span></p> 
+<ul> 
+ <li><span>A primary copy of that data locally</span></li> 
+ <li><span>A secondary copy of that data that is located elsewhere</span></li> 
+</ul> 
+<p><span>When it comes to where you should store your primary and secondary copies of your data, the primary copy can be stored on-premise while the secondary copy should be placed in the cloud. However, having your data safely stored away doesn’t always mean that your data can be easily recovered if disaster strikes. Depending on the size of your data set, the process to recover it can be a lengthy one.</span></p> 
+<h2><b>Best Practices</b></h2> 
+<p><span>Thinking ahead can save you a lot of grief. It’s important to critically analyze your business’s backup capabilities and if necessary, implement cross-cloud backup. This will ensure that your data is absolutely secure in case one cloud is compromised.</span></p> 
+<p><span>If you currently have on-premise resources, getting them backed up locally and on the cloud should be a top priority. Fortunately, there are technologies out there that allow you to do just that – make a copy of your data locally within your computer or data center and also replicate that data offsite.</span></p> 
+<p><span>If your budget permits it, backup your existing server infrastructure – if you have one – locally and onto another location within the data center so that it can be done quickly. In fact, the proximity of the data often determines the speed in which it's backed up and restored. </span></p> 
+<p><span>When it comes to a desktop backup, it’s similar to a cloud backup. While mobile devices and people are vulnerable to errors, having data backed up and secure means that if that data is ever lost it can be encrypted and safe, thanks to the cloud.</span></p> 
+<p><span>Having a primary and secondary backup should not be viewed as a luxury, it’s a necessity. You need both for your business. Without them, you will not be able to survive a site-level failure, especially if you only have a local backup.</span></p> 
+<h2><b>Ready for an XceptionalBackup?</b></h2> 
+<p><span>If you’re ready to start thinking about your backup plan, Xceptional can help you. Don’t wait until it's too late. At Xceptional, we can work with you to deliver the solutions you need to secure your data. Discover our </span><a href="https://www.xceptional.com/xceptionalbackup/"><span>XceptionalBackup</span></a><span> today and if you’re interested in learning more, contact us to get started.</span></p></span>
+        </div>
+        <div class="full-link">
+          <a href="lets-talk-cloud-backup-best-practices.html">View full post</a>
+        </div>
+      </div>
+    </div>
+    
+    <amp-pixel src="../../../../../track.hubspot.com/__ptq6392.gif?cd=SCREEN_COLOR_DEPTH-bit&amp;cs=DOCUMENT_CHARSET&amp;ln=BROWSER_LANGUAGE&amp;sd=AVAILABLE_SCREEN_WIDTHxAVAILABLE_SCREEN_HEIGHT&amp;v=1.1&amp;iaa=1&amp;k=1&amp;ccu=CANONICAL_URL&amp;r=DOCUMENT_REFERRER&amp;ct=blog-post&amp;t=Let%27s+Talk+Cloud+Backup+Best+Practices&amp;pi=50500994853&amp;a=6853069&amp;nc=true&amp;cgi=23291088092&amp;lvi=50500994853&amp;lvc=en&amp;vi=CLIENT_ID(hubspotutk)&amp;ai=CLIENT_ID(amputk)">
+    </amp-pixel>
+    
+  </body>
+
+<!-- Mirrored from resources.xceptional.com/blog/2019/02/21/lets-talk-cloud-backup-best-practices?hs_amp=true by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 23 Jan 2024 06:48:48 GMT -->
+</html>

@@ -1,0 +1,206 @@
+<!doctype html>
+<html amp lang="en" >
+  
+<!-- Mirrored from resources.xceptional.com/blog/2018/06/18/network-reliability-engineers-manifesto?hs_amp=true by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 23 Jan 2024 07:09:50 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8">
+    <title>The Network Reliability Engineer's Manifesto</title>
+    <link rel="canonical" href="network-reliability-engineers-manifesto.html" />
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+
+    <meta name="author" content="Natalie">
+
+    <meta name="description" content="The Network Reliability Engineer&#39;s Manifesto">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <meta name="generator" content="HubSpot">
+    <script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "The Network Reliability Engineer's Manifesto",
+        "datePublished": "2018-06-18T19:53:02Z",
+        "dateModified": "2021-11-09T02:34:50.079Z",
+        "mainEntityOfPage": "https://resources.xceptional.com/blog/2018/06/18/network-reliability-engineers-manifesto",
+        "author": {
+          "@type": "Person",
+          "name": "Natalie"
+        },
+        "image": {
+         "@type": "ImageObject",
+        
+          
+          
+          "url": "https://f.hubspotusercontent10.net/hubfs/6853069/Imported_Blog_Media/393497659-1.jpg"
+        
+        },
+        "publisher" : {
+          "@type": "Organization",
+          "logo": {
+            "@type": "ImageObject",
+            
+            "url": "/hs/hsstatic/content_shared_assets/static-1.4092/img/default-amp-logo.png",
+            "width": 60,
+            "height": 60
+            
+          },
+          "name": "The Xceptional Blog"
+        }
+      }
+    </script>
+    <script async custom-element="amp-analytics" src="../../../../../cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
+    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style>
+    <noscript>
+      <style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style>
+    </noscript>
+  <style amp-custom>
+      body {
+        color: #404040;
+        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        font-size: 18px;
+        line-height: 1.6;
+      }
+
+      .hs-page-width-normal {
+        box-sizing: content-box;
+        margin: 0 auto;
+        padding: 0 5vw 5vw;
+      }
+
+      .info {
+        font-size: 14px
+      }
+
+      h1 {
+        color: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        font-size: 26px;
+        line-height: 1.5;
+        font-weight: 600;
+      }
+
+      h1 a {
+        color: #404040;
+      }
+
+      h2 {
+        color: #404040;
+        font-size: 22px;
+        line-height: 38px;
+      }
+
+      a {
+        color: #416bb3;
+        text-decoration: none;
+      }
+
+      .logo-header-text {
+        color: #1e1e1e;
+        font-size: 36px;
+        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        line-height: 2.0;
+        font-weight: bold;
+        vertical-align: text-bottom;
+      }
+
+      .hs-page-width-normal {
+        padding: 5vw;
+      }
+
+      .iframe-placeholder {
+        background-color: #bbb;
+      }
+
+      .header-banner {
+        padding: 3vw 1vw;
+        border-color: #dcdcdc;
+        border-bottom-style: solid;
+        border-bottom-width: thin;
+        background-color: #ffffff;
+        color: #1e1e1e;
+        text-align: center;
+      }
+
+      .full-link {
+        text-align: center;
+      }
+
+      .full-link a {
+        border: 1px solid #dcdcdc;
+        background-color: transparent;
+        color: #416bb3;
+        cursor: pointer;
+        display: block;
+        font-size: 14px;
+        line-height: 18px;
+        margin: 0 auto;
+        max-width: 200px;
+        padding: 11px 16px;
+        text-decoration: none;
+        width: 50%;
+      }
+
+    </style>
+    <script async src="../../../../../cdn.ampproject.org/v0.js"></script>
+  </head>
+  <body>
+    <div class="row-fluid">
+      <div class="header-banner">
+        <a class="blog-link" href="../../../../blog.html">
+        
+          <span class="logo-header-text">The Xceptional Blog</span>
+         </a>
+      </div>  
+      <div class="hs-page-width-normal">
+        <div class="post-header">
+          <h1><a href="network-reliability-engineers-manifesto.html">The Network Reliability Engineer's Manifesto</a></h1>
+        </div>
+        <div class="info">
+          <span> Written by <a class="author-link" href="../../../author/andy.html">Natalie</a> | Jun 18, 2018 7:53:02 PM </span>
+        </div>
+        <div class="blog-section">
+          <span><p>The industry is at a crossroads. And this isn’t just hyperbole - we as an industry have some decisions to make around what we stand for - as engineers, operators, and architects, and frankly, the people that (sometimes literally) keep the lights on. It’s time to have some real talk.</p> 
+<p>We’ve heard for years that we need to automate, but so little clarity on why or how. Coming primarily from a customer background, I’ll be honest - network vendors haven’t done the industry many favors here, often speaking of automation as “the replacement for expensive network engineers”, or focusing on fairly minor benefits like doing things “faster”. As someone that’s worked in network operations before and seen how fragile it can be, doing things faster is an utterly terrifying prospect.</p> 
+<p>Software-Defined Networking really kick-started the network automation conversation back in 2012, but six years later, we’re still primarily talking about “pushing config changes” as the reason someone might want to automate.&nbsp;<strong>No wonder</strong>&nbsp;most network engineers think automation is only for hyper-scale companies like Facebook or Google. Even large enterprises make very few configuration changes to the physical network once deployed. Yet many vendors who claim leadership of the network automation conversation can rarely go beyond configuration management as a use case.</p> 
+<p>So ask yourself, as an infrastructure professional, what is really your job? Is it pushing configs? I think a lot of us on the vendor side might like to think you’re spending 100% of your time in our CLI, configuring our boxes - but I’ve spent time in operations and I know this isn't reality. I have been called back in to work because of a broadcast storm. I’ve had to drive to a data center because a bug brought part of the network down. I’ve had to build systems that talk to other systems that talk to other systems because the network is inherently a distributed application; one that touches every other aspect of IT. The reality is that network engineers have to touch all kinds of systems, both within and outside the network, ranging from routers and switches to servers, storage, applications, ticketing systems, and monitoring tools,&nbsp;<strong><u>all for the sole purpose of keeping the network running</u></strong>, and providing connectivity for applications and users. Automation should really be little more than a machine-compatible representation of that.</p> 
+<p>As it turns out, Facebook and Google aren’t the only organizations that care about reliability. Let’s face it - in 2018, the network is critical infrastructure for most of the planet. The cost of a network outage these days is almost always measured north of six-figures, and for many organizations it gets much, much worse. In “<a href="https://landing.google.com/sre/book/chapters/introduction.html" target="_blank" rel="nofollow noopener noreferrer">Site Reliability Engineering</a>” culture, there’s a saying:</p> 
+<p><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<em>&nbsp;“Hope is not a strategy”.</em></span></p> 
+<p>The time for hoping a network outage won’t occur is over. It’s time to actively engineer against them. It’s time to make network reliability the total, unyielding focus of any automation effort. It’s time for&nbsp;<strong>you</strong>&nbsp;to start automating your network operations - not because it will put you out of a job, but because it will make you and your network invincible. It’s time to reset the conversation and center our efforts on&nbsp;<u><strong>Network Reliability Engineering</strong></u>, and how automation can play a role in making our networks&nbsp;<strong>more</strong>&nbsp;reliable.</p> 
+<h2 id="toc-hId-1675325524">The Focus on Reliability - What’s in it for me?</h2> 
+<p>“Oh come on, Matt,” you’re probably saying by now. “We’ve always cared about reliability, so what is this all about?”</p> 
+<p>To be sure, it’s not like I’m making a massively controversial statement when I say reliability should be the focus. I don’t think anyone would explicitly argue&nbsp;against&nbsp;reliability, except for maybe pager manufacturers. However, there’s a big difference between not being outright against reliability, and obsessing over it to the point where every process is aimed at it as an ultimate goal.</p> 
+<p>Again though, whenever automation comes up, it’s always pitched as a cost-saving measure, or a way to make things go “faster”. These may seem like logical outcomes, but anyone who has started putting automation into practice will tell you it’s not this easy. Using Ansible doesn’t mean you’ve automated your network operations; I assure you, I can destroy a network just fine with an Ansible playbook. Automation is no more a time-saver as it is a cost-cutter.</p> 
+<p>Let’s say you build a huge rocket capable of going to Pluto and back. It’s a monster - an enormous machine with giant engines, worth billions of dollars and decades of research. Having the capacity of getting to Pluto and back is truly impressive. But if it blows up on the pad because of a hastily assembled subsystem, literally none of that matters.</p> 
+<p>Network Reliability Engineering is needed because network operations as a whole simply isn't&nbsp;reliable today. We know this because much of the network industry is inherently terrified of automation. They are mortified to think that the firefighting they're already dealing with could potentially be magnified by simply doing it faster.</p> 
+<p>I’ll let you into the big secret about automation:</p> 
+<p><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<em>&nbsp;Automation is just reliable operations.</em></span></p> 
+<p>Automation, when done correctly, is the cornerstone of reliability. At it’s simplest, it is a machine-executable form of what’s already in your head. Not a “developer”;&nbsp;<strong>yours.</strong>&nbsp;You are the one that is best positioned to make automation real in your environment, and offer your network as a&nbsp;responsive&nbsp;infrastructure for others to build on. Take Amazon for instance.&nbsp; They employ scores of network engineers just like you or I, but I've never seen an indication of what switches or routers are up when I go to the AWS services status page. Instead, I'm told which services are online. This isn't magic, and it's not "developers taking over the network". It's network engineers like you translating between network-specific tools and workflows into a format that the customers of the network actually care about. This obsessive focus on customers is&nbsp;<u><strong>surely</strong></u>&nbsp;not something only for the hyperscalers.</p> 
+<p>What you’ll find when starting down the NRE journey and using automation to make your networks more reliable is that you’ll unlock new capabilities - both for your organization, as well as yourself - that you simply didn’t have before because you were mired in the toil of network operations and fire-fighting culture. Automation does eliminate tasks, but it doesn’t eliminate people. People are literally the fulcrum on which automated operations sits, and those that use automation to make their networks more reliable will always be moving their skill-sets forward and making themselves and their organizations more valuable.</p> 
+<p>All this isn’t to say that automation won’t let your IT organization move faster. On the contrary, I’d argue that reliable network operations&nbsp;<strong>must</strong>&nbsp;strive to reduce the mean time to respond (MTTR), or mean time between failures (MTBF). Just because reliability is automation’s ultimate purpose doesn’t mean it’s the only purpose.</p> 
+<p>You’ll find that the more reliable your network is, the less time you’ll spend in toil, the more time you’ll spend making your customers happy, and the sooner you’ll get home to spend uninterrupted time with your family. This is about keeping your eyes on what will trigger all of the other benefits. A focus on reliability means you get to have your cake, and eat it too.</p> 
+<h2 id="toc-hId--876831437">The NRE Manifesto</h2> 
+<p>As Network Reliability Engineers,&nbsp;it's time to converge on a set of ideals. We'll endlessly be debating which automation tool is best until we have a real conversation about what matters; what it is that drives us, and how&nbsp;we use automation to make our network operations more reliable.</p> 
+<ul> 
+ <li><strong><u>We’re obsessed with our customers</u></strong>. Everything we do is aimed at meeting their expectations. We recognize that WE are the ones that are in a position to translate between networking-specific metrics and overall service health.</li> 
+ <li><u><strong>We don’t rely on hope</strong></u>. We proactively engineer reliability into everything we do. We don’t rest on our laurels after an outage, we obsess over the details of what happens, without blame, and engineer our systems to ensure it will never happen again. We don’t just assume the network is working, we run tests and experiments in production all the time to constantly challenge this assertion.</li> 
+ <li><u><strong>We are full-stack</strong></u>. We can recite every OSPF LSA type on command, but we also deploy tools and applications to public cloud, and have an opinion on the Kubernetes network model. We automatically invite ourselves to every meeting about service meshes. Why? Because these are “the network” just as much as the access-points in our campus network, and if we’re going to engineer reliability into our network, we need to have a hand in the way our organizations deploy applications.</li> 
+ <li><u><strong>We embrace failure</strong></u>. Not because failure is fun, or outages are particularly pleasant experiences - they’re not. But we put processes and tools into place to ensure we never encounter the same failure twice. So, failure means we’re growing. Our infrastructure is encountering one more thing that will never catch it by surprise again. And in the future, where we’d normally be kept away from our families to fix an issue for the Nth time, we’ll be home for dinner.</li> 
+</ul> 
+<p>&nbsp;</p> 
+<p><a href="../../../../../f.hubspotusercontent10.net/hubfs/6853069/Imported_Blog_Media/Blog-Post-6-18-18-Author-1.jpg"><amp-img class="wp-image-6304 alignleft" src="../../../../hs-fs/hubfs/Imported_Blog_Media/393497659-18f79.jpg?width=84&amp;height=85&amp;name=393497659-1.jpg" alt="" width="84" height="85" srcset="https://resources.xceptional.com/hs-fs/hubfs/Imported_Blog_Media/393497659-1.jpg?width=42&amp;height=43&amp;name=393497659-1.jpg 42w, https://resources.xceptional.com/hs-fs/hubfs/Imported_Blog_Media/393497659-1.jpg?width=84&amp;height=85&amp;name=393497659-1.jpg 84w, https://resources.xceptional.com/hs-fs/hubfs/Imported_Blog_Media/393497659-1.jpg?width=126&amp;height=128&amp;name=393497659-1.jpg 126w, https://resources.xceptional.com/hs-fs/hubfs/Imported_Blog_Media/393497659-1.jpg?width=168&amp;height=170&amp;name=393497659-1.jpg 168w, https://resources.xceptional.com/hs-fs/hubfs/Imported_Blog_Media/393497659-1.jpg?width=210&amp;height=213&amp;name=393497659-1.jpg 210w, https://resources.xceptional.com/hs-fs/hubfs/Imported_Blog_Media/393497659-1.jpg?width=252&amp;height=255&amp;name=393497659-1.jpg 252w"></amp-img></a>&nbsp; By Matt Oswalt</p> 
+<p>Published with permission from&nbsp;forums.juniper.net/t5/Blogs/ct-p/blogs</p></span>
+        </div>
+        <div class="full-link">
+          <a href="network-reliability-engineers-manifesto.html">View full post</a>
+        </div>
+      </div>
+    </div>
+    
+    <amp-pixel src="../../../../../track.hubspot.com/__ptq6265.gif?cd=SCREEN_COLOR_DEPTH-bit&amp;cs=DOCUMENT_CHARSET&amp;ln=BROWSER_LANGUAGE&amp;sd=AVAILABLE_SCREEN_WIDTHxAVAILABLE_SCREEN_HEIGHT&amp;v=1.1&amp;iaa=1&amp;k=1&amp;ccu=CANONICAL_URL&amp;r=DOCUMENT_REFERRER&amp;ct=blog-post&amp;t=The+Network+Reliability+Engineer%27s+Manifesto&amp;pi=50500994659&amp;a=6853069&amp;nc=true&amp;cgi=23291088092&amp;lvi=50500994659&amp;lvc=en&amp;vi=CLIENT_ID(hubspotutk)&amp;ai=CLIENT_ID(amputk)">
+    </amp-pixel>
+    
+  </body>
+
+<!-- Mirrored from resources.xceptional.com/blog/2018/06/18/network-reliability-engineers-manifesto?hs_amp=true by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 23 Jan 2024 07:09:50 GMT -->
+</html>

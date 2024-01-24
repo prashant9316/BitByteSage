@@ -1,0 +1,200 @@
+<!doctype html>
+<html amp lang="en" >
+  
+<!-- Mirrored from resources.xceptional.com/blog/2018/03/29/collateral-damage-ddos-attacks-part-1?hs_amp=true by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 23 Jan 2024 07:14:59 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8">
+    <title>The Collateral Damage of DDoS Attacks - Part 1. What is what</title>
+    <link rel="canonical" href="collateral-damage-ddos-attacks-part-1.html" />
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+
+    <meta name="author" content="Natalie">
+
+    <meta name="description" content="The Collateral Damage of DDoS Attacks - Part 1. What is what">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <meta name="generator" content="HubSpot">
+    <script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "The Collateral Damage of DDoS Attacks - Part 1. What is what",
+        "datePublished": "2018-03-29T17:55:36Z",
+        "dateModified": "2021-11-09T02:37:30.113Z",
+        "mainEntityOfPage": "https://resources.xceptional.com/blog/2018/03/29/collateral-damage-ddos-attacks-part-1",
+        "author": {
+          "@type": "Person",
+          "name": "Natalie"
+        },
+        "image": {
+         "@type": "ImageObject",
+        
+          "url": "/hs/hsstatic/content_shared_assets/static-1.4092/img/default-amp-logo.png",
+          "width": 60,
+          "height": 60
+        
+        },
+        "publisher" : {
+          "@type": "Organization",
+          "logo": {
+            "@type": "ImageObject",
+            
+            "url": "/hs/hsstatic/content_shared_assets/static-1.4092/img/default-amp-logo.png",
+            "width": 60,
+            "height": 60
+            
+          },
+          "name": "The Xceptional Blog"
+        }
+      }
+    </script>
+    <script async custom-element="amp-analytics" src="../../../../../cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
+    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style>
+    <noscript>
+      <style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style>
+    </noscript>
+  <style amp-custom>
+      body {
+        color: #404040;
+        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        font-size: 18px;
+        line-height: 1.6;
+      }
+
+      .hs-page-width-normal {
+        box-sizing: content-box;
+        margin: 0 auto;
+        padding: 0 5vw 5vw;
+      }
+
+      .info {
+        font-size: 14px
+      }
+
+      h1 {
+        color: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        font-size: 26px;
+        line-height: 1.5;
+        font-weight: 600;
+      }
+
+      h1 a {
+        color: #404040;
+      }
+
+      h2 {
+        color: #404040;
+        font-size: 22px;
+        line-height: 38px;
+      }
+
+      a {
+        color: #416bb3;
+        text-decoration: none;
+      }
+
+      .logo-header-text {
+        color: #1e1e1e;
+        font-size: 36px;
+        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        line-height: 2.0;
+        font-weight: bold;
+        vertical-align: text-bottom;
+      }
+
+      .hs-page-width-normal {
+        padding: 5vw;
+      }
+
+      .iframe-placeholder {
+        background-color: #bbb;
+      }
+
+      .header-banner {
+        padding: 3vw 1vw;
+        border-color: #dcdcdc;
+        border-bottom-style: solid;
+        border-bottom-width: thin;
+        background-color: #ffffff;
+        color: #1e1e1e;
+        text-align: center;
+      }
+
+      .full-link {
+        text-align: center;
+      }
+
+      .full-link a {
+        border: 1px solid #dcdcdc;
+        background-color: transparent;
+        color: #416bb3;
+        cursor: pointer;
+        display: block;
+        font-size: 14px;
+        line-height: 18px;
+        margin: 0 auto;
+        max-width: 200px;
+        padding: 11px 16px;
+        text-decoration: none;
+        width: 50%;
+      }
+
+    </style>
+    <script async src="../../../../../cdn.ampproject.org/v0.js"></script>
+  </head>
+  <body>
+    <div class="row-fluid">
+      <div class="header-banner">
+        <a class="blog-link" href="../../../../blog.html">
+        
+          <span class="logo-header-text">The Xceptional Blog</span>
+         </a>
+      </div>  
+      <div class="hs-page-width-normal">
+        <div class="post-header">
+          <h1><a href="collateral-damage-ddos-attacks-part-1.html">The Collateral Damage of DDoS Attacks - Part 1. What is what</a></h1>
+        </div>
+        <div class="info">
+          <span> Written by <a class="author-link" href="../../../author/andy.html">Natalie</a> | Mar 29, 2018 5:55:36 PM </span>
+        </div>
+        <div class="blog-section">
+          <span><p>ISP networks are part of the backbone of the Internet—and carry any and every security threat. Most threats are not considered by the ISP, since they do not harm their own infrastructure, they are just another packet flow. While this is true for application-level and state-exhaustion DDoS attacks, ransomware infection, malware distribution, and so on, there are exceptions, such as volumetric DDoS attacks.</p> 
+<p>In contrast to other attacks, the DDoS volumetric attacks impact ISP infrastructure even if it is not the target of the attack. In this blog I will focus on volumetric DDoS attacks and techniques that allow ISPs to mitigate collateral damage on their network.</p> 
+<p>The Volumetric DDoS attack is characterized by large volume of data sent to the target that originates from multiple sources simultaneously. But what is meant by “large volume” and “multiple” sources?</p> 
+<p>The trend since 2008 shows exponential growth, peaking in 2016 at 800Gbps; attacks in 2017 and earlier (see picture below) are likely temporary retracements.<span class="lia-inline-image-display-wrapper lia-image-align-center"><span class="lia-message-image-wrapper"><amp-img class="lia-media-image" src="../../../../../static.hsstatic.net/BlogImporterAssetsUI/ex/missing-image.png" alt="DDoS-p1-Pic1.png" width="587" height="328" layout="responsive"></amp-img><i></i></span></span><span><em>(Source:&nbsp;</em><em>NETSCOUT Arbor’s 13th Annual Worldwide Infrastructure Security Report</em><em>)</em></span></p> 
+<p>Looking at additional data sources, we find that on average there are ~40.000 attacks reported per week, with an average attack time of ~1.2 hours from ~250 simultaneous attack sources. Given the 2017 average attack size of ~1Gbps,&nbsp; this translates to ~250 of Gbps of attack traffic.</p> 
+<p>We can conclude that the total volume of DDoS data that SPs must deal with is large and increasing.</p> 
+<p>During an attack, malicious traffic enters the ISP network, and if not mitigated, is transported toward the target, consuming network resources along the way. As a result, high-cost long-haul links can be saturated, causing ‘non-selective’ packet drops and latency to all traffic traversing the given resources and potentially impacting the traffic of all customers, not just the target. As a result, customers may experience network slowness, unresponsive services, streamed media degradation, and even total outage (TCP timeouts = 15-30 minutes). These issues damage the SPs business directly (SLA penalties) and indirectly (customer dissatisfaction, brand damage, etc).<span class="lia-inline-image-display-wrapper lia-image-align-center"><span class="lia-message-image-wrapper"><amp-img class="lia-media-image" src="../../../../../static.hsstatic.net/BlogImporterAssetsUI/ex/missing-image.png" alt="DDoS-p1-Pic2.png" width="582" height="415" layout="responsive"></amp-img><i></i></span></span></p> 
+<p>Therefore, it is in the SPs best interest to mitigate DDoS impact on their infrastructure and thus protect the experience of the entire customer base.</p> 
+<p>Volumetric DDoS attacks are not a new phenomenon on Internet, but with the exception of very few large attacks, the network infrastructure has had enough capacity to absorb the DDoS traffic. For example, in 2010, when 100GE links were widely deployed in SP core networks, the biggest DDoS attacks generated just 100Gbps of traffic.</p> 
+<p>In the past, DDoS attacks have been contained by manual intervention utilizing techniques like D-RTBH, S-RTBH and filters/access-lists.&nbsp; RTBH discards all traffic addressed to (D-RTBH) the target; similarly, S-RTBH discards all traffic coming from source addresses generating the attack, not a bad counter- measure at first look,&nbsp;<em>but</em>… a) the actual device generating the attack traffic may use a spoofed address, so counter-attacks will penalize innocent hosts; and b) even if the source address is not spoofed, the device (eg PC/laptop) may be infected by some malware that generated the attack, but are also simultaneously used for legitimate, normal work<a href="https://forums.juniper.net/t5/Industry-Solutions-and-Trends/The-Collateral-Damage-of-DDoS-Attacks-Part-1-What-is-what/ba-p/319183#_edn1" target="_blank" rel="nofollow noopener noreferrer" name="_ednref1">[i]</a>.</p> 
+<p>These techniques provide a coarse grain, very simple “DDoS detection” solution by finding IP addresses that are a destination to an untypically large volume, and flow export (Netflow) provides sufficient data to accomplish this. Unfortunately, this detection is associated with relatively high false-positives, and triggering RTBH automatically is such a nuclear option, that virtually noISP has automated this response. There is always a human in decision loop.</p> 
+<p>These legacy approaches are no longer sufficient. Over the years, the volume of traffic generated by DDOS attacks has grown faster than infrastructure capacity, the number of DDoS attacks per day and per week continues to grow, and, because the majority of volumetric DDoS attacks are amplification types--with DNS and NTP being the biggest contributors--back hauling DNS, and even filtering DNS service (at L4) are not useful because they break the name resolution system.</p> 
+<p>Fortunately, analytics software has matured, and so has ISP willingness to trust autonomous decisions taken by software, thanks to advances in technology and experience gathered in other industries. These technologies offer new approaches to mitigate the collateral damage caused by volumetric DDoS attack. These new approaches should:</p> 
+<ul> 
+ <li>Detect attacks based on a combination of flow volume and payload data.</li> 
+ <li>Enable fine-grain differentiation of attacks vs. legitimate flows and packets, even inside same Layer 3-4 flow, and discarding/rate-limiting only malicious ones.</li> 
+ <li>Provide a rapid and complete detect-analyze-mitigate cycle to prevent TCP sessions time-out and protect customer experience.</li> 
+ <li>Should discard malicious packets at network edge (inline/on router line card)</li> 
+ <li>The network service prices payed by customers should not be impacted by the the cost of the solution; solution costs should offset by savings coming from not carrying DDOS traffic over network.</li> 
+ <li>Be focused on volumetric attacks; non-volumetric one does not really impact network resources, so their detection and mitigation is good to have if possible without adding solution costs, but is not critical.</li> 
+</ul> 
+<p>&nbsp;</p> 
+<p><amp-img class="wp-image-5916 alignleft" src="../../../../hs-fs/hubfs/Imported_Blog_Media/996878441-168c7.jpg?width=81&amp;height=80&amp;name=996878441-1.jpg" alt="" width="81" height="80" srcset="https://resources.xceptional.com/hs-fs/hubfs/Imported_Blog_Media/996878441-1.jpg?width=41&amp;height=40&amp;name=996878441-1.jpg 41w, https://resources.xceptional.com/hs-fs/hubfs/Imported_Blog_Media/996878441-1.jpg?width=81&amp;height=80&amp;name=996878441-1.jpg 81w, https://resources.xceptional.com/hs-fs/hubfs/Imported_Blog_Media/996878441-1.jpg?width=122&amp;height=120&amp;name=996878441-1.jpg 122w, https://resources.xceptional.com/hs-fs/hubfs/Imported_Blog_Media/996878441-1.jpg?width=162&amp;height=160&amp;name=996878441-1.jpg 162w, https://resources.xceptional.com/hs-fs/hubfs/Imported_Blog_Media/996878441-1.jpg?width=203&amp;height=200&amp;name=996878441-1.jpg 203w, https://resources.xceptional.com/hs-fs/hubfs/Imported_Blog_Media/996878441-1.jpg?width=243&amp;height=240&amp;name=996878441-1.jpg 243w"></amp-img>&nbsp;By Szary-rs</p> 
+<p>Published with permission from&nbsp;forums.juniper.net/t5/Blogs/ct-p/blogs</p></span>
+        </div>
+        <div class="full-link">
+          <a href="collateral-damage-ddos-attacks-part-1.html">View full post</a>
+        </div>
+      </div>
+    </div>
+    
+    <amp-pixel src="../../../../../track.hubspot.com/__ptq21ba.gif?cd=SCREEN_COLOR_DEPTH-bit&amp;cs=DOCUMENT_CHARSET&amp;ln=BROWSER_LANGUAGE&amp;sd=AVAILABLE_SCREEN_WIDTHxAVAILABLE_SCREEN_HEIGHT&amp;v=1.1&amp;iaa=1&amp;k=1&amp;ccu=CANONICAL_URL&amp;r=DOCUMENT_REFERRER&amp;ct=blog-post&amp;t=The+Collateral+Damage+of+DDoS+Attacks+-+Part+1.+What+is+what&amp;pi=50503647760&amp;a=6853069&amp;nc=true&amp;cgi=23291088092&amp;lvi=50503647760&amp;lvc=en&amp;vi=CLIENT_ID(hubspotutk)&amp;ai=CLIENT_ID(amputk)">
+    </amp-pixel>
+    
+  </body>
+
+<!-- Mirrored from resources.xceptional.com/blog/2018/03/29/collateral-damage-ddos-attacks-part-1?hs_amp=true by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 23 Jan 2024 07:14:59 GMT -->
+</html>
