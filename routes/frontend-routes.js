@@ -21,6 +21,10 @@ routes.get('/privacy-policy', (req, res) => {
     res.render('frontend/privacy-policy', { layout: false });
 });
 
+routes.get('/support-center', (req, res) => {
+    res.render('frontend/support-center', { layout: false });
+})
+
 
 
 
